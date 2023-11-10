@@ -55,18 +55,22 @@ function Panel({
   index: number;
 }) {
   return (
-    <div className="">
-      <h3 className='text-[#333333] font-semibold text-lg lg:text-xl'>{title}</h3>
-      {isActive ? (
-        <p className='font-medium text-[#666666] text-md lg:text-lg py-4'>{answer}</p>
-      ) : (
-        <button onClick={onShow} className='py-4'>
-            { isActive 
-                ?  <Image src={CloseAccordionButton} alt='Open Accordion Button' height={20} width={20} />
-                :  <Image src={OpenAccordionButton} alt='Open Accordion Button' height={20} width={20} />
-            }
-        </button>
-      )}
+    <div className=" border-[#e8e8e8] border-b-2">
+      <div className='flex items-center justify-between py-4'>
+          <h3 className='text-[#333333] font-semibold text-lg lg:text-xl'>{title}</h3>
+          <button onClick={onShow} className='py-2'>
+                { isActive
+                    ?  <Image src={CloseAccordionButton} alt='Open Accordion Button' height={20} width={20} />
+                    :  <Image src={OpenAccordionButton} alt='Open Accordion Button' height={20} width={20} />
+                }
+            </button>
+      </div>
+      {
+        isActive 
+            ? <p className='font-medium text-[#666666] text-md lg:text-lg py-2'>{answer}</p>
+            : null 
+      }
+        
     </div>
   );
 }
