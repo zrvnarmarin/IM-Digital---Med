@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import OpenAccordionButton from '../../public/FAQ-section/Union.png'
 import CloseAccordionButton from '../../public/FAQ-section/CloseAccordionButton.png'
 import Image from 'next/image';
+import DoctorImage from '../../public/FAQ-section/doctor.png'
 
 export default function FAQSection() {
   return (
@@ -15,6 +16,10 @@ export default function FAQSection() {
         A frequently asked questions (FAQ) forum is often used in articles, websites, email lists, and online forums where common questions tend to recur.
       </p>
       <Accordion />
+      <div className='flex items-center justify-center'>
+          <Image src={DoctorImage} alt='Open Accordion Button' height={400} width={400} />
+      </div>
+
     </section>
   );
 }
