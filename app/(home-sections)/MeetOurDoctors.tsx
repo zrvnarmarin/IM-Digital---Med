@@ -4,7 +4,7 @@ import BagIcon from '../../public/meet-our-doctors/BagIcon.png'
 import HeartIcon from '../../public/meet-our-doctors/HeartIcon.png'
 import StarIcon from '../../public/meet-our-doctors/StarIcon.png'
 
-
+// Trebaju slike na kartice
 
 export default function MeetOurDoctors() {
   return (

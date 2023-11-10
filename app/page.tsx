@@ -3,6 +3,7 @@ import Navbar from './(home-sections)/Navbar'
 import HeroSection from './(home-sections)/HeroSection'
 import WhyPeopleChooseUs from './(home-sections)/WhyPeopleChooseUs'
 import MeetOurDoctors from './(home-sections)/MeetOurDoctors'
+import FAQSection from './(home-sections)/FAQSection'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <WhyPeopleChooseUs />
       <MeetOurDoctors />
+      <FAQSection />
     </main>
   )
 }
