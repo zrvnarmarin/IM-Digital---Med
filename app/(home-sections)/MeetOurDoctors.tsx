@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import BagIcon from '../../public/meet-our-doctors/BagIcon.png'
-import HeartIcon from '../../public/meet-our-doctors/HeartIcon.png'
-import StarIcon from '../../public/meet-our-doctors/StarIcon.png'
+import { HeartIcon, StarIcon, BagIcon } from '@/public/Icons'
 
 // Trebaju slike na kartice
 
@@ -22,7 +20,7 @@ export default function MeetOurDoctors() {
         <p className='text-[#555f60] text-center lg:text-center md:text-center text-md sm:text-lg leading-7 pt-8'>
             Clinical Research Training and Medical Education · Critical Care Medicine  Additional NIH Doctors/Researchers
         </p>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-16'>
             {doctors.map(doctor =>
                 <DoctorCard
                     doctor={doctor}
@@ -65,7 +63,7 @@ const doctors = [
 export function DoctorCard ({ doctor }: { doctor: Doctor }) {
 
     return (
-        <div className='cursor-pointer bg-white shadow-lg shadow-[#d4e5ed]  rounded-xl pb-10 pt-6 px-6 hover:bg-[#fcfcfc] hover:scale-105'>
+        <div className='cursor-pointer bg-white shadow-lg duration-100 shadow-[#d4e5ed]  rounded-xl pb-10 pt-6 px-6 hover:bg-[#fcfcfc] hover:scale-105'>
             <div>
                 {/* Image here */}
             </div>
@@ -73,17 +71,17 @@ export function DoctorCard ({ doctor }: { doctor: Doctor }) {
                 <div className='flex items-center justify-between'>
                     <h2 className='text-[#333333] font-medium text-lg'>{doctor.name}</h2>
                     <div className='px-2 py-2.5 border border-gray-400 rounded-full'>
-                        <Image src={HeartIcon} width={20} height={20} alt='Heart Icon'  />
+                        <HeartIcon />
                     </div>
                 </div>
                 <p className='text-[#656666] font-medium'>{doctor.specialisation}</p>
                 <div className='flex flex-row justify-between items-center pt-6'>
                     <div className='flex items-center gap-4'>
-                        <Image src={BagIcon} width={20} height={20} alt='Heart Icon'  />
+                        <BagIcon />
                         <p className='text-[#656666] font-medium'>{doctor.yearsOfExperience} Years</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <Image src={StarIcon} width={20} height={20} alt='Heart Icon'  />
+                        <StarIcon />
                         <p className='text-[#656666] font-medium'>{doctor.rating}</p>
                     </div>
                 </div>

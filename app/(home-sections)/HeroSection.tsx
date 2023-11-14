@@ -21,7 +21,7 @@ export default function HeroSection() {
 
         <div className='flex flex-col sm:flex-row items-center gap-4 lg:gap-12 pt-8'>
           <div className='w-full'>
-            <button className='w-full text-white text-md lg:text-lg xl:text-xl font-medium leading-7 bg-[#3caeaa] px-6 py-3 lg:px-8 lg:py-4 rounded-md'>
+            <button className='w-full text-white text-md lg:text-lg xl:text-xl font-semibold leading-7 bg-[#3caeaa] hover:bg-[#47ccc7] shadow-xl hover:scale-105 duration-100 px-6 py-3 lg:px-8 lg:py-4 rounded-md'>
               Appointment
             </button>
           </div>
