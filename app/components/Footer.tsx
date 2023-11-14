@@ -5,12 +5,9 @@ export default function Footer() {
   return (
     <footer className='bg-gradient-to-r from-[#0C9CD3] to-[#3CAEAA] px-8 flex flex-col w-full'>
        <div className='flex flex-col gap-6'>
-       <Link href={'/'}>
-            <p className='text-3xl sm:text-4xl leading-10 font-black italic text-white md:text-6xl lg:text-[#3caeaa]'>LOGO</p>
-        </Link>
-          <p className='text-lg font-normal text-gray-200'>
-            We will help you shape the body of your dreams
-          </p>
+        <Link href={'/'}>
+                <p className='text-3xl sm:text-4xl leading-10 font-black italic text-white md:text-6xl lg:text-[#3caeaa]'>LOGO</p>
+            </Link>
        </div>
 
         <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-12'>
