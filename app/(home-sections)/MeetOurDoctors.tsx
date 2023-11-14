@@ -6,16 +6,23 @@ import StarIcon from '../../public/meet-our-doctors/StarIcon.png'
 
 // Trebaju slike na kartice
 
+type Doctor = {
+    name: string,
+    specialisation: string,
+    yearsOfExperience: number,
+    rating: number
+}
+
 export default function MeetOurDoctors() {
   return (
-    <section className='flex h-full flex-col lg:flex-row py-16 px-8 bg-[#eff3fa]'>
-        <h1 className='font-bold text-center lg:text-start md:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
-            Meet Our Doctors Specialists
+    <section className='flex h-full flex-col lg:flex-col w-full py-16 px-8 bg-[#eff3fa]'>
+        <h1 className='font-bold text-center md:text-center lg:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
+            Meet Our Doctor Specialists
         </h1>
-        <p className='text-[#555f60] text-center lg:text-start md:text-center text-md sm:text-lg leading-7 pt-10'>
+        <p className='text-[#555f60] text-center lg:text-center md:text-center text-md sm:text-lg leading-7 pt-8'>
             Clinical Research Training and Medical Education · Critical Care Medicine  Additional NIH Doctors/Researchers
         </p>
-        <div className='flex flex-col gap-4 pt-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-8'>
             {doctors.map(doctor =>
                 <DoctorCard
                     doctor={doctor}
@@ -54,17 +61,11 @@ const doctors = [
     }
 ]
 
-type Doctor = {
-    name: string,
-    specialisation: string,
-    yearsOfExperience: number,
-    rating: number
-}
 
-export function DoctorCard ({ doctor }: { Doctor }) {
+export function DoctorCard ({ doctor }: { doctor: Doctor }) {
 
     return (
-        <div className='bg-white  rounded-xl pb-10 pt-6 px-6'>
+        <div className='cursor-pointer bg-white shadow-lg shadow-[#d4e5ed]  rounded-xl pb-10 pt-6 px-6 hover:bg-[#fcfcfc] hover:scale-105'>
             <div>
                 {/* Image here */}
             </div>

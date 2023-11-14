@@ -59,7 +59,7 @@ export default function WhyPeopleChooseUs() {
 
 export function ServiceCard ({ service }: { service: Service }) {
     return (
-        <div key={service.title} className={`flex flex-col sm:flex-row items-center gap-4 ${service.iconBackground} bg-opacity-5 rounded-lg p-4`}>
+        <div key={service.title} className={`flex flex-col sm:flex-row items-center gap-4 ${service.iconBackground} shadow-lg bg-opacity-5 rounded-lg p-4`}>
             <div className={`flex items-center justify-center ${service.iconBackground} w-fit h-fit p-2 rounded-lg`}>
                 {service?.icon()}
             </div>
