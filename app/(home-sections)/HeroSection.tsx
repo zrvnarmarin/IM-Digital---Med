@@ -6,7 +6,7 @@ import SquareBg from '../../public/square-background.png';
 
 export default function HeroSection() {
   return (
-    <section className='flex h-full flex-col lg:flex-row py-12 px-8'>
+    <section className='flex gap-8 h-full flex-col lg:flex-row py-12 px-8'>
 
       <div className='flex flex-col justify-center'>
 
@@ -33,24 +33,25 @@ export default function HeroSection() {
 
       </div>
 
-      <div className="relative bg-red-300 w-full">
-        <div className="flex min-w-32 min-h-48">
-          <Image
+      <div className="relative flex items-center justify-center border-2 border-black mt-8 w-full">
+        <div className="flex items-center justify-center">
+          Insert Image of doctor and square backgrounds here
+          {/* <Image
             src={Med}
             alt="med"
             width={500}
             height={500}
             layout="responsive"
             className="w-full absolute inset-0 object-cover z-20"
-          />
-          <Image
+          /> */}
+          {/* <Image
             src={SquareBg}
             alt="square background"
             width={500}
             height={500}
             layout="responsive"
             className="w-full absolute inset-0 object-cover z-10"
-          />
+          /> */}
         </div>
       </div>
 
