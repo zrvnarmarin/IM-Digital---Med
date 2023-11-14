@@ -17,11 +17,11 @@ export default function FAQSection() {
         A frequently asked questions (FAQ) forum is often used in articles, websites, email lists, and online forums where common questions tend to recur.
       </p>
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-16 pt-12'>
-        <Accordion />
         <div className='flex items-center justify-center border-2 border-black'>
             {/* <Image src={DoctorImage} alt='Open Accordion Button' height={400} width={400} /> */}
             Insert image of random doctor
         </div>
+        <Accordion />
       </div>
 
     </section>
@@ -69,8 +69,8 @@ function Panel({
           <h3 className='text-[#333333] font-semibold text-sm md:text-md lg:text-xl'>{title}</h3>
           <button onClick={onShow} className='py-2'>
                 { isActive
-                    ?  '-'
-                    :  '+'
+                    ?  <p className='text-4xl text-[#3CAEAA]'>-</p>
+                    :  <p className='text-4xl text-[#3CAEAA]'>+</p>
                 }
             </button>
       </div>

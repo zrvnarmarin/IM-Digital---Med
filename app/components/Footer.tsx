@@ -24,8 +24,8 @@ export default function Footer() {
                 </div>
               )}
             </ul>
-          <div className='pt-12 flex flex-col items-end'>
-            <h2 className='text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl leading-10 font-bold text-white'>
+          <div className='pt-12 flex flex-col items-end gap-2'>
+            <h2 className='text-md sm:text-lg md:text-xl lg:text-xl xl:text-2xl leading-10 font-semibold text-white'>
               Subscribe to Our newsletter.
             </h2>
             <p className='text-gray-200 leading-2 text-xs hover:underline hover:underline-offset-4 hover:decoration-[#1D7349]'>
