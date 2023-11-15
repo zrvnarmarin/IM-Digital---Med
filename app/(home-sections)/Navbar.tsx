@@ -17,7 +17,7 @@ export default function Navbar() {
                 <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/'}>Home</Link></li>
                 <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/about-us'}>About Us</Link></li>
                 <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/services'}>Services</Link></li>
-                <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/find-doctor'}>Find Doctor</Link></li>
+                <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/our-team'}>Our Team</Link></li>
                 <li className='text-[#2a2f31] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/contact'}>Contact</Link></li>
             </ul>
             <div>

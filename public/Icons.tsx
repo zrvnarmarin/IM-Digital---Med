@@ -73,3 +73,11 @@ export const BagIcon = () => {
         </svg>
     )
 }
+
+export const PlayIcon = () => {
+    return (
+        <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 18.1682V2.96974C0 1.32726 1.87027 0.38499 3.19023 1.36246L13.7631 9.19199C14.8621 10.0059 14.8384 11.6581 13.7164 12.4401L3.14359 19.809C1.81767 20.7331 0 19.7844 0 18.1682Z" fill="#3CAEAA"/>
+        </svg>
+    )
+}
