@@ -7,14 +7,14 @@ import Footer from '../components/Footer'
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-[#d0ecf4]">
+    <main className="flex min-h-screen flex-col items-center py-4 bg-[#FFFFFF]">
       <Navbar />
       <section className='flex flex-col items-center justify-center lg:pt-4 bg-white px-8 py-8'>
       <div className='b-2 pt-6 px-8'>
         <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-6'>
           About Us
         </h1>
-        <p className='text-[#555f60] text-start md:text-center text-md sm:text-lg leading-7'>
+        <p className='text-[#555f60] text-start md:text-start text-md sm:text-lg leading-7'>
           Welcome to Kompany, where our commitment to your well-being drives everything we do. Founded on the principles of compassion, expertise, and innovation, we strive to redefine healthcare and make a positive impact on lives around the world. We believe in accessible and personalized healthcare.
         </p>
       </div>
@@ -40,7 +40,7 @@ export default function Page() {
       </div>
 
       {/* Mission Statement */}
-      <div className='mb-2 pt-6 px-8'>
+      <div className='mb-2 pt-6 px-8 w-full'>
         <h2 className='text-xl font-bold mb-4'>Our Mission</h2>
         <p>
           Our mission is to empower individuals to take control of their health and well-being through a seamless blend of cutting-edge technology and compassionate care.

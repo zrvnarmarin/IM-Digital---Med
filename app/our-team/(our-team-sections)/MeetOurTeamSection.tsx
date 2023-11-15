@@ -4,7 +4,7 @@ import { doctors } from '@/app/data';
 
 export default function MeetOurTeamSection() {
   return (
-    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-8 bg-[#EFF3FA]'>
+    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-8 bg-[#F1F2F4]'>
       <h1 className='font-bold md:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
         Meet Our Team
       </h1>
@@ -46,7 +46,7 @@ export function DoctorCard({ doctor } : { doctor: Doctor}) {
     <Link 
       href={`/our-team/${doctor.id}`} 
       key={doctor.name} 
-      className='cursor-pointer bg-white shadow-lg duration-100 shadow-[#d4e5ed] grid grid-cols-1 md:grid-cols-3 gap-4 p-6 hover:bg-[#fcfcfc] rounded-xl'
+      className='cursor-pointer bg-white hover:scale-105 duration-100 shadow-md grid grid-cols-1 md:grid-cols-3 gap-4 p-6 hover:bg-[#fcfcfc] rounded-xl'
     >
       <div className='flex border border-black items-center justify-center rounded-lg col-span-1 md:col-span-1'>
         Image of the doctor
