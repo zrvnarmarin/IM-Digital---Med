@@ -4,7 +4,7 @@ import { doctors } from '@/app/data';
 
 export default function MeetOurTeamSection() {
   return (
-    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-8 bg-[#F1F2F4]'>
+    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-8 bg-[#FFFFFF]'>
       <h1 className='font-bold md:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
         Meet Our Team
       </h1>
@@ -55,7 +55,7 @@ export function DoctorCard({ doctor } : { doctor: Doctor}) {
         <div className='flex flex-col'>
           <h2 className='text-[#333333] font-medium text-lg'>{doctor.name}</h2>
           <p className='text-[#656666] font-xs'>{doctor.title}</p>
-          <p className='text-[#656666] font-sm pt-4'>{doctor.shortDescription}</p>
+          <p className='text-[#656666] text-md pt-4'>{doctor.shortDescription}</p>
         </div>
       </div>
       <p className='text-[#656666] font-xs pt-4 text-end col-span-1 md:col-span-full'>

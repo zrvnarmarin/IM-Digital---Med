@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center py-4 bg-[#FFFFFF]">
       <Navbar />
-      <section className='flex flex-col items-center justify-center lg:pt-4 bg-white px-8 py-8'>
+      <section className='flex flex-col items-center justify-center lg:pt-4 bg-[#FFFFFF] px-8 py-8'>
       <div className='b-2'>
         <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-6'>
           About Us
@@ -48,7 +48,7 @@ export default function Page() {
       </div>
 
       {/* What Sets Us Apart */}
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 bg-white w-full py-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#FFFFFF] w-full py-12'>
         <div>
           <h2 className='text-xl font-bold mb-4'>What Sets Us Apart</h2>
           <p>
