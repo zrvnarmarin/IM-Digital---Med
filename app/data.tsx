@@ -61,4 +61,66 @@ export const doctors = [
     },
   ];
   
+  export const medicalServices = [
+    {
+      id: 1,
+      icon: '',
+      service: 'Minimally Invasive Cardiac Procedures',
+      shortDescription: 'Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.',
+      includes: [
+        'Cardiac catheterization for precise diagnosis.',
+        'Angioplasty to open narrowed or blocked vessels.',
+        'Stent placement to support arterial blood flow.'
+      ],
+      recovery: 'After the minimally invasive cardiac procedure, recovery involves a comprehensive care plan. Patients are advised to follow prescribed medications, rest adequately, and attend regular follow-up appointments. This approach aims to ensure a smooth recovery and improved heart health.',
+      examination: 'Diagnostic tests, including Electrocardiogram (ECG) and stress tests, assess heart function before the procedure. Results guide the customization of the minimally invasive cardiac procedure to each patient\'s unique needs.',
+      surgicalProcess: 'Performed in a specialized cardiac catheterization lab, the procedure involves inserting a catheter through a small incision. This minimizes trauma to surrounding tissues. The expertise of the medical team ensures precision and safety throughout the process.',
+      complications: 'While generally safe, potential complications such as bleeding or infection are discussed with patients. Thorough pre-procedure consultations provide comprehensive information for informed decision-making.'
+    },
+    {
+      id: 2,
+      icon: '',
+      service: 'Pediatric Telemedicine Consultations',
+      shortDescription: 'Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.',
+      includes: [
+        'Video consultations for face-to-face communication.',
+        'Prescription services for necessary medications.',
+        'Parental guidance and support for managing your child\'s health at home.'
+      ],
+      recovery: 'Recovery involves diligent adherence to prescribed treatments. Parents play a crucial role in monitoring their child\'s progress, with additional virtual check-ins as needed. This approach ensures continuous support and care from the pediatrician.',
+      examination: 'Virtual assessments of symptoms and medical history form the foundation of telemedicine consultations. Advanced technologies allow for thorough examinations, ensuring accurate diagnoses and personalized recommendations.',
+      surgicalProcess: 'As a non-surgical service, telemedicine consultations focus on virtual assessments and guidance. The pediatrician utilizes expertise to address various pediatric health concerns through remote consultations, emphasizing preventive care and timely interventions.',
+      complications: 'Pediatric telemedicine consultations pose minimal risks, primarily associated with remote diagnosis. The pediatrician prioritizes safety, ensuring that parents are well-informed about potential complications, even though they are rare.'
+    },
+    {
+      id: 3,
+      icon: '',
+      service: 'State-of-the-Art Laser Therapy for Scar Reduction',
+      shortDescription: 'Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.',
+      includes: [
+        'Fractional laser therapy for targeted scar treatment.',
+        'Scar revision techniques to optimize results.',
+        'Post-treatment care guidance for optimal healing.'
+      ],
+      recovery: 'Post-treatment recovery involves a comprehensive skincare regimen. Patients receive detailed instructions on skincare practices, including the use of specialized products and protection from sun exposure. The dermatologist emphasizes diligent adherence to these guidelines for optimal healing and lasting results.',
+      examination: 'Before undergoing laser therapy, patients undergo a thorough examination of their skin type, scar characteristics, and overall health. Diagnostic tools and assessments tailor the laser treatment plan, ensuring alignment with each patient\'s unique needs and goals.',
+      surgicalProcess: 'State-of-the-art laser therapy is a non-surgical dermatological procedure. The dermatologist applies focused laser energy to targeted areas of the skin, promoting collagen production and minimizing the appearance of scars. Expertise ensures precision and safety throughout the process.',
+      complications: 'While generally considered safe, patients are informed about potential complications such as temporary redness, swelling, or changes in pigmentation. The dermatologist discusses these risks during pre-treatment consultations, ensuring patients are well-prepared and confident in their decision.'
+    },
+    {
+      id: 4,
+      icon: '',
+      service: 'Groundbreaking Joint Replacement Surgeries',
+      shortDescription: 'Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.',
+      includes: [
+        'Total joint replacement for severely damaged joints.',
+        'Revision joint replacement for addressing previous implant issues.',
+        'Comprehensive pre-operative and post-operative care.'
+      ],
+      recovery: 'Post-operative recovery involves a structured rehabilitation program, personalized for each patient. Physical therapy, pain management, and follow-up appointments contribute to optimal recovery, allowing individuals to regain mobility and improve their quality of life.',
+      examination: 'Pre-operative assessments include imaging studies, such as X-rays and MRI scans, to evaluate joint condition. The orthopedic specialist conducts a thorough examination of the patient\'s medical history and lifestyle to tailor the joint replacement surgery.',
+      surgicalProcess: 'The joint replacement surgery is performed in a specialized operating room equipped with advanced technology. The orthopedic specialist utilizes expertise to ensure precision and safety throughout the surgical process, emphasizing optimal functionality and long-term joint health.',
+      complications: 'While joint replacement surgeries are generally safe, potential complications such as infection or implant issues are discussed with patients. Thorough pre-operative consultations provide comprehensive information for informed decision-making.'
+    }
+  ];
   

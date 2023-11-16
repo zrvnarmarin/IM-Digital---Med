@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ subsets: ['latin']})
@@ -17,7 +18,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        {children}
+      </body>
     </html>
   )
 }
+
+export const Sidebar = () => {
+  return (
+    <aside className="fixed bottom-0 top-0 left-0 bg-gray-800 text-white h-screen w-1/4">
+      <div className="p-4">
+        <h2 className="text-2xl font-bold mb-4">Sidebar</h2>
+        <ul>
+          <li>
+              <Link href={'/'} className="block py-2">Home</Link>
+          </li>
+          <li>
+              <Link href={'/about-us'} className="block py-2">About</Link>
+          </li>
+          {/* Add more links as needed */}
+        </ul>
+      </div>
+    </aside>
+  );
+};

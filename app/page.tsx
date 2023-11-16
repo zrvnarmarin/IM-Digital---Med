@@ -5,6 +5,7 @@ import WhyPeopleChooseUs from './(home-sections)/WhyPeopleChooseUs'
 import MeetOurDoctors from './(home-sections)/MeetOurDoctors'
 import FAQSection from './(home-sections)/FAQSection'
 import Footer from './components/Footer'
+import { Sidebar } from './layout'
 
 export default function Home() {
   return (

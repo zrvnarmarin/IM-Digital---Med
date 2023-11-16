@@ -10,7 +10,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center py-4 bg-[#FFFFFF]">
       <Navbar />
       <section className='flex flex-col items-center justify-center lg:pt-4 bg-white px-8 py-8'>
-      <div className='b-2 pt-6 px-8'>
+      <div className='b-2'>
         <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-6'>
           About Us
         </h1>
@@ -20,7 +20,7 @@ export default function Page() {
       </div>
 
       {/* Founding Story */}
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 py-12'>
         <div className='md:col-span-1'>
           <h2 className='text-xl font-bold mb-4'>Our Founding Story</h2>
           <p>
@@ -40,7 +40,7 @@ export default function Page() {
       </div>
 
       {/* Mission Statement */}
-      <div className='mb-2 pt-6 px-8 w-full'>
+      <div className=' w-full'>
         <h2 className='text-xl font-bold mb-4'>Our Mission</h2>
         <p>
           Our mission is to empower individuals to take control of their health and well-being through a seamless blend of cutting-edge technology and compassionate care.
@@ -48,7 +48,7 @@ export default function Page() {
       </div>
 
       {/* What Sets Us Apart */}
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 bg-white w-full py-12 px-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 bg-white w-full py-12'>
         <div>
           <h2 className='text-xl font-bold mb-4'>What Sets Us Apart</h2>
           <p>
