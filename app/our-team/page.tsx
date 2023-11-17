@@ -5,7 +5,7 @@ import MeetOurTeamSection from './(our-team-sections)/MeetOurTeamSection'
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
+    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-white">
       <Navbar />
       <MeetOurTeamSection />
       <Footer />

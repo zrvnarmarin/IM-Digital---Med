@@ -7,9 +7,9 @@ import Footer from '../components/Footer'
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center py-4 bg-[#FFFFFF]">
+    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
       <Navbar />
-      <section className='flex flex-col items-center justify-center lg:pt-4 bg-[#FFFFFF] px-8 py-8'>
+      <section className='flex flex-col items-center justify-center lg:pt-4 md:px-8 lg:px-24 pb-4'>
       <div className='b-2'>
         <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-6'>
           About Us
