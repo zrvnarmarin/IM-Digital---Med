@@ -1,11 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
-import OpenAccordionButton from '../../public/FAQ-section/Union.png'
-import CloseAccordionButton from '../../public/FAQ-section/CloseAccordionButton.png'
 import Image from 'next/image';
 import DoctorImage from '../../public/FAQ-section/doctor.png'
-import { CloseAccordionIcon, OpenAccordionIcon } from '@/public/Icons';
 
 export default function FAQSection() {
   return (
@@ -19,7 +16,7 @@ export default function FAQSection() {
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-16 pt-12'>
         <div className='flex items-center justify-center border-2 border-black'>
             {/* <Image src={DoctorImage} alt='Open Accordion Button' height={400} width={400} /> */}
-            Insert image of random doctor
+            Insert image of random doctor 
         </div>
         <Accordion />
       </div>
