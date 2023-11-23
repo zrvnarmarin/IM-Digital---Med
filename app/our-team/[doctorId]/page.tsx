@@ -2,6 +2,7 @@ import React from 'react';
 import { doctors } from '@/app/data';
 import Navbar from '@/app/(home-sections)/Navbar';
 import Footer from '@/app/components/Footer';
+import { EmergencySupportIcon } from '@/public/Icons';
 
 export default function Page({ params }: { params: { doctorId: string }}) {
   const doctor = doctors.find(doctor => doctor.id === parseInt(params.doctorId, 10))
@@ -24,17 +25,29 @@ export default function Page({ params }: { params: { doctorId: string }}) {
 
 export function DoctorDetailsSection({ doctor }: { doctor: Doctor }) {
   return (
-    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-8 md:px-12 lg:px-24 bg-white'>
-      <h1 className='text-[#333333] font-medium text-lg'>{doctor.name}</h1>
-      <p className='text-[#656666] font-xs'>{doctor.title}</p>
-      <p>{doctor.description}</p>
-      <ul>
-        {doctor.achievements.map(achievement =>
-          <li key={achievement}>
-            {achievement}
-          </li>
-        )}
-      </ul>
+    <section className='h-full grid grid-cols-1 lg:grid-cols-2 gap-16 py-16 px-8 md:px-12 lg:px-24 bg-white'>
+      <div className='border-2 border-black flex items-center justify-center'>
+        Image of doctor
+      </div>
+      <div className='flex flex-col gap-4'>
+        <h1 className='text-[#333333] font-medium text-lg lg:text-5xl'>{doctor.name}</h1>
+        <div className='flex items-center gap-2'>
+          <div className={`flex items-center justify-center bg-red-400 w-fit h-fit p-2 rounded-lg`}>
+            <EmergencySupportIcon />
+          </div>
+          <p className='text-[#656666] text-xs lg:text-lg'>{doctor.title}</p>
+        </div>
+        <p className='text-[#656666]  lg:text-lg'>{doctor.description}</p>
+        <h3 className='text-[#656666] text-xs lg:text-lg'>Achievements: </h3>
+        <ul>
+          {doctor.achievements.map(achievement =>
+            <li key={achievement} className='text-[#656666] flex flex-row gap-2 lg:text-xl'>
+              <span className='font-bold text-2xl text-[#3CAEAA]'>&#8226;</span> 
+              {achievement} <br /> <br />
+            </li>
+          )}
+        </ul>
+      </div>
     </section>
   )
 }

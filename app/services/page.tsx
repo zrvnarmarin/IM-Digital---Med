@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
       <Navbar />
-      <section className='flex flex-col items-center justify-center lg:pt-4 md:px-8 lg:px-16 pb-12'>
+      <section className='flex flex-col gap-12 items-center justify-center lg:pt-4 md:px-8 lg:px-16 pb-12'>
         <div className='b-2 pt-6 px-8 pb-8'>
             <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-8'>
                 Services

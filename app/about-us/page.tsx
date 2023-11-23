@@ -11,7 +11,7 @@ export default function Page() {
       <Navbar />
       <section className='flex flex-col items-center justify-center lg:pt-4 md:px-8 lg:px-24 pb-4'>
       <div className='b-2'>
-        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-8 pt-6'>
+        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-star md:text-center text-[#2a2f31] leading-10 mb-8 pt-6 pb-2'>
           About Us
         </h1>
         <p className='text-[#555f60] text-start md:text-start text-md sm:text-lg leading-7'>

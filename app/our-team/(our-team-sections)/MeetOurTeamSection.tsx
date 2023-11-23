@@ -7,7 +7,7 @@ import MedImg from '../../../public/med.png'
 
 export default function MeetOurTeamSection() {
   return (
-    <section className='flex gap-8 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]'>
+    <section className='flex gap-16 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]'>
       <h1 className='font-bold md:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
         Meet Our Team
       </h1>
@@ -21,7 +21,7 @@ export default function MeetOurTeamSection() {
           Place for the team of doctors image
         </div>
       </div>
-      <section className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <section className='grid grid-cols-1 md:grid-cols-2 gap-8 pt-8'>
       {doctors.map(doctor =>
         <DoctorCard 
           key={doctor.id} 
