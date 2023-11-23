@@ -33,7 +33,7 @@ export function MedicalServiceCard({ service } : { service: Service }) {
       hover:scale-105 duration-100 shadow-xl grid grid-cols-1 md:grid-cols-3 gap-4 p-6
        rounded-xl text-[#2a2f31]'
     >
-      <div className='flex border border-black items-center justify-center rounded-lg col-span-1 md:col-span-1'>
+      <div className='flex border row-start-1 row-end-3 border-black items-center justify-center rounded-lg col-span-1 md:col-span-1'>
         Image of the service
       </div>
       <div className='flex flex-col md:flex-row col-span-1 md:col-span-2'>

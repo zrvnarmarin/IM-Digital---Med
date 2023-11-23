@@ -33,7 +33,7 @@ export function Accordion() {
   };
 
   return (
-    <div className='pt-8'>
+    <div className=''>
       {accordions.map((accordion, index) => (
         <Panel
           key={accordion.id}
@@ -61,22 +61,19 @@ function Panel({
   index: number;
 }) {
   return (
-    <div className=" border-[#e8e8e8] border-b-2">
+    <div onClick={onShow} className="cursor-pointer border-[#e8e8e8] border-b-2">
       <div className='flex items-center justify-between gap-6 py-4'>
-          <h3 className='text-[#333333] font-semibold text-sm md:text-md lg:text-xl'>{title}</h3>
-          <button onClick={onShow} className='py-2'>
-                { isActive
-                    ?  <p className='text-4xl text-[#3CAEAA]'>-</p>
-                    :  <p className='text-4xl text-[#3CAEAA]'>+</p>
-                }
-            </button>
+        <h3 className='text-[#333333] font-semibold text-sm md:text-md lg:text-xl'>{title}</h3>
+          { isActive
+            ?  <p className='text-4xl font-semibold text-[#3CAEAA]'>-</p>
+            :  <p className='text-4xl font-semibold text-[#3CAEAA]'>+</p>
+          }
       </div>
       {
         isActive 
-            ? <p className='font-medium text-[#666666] text-md lg:text-lg py-2'>{answer}</p>
-            : null 
+          ? <p className='font-medium text-[#666666] text-md lg:text-lg py-2'>{answer}</p>
+          : null 
       }
-        
     </div>
   );
 }
@@ -84,27 +81,28 @@ function Panel({
 const accordions = [
   {
     id: 1,
-    title: 'What does telemedicine mean? ndjvndf nonon kdnfondfvnfdno',
-    answer: 'Telemedicine is the exchange of medical information from one location to another using electronic communication, ',
+    title: 'What are common pediatric cardiovascular conditions?',
+    answer: 'Common pediatric cardiovascular conditions include congenital heart defects, arrhythmias, and heart murmurs.',
   },
   {
     id: 2,
-    title: 'What does telemedicine mean?',
-    answer: 'Telemedicine is the exchange of medical information from one location to another using electronic communication, ',
+    title: 'How are pediatric cardiovascular conditions diagnosed?',
+    answer: 'Pediatric cardiovascular conditions are often diagnosed through physical examinations, imaging tests like echocardiograms, and electrocardiograms (ECGs).',
   },
   {
     id: 3,
-    title: 'What does telemedicine mean?',
-    answer: 'Telemedicine is the exchange of medical information from one location to another using electronic communication, ',
+    title: 'What is the treatment for pediatric cardiovascular conditions?',
+    answer: 'Treatment for pediatric cardiovascular conditions may involve medications, surgical procedures, or interventions such as catheterization.',
   },
   {
     id: 4,
-    title: 'What does telemedicine mean?',
-    answer: 'Telemedicine is the exchange of medical information from one location to another using electronic communication, ',
+    title: 'What are common dermatological conditions in children?',
+    answer: 'Common dermatological conditions in children include eczema, acne, impetigo, and fungal infections.',
   },
   {
     id: 5,
-    title: 'What does telemedicine mean?',
-    answer: 'Telemedicine is the exchange of medical information from one location to another using electronic communication, ',
+    title: 'How can pediatric dermatological conditions be managed?',
+    answer: 'Management of pediatric dermatological conditions may involve topical medications, oral medications, and lifestyle modifications.',
   },
 ];
+

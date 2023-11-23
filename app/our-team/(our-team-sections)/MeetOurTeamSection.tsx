@@ -53,15 +53,16 @@ export function DoctorCard({ doctor } : { doctor: Doctor }) {
       hover:scale-105 duration-100 shadow-xl grid grid-cols-1 md:grid-cols-3 gap-4 p-6
       rounded-md text-[#2a2f31]'
     >
-      <div className='w-full row-span-full h-full flex border border-black items-center justify-center rounded-md col-span-1 md:col-span-1'>
+      <div className='w-full row-span-full row-span-2 h-full flex border border-black items-center justify-center rounded-md col-span-1 md:col-span-1'>
+        Image of doctor
       </div>
       <div className='flex flex-col md:flex-row col-span-1 md:col-span-2'>
         <div className='flex flex-col'>
           <h2 className='pb-4 font-bold'>{doctor.name}</h2>
-          <h2 className='font-normal text-sm md:text-md'>{doctor.shortDescription}</h2>
+          <h2 className='text-[#555f60] text-md sm:text-lg leading-7'>{doctor.shortDescription}</h2>
         </div>
       </div>
-      <p className='flex flex-row gap-2 font-xs text-center md:col-span-2 place-self-end px-2 py-2 text-[#000000] font-semibold rounded-md'>
+      <p className='flex flex-row gap-2 font-xs text-center  md:col-start-3 place-self-end px-2 py-2 text-[#000000] font-semibold rounded-md'>
         <span>Read More</span>
         <span>&rarr;</span>
       </p>
