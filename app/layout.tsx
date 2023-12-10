@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Montserrat, League_Spartan } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ subsets: ['latin']})
+const leagueSpartan = League_Spartan({ subsets: ['latin']})
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={leagueSpartan.className}>
         {children}
       </body>
     </html>
