@@ -9,9 +9,9 @@ export default function Navbar() {
 
   return (
     <header className='w-full sticky top-0 left-0 right-0 z-50'>
-        <nav className='flex flex-row justify-between items-center py-6 lg:bg-inherit px-8'>
+        <nav className='flex flex-row justify-between items-center py-1.5 lg:bg-inherit px-8'>
             <Link href={'/'}>
-                <p className='text-3xl sm:text-4xl leading-10 font-black italic md:text-6xl text-[#194C7A]'>LOGO</p>
+                <p className='text-3xl sm:text-4xl text leading-10 font-black italic md:text-6xl text-[#194C7A]'>LOGO</p>
             </Link>
             <ul className='hidden lg:flex flex-row items-center justify-between gap-12'>
                 <li className='text-[#194C7A] xs:text-md lg:text-lg xl:text-xl font-medium leading-7'><Link href={'/'}>Home</Link></li>

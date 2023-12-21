@@ -15,7 +15,7 @@ export default function HeroSection() {
           <Image
             src={HeroImage}
             alt="Hero Image"
-            className='object-cover w-full h-full md:h-auto opacity-100 bg-black'
+            className='object-cover w-full h-full md:h-auto opacity-60 bg-black'
           />
           {/* Hero Content (Add your text and buttons here) */}
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
