@@ -9,7 +9,7 @@ import { Sidebar } from './layout'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#d0ecf4]">
+    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
       <Navbar />
       <HeroSection />
       <WhyPeopleChooseUs />
