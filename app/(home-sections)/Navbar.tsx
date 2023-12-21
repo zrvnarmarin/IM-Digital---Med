@@ -8,7 +8,7 @@ export default function Navbar() {
     const pathname = usePathname()
 
   return (
-    <header className='w-full sticky top-0 left-0 right-0 z-50'>
+    <header className='w-full sticky top-0 left-0 right-0 z-50 bg-white'>
         <nav className='flex flex-row justify-between items-center py-1.5 lg:bg-inherit px-8'>
             <Link href={'/'}>
                 <p className='text-3xl sm:text-4xl text leading-10 font-black italic md:text-6xl text-[#194C7A]'>LOGO</p>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#0C9CD3] to-[#3CAEAA] px-8 pt-8 pb-4 flex flex-col w-full h-full relative">
+    <footer className="bg-gradient-to-r from-[#194C7A] to-slate-800 px-8 pt-8 pb-4 flex flex-col w-full h-full relative">
       {/* <Image src={Pattern} alt='nesto' width={200} height={200} className='absolute right-0 top-0' /> */}
       <div className="flex flex-col">
         <Link href={"/"}>
