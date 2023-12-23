@@ -7,15 +7,15 @@ import DoctorImage from "../../public/doctorOperating.jpg";
 export default function FAQSection() {
   return (
     <section className="w-full px-8 py-16 bg-white">
-      <h1 className="font-bold text-start text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10">
+      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Frequently Asked Questions
       </h1>
-      <p className="text-[#555f60] text-start text-md sm:text-lg leading-7 pt-8">
-        A frequently asked questions (FAQ) forum is often used in articles,
-        websites, email lists, and online forums where common questions tend to
-        recur.
+      <p className="text-[#555f60] text-start text-sm pt-4">
+        A frequently asked questions (FAQ) forum is often used in articles and
+        online forums where common questions tend to recur.
       </p>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 pt-12">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 pt-8">
+        <Accordion />
         <div className="flex items-center justify-center bg-black">
           <Image
             src={DoctorImage}
@@ -25,7 +25,6 @@ export default function FAQSection() {
             className="object-cover w-full h-96 "
           />
         </div>
-        <Accordion />
       </div>
     </section>
   );
@@ -67,12 +66,11 @@ function Panel({
   index: number;
 }) {
   return (
-    <div
-      onClick={onShow}
-      className="cursor-pointer border-[#e8e8e8] border-b-2"
-    >
-      <div className="flex items-center justify-between gap-6 py-4">
-        <h3 className="text-[#333333] font-semibold text-sm md:text-md lg:text-xl">
+    <div onClick={onShow} className="cursor-pointer">
+      <div className={`flex items-center justify-between gap-6 py-4`}>
+        <h3
+          className={`text-[#333333] font-semibold text-sm md:text-md lg:text-xl`}
+        >
           {title}
         </h3>
         {isActive ? (
@@ -82,9 +80,9 @@ function Panel({
         )}
       </div>
       {isActive ? (
-        <p className="font-medium text-[#666666] text-md lg:text-lg py-2">
-          {answer}
-        </p>
+        <div className="px-4 py-2 border-[1px] border-slate-200 text-start">
+          <p className="text-[#666666] text-sm lg:text-lg py-2">{answer}</p>
+        </div>
       ) : null}
     </div>
   );

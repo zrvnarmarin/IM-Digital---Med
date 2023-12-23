@@ -18,11 +18,11 @@ export default function HeroSection() {
             className='object-cover w-full h-full md:h-auto opacity-60 bg-black'
           />
           {/* Hero Content (Add your text and buttons here) */}
-          <div className="absolute inset-0 flex items-center justify-center text-white text-center">
+          <div className="absolute inset-0 flex items-center justify-center text-white text-center pt-24">
             <div>
-              <h1 className="text-3xl font-bold mb-4 px-2">Lorem Ipsum Dolor Sit</h1>
+              <h1 className="text-3xl text-center font-bold mb-4 px-3.5">Lorem Ipsum Dolor Sit</h1>
               <p className="text-lg mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, eum.</p>
-              <button className="bg-blue-500 text-white px-6 py-3 rounded">Explore Now</button>
+              <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Our Services</button>
             </div>
           </div>
         </div>

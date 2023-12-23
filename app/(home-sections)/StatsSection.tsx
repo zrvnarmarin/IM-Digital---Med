@@ -2,9 +2,9 @@ import React from "react";
 
 export default function StatsSection() {
   return (
-    <section className="grid grid-cols-4 gap-8 py-16 px-8 bg-white">
+    <section className="flex flex-col gap-8 w-full pb-16 px-8 bg-white">
 
-      <div className="flex flex-col justify-center items-center gap-2 border border-dashed border-gray-500 p-4 rounded-md h-32">
+      <div className="flex flex-col justify-center items-center gap-2 border border-slate-200 p-4 rounded-md h-32">
         <div className="flex gap-2 items-center">
           <span className="font-bold text-4xl">20</span>
           <svg
@@ -27,7 +27,7 @@ export default function StatsSection() {
         </span>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-2 border border-dashed border-gray-500 p-4 rounded-md h-32">
+      <div className="flex flex-col justify-center items-center gap-2 border border-slate-200 p-4 rounded-md h-32">
         <div className="flex gap-2 items-center">
           <span className="font-bold text-4xl">5k</span>
           <svg
@@ -50,7 +50,7 @@ export default function StatsSection() {
         </span>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-2 border border-dashed border-gray-500 p-4 rounded-md h-32">
+      <div className="flex flex-col justify-center items-center gap-2 border border-slate-200 p-4 rounded-md h-32">
         <div className="flex gap-2 items-center">
           <span className="font-bold text-4xl">34K</span>
           <svg
@@ -73,7 +73,7 @@ export default function StatsSection() {
         </span>
       </div>
 
-      <div className="md:col-start-2 lg:col-auto flex flex-col justify-center items-center gap-2 border border-dashed border-gray-500 p-4 rounded-md h-32">
+      <div className="md:col-start-2 lg:col-auto flex flex-col justify-center items-center gap-2 border border-slate-200 p-4 rounded-md h-32">
         <div className="flex gap-2 items-center">
           <span className="font-bold text-4xl">3</span>
           <svg

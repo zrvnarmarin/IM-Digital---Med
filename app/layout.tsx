@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={leagueSpartan.className}>
+      <body className={montserrat.className}>
         {children}
       </body>
     </html>
