@@ -3,8 +3,6 @@ import Image from "next/image";
 import { IconsEightTestIcon } from "@/public/Icons";
 import RightArrowImage from '../../public/RightIcon.png'
 
-//TO DO: put mouse out color animations on cards
-
 export default function WhyPeopleChooseUs() {
   return (
     <section className="flex flex-col gap-8 py-16 px-8 bg-white">
@@ -23,9 +21,6 @@ export default function WhyPeopleChooseUs() {
           ))}
         </div>
       </div>
-      {/* <div className='flex items-center justify-center border-2 border-black h-full'>
-            <Image src={DocImage} alt='g' height={0} width={0} />
-        </div> */}
     </section>
   );
 }
