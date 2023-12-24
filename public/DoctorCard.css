@@ -1,18 +1,17 @@
 .testimotionals {
-  background-color: red;
   gap: 8px;
+  padding: 4px;
 }
 
 .card {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  background: #333;
-  padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 10px 40px #334155;
+  border-radius: 0.25rem;
   width: 100%;
+  padding: 16px;
 }
 .card .layer {
   z-index: 1;
@@ -21,7 +20,7 @@
   height: 100%;
   width: 100%;
   left: 0;
-  background: linear-gradient(to left, orange, tomato);
+  background: linear-gradient(to left, rgb(30, 47, 80), rgb(30, 47, 80));
   transition: 0.5s;
 }
 
@@ -34,11 +33,6 @@
   top: 0;
 }
 
-.content p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-}
 .image {
   width: 100px;
   height: 100px;

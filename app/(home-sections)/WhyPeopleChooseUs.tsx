@@ -1,6 +1,5 @@
 import React from "react";
 import { IconsEightTestIcon } from "@/public/Icons";
-import "../../public/CardHoverEffect.css";
 
 //TO DO: put mouse out color animations on cards
 
