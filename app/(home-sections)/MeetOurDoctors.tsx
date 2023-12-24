@@ -26,6 +26,11 @@ export default function MeetOurDoctors() {
           <DoctorCard doctor={doctor} key={doctor.name} />
         ))}
       </div>
+      <div>
+      <div className="flex justify-center pt-16">
+        <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Meet The Rest</button>
+      </div>
+      </div>
     </section>
   );
 }

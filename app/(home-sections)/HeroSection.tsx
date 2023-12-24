@@ -22,7 +22,7 @@ export default function HeroSection() {
             <div>
               <h1 className="text-3xl text-center font-bold mb-4 px-3.5">Lorem Ipsum Dolor Sit</h1>
               <p className="text-lg mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, eum.</p>
-              <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Our Services</button>
+              <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Contact Us</button>
             </div>
           </div>
         </div>

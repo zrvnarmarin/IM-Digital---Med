@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StatsSection() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full pb-16 px-8 bg-white">
+    <section className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-8 w-full pb-16 px-8 bg-white">
 
       <div className="flex flex-col justify-center items-center gap-2 border border-slate-200 p-4 rounded-md h-32">
         <div className="flex gap-2 items-center">

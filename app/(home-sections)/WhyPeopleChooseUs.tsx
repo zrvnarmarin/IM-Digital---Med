@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import { IconsEightTestIcon } from "@/public/Icons";
+import RightArrowImage from '../../public/RightIcon.png'
 
 //TO DO: put mouse out color animations on cards
 
@@ -15,7 +17,7 @@ export default function WhyPeopleChooseUs() {
           doloremque at placeat ducimus alias ad quis optio necessitatibus,
           deleniti voluptates veritatis aspernatur similique.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pt-10">
           {services.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
@@ -32,19 +34,23 @@ export function ServiceCard({ service }: { service: Service }) {
   return (
     <div
       key={service.title}
-      className={`flex flex-col rounded sm:flex-row items-center gap-4 bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:cursor-pointer hover:scale-105 hover:bg-slate-500 hover:text-white duration-300`}
+      className={`flex flex-col rounded sm:flex-row items-center bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:cursor-pointer hover:scale-105 hover:bg-slate-500 hover:text-white duration-300`}
     >
       <div
         className={`flex items-center justify-center  w-fit h-fit p-2 rounded-full bg-slate-300 duration-300`}
       >
         {service?.icon()}
       </div>
-      <p className="text-center text-md md:text-lg lg:text-xl  font-semibold">
+      <h2 className="w-full text-start text-md md:text-lg lg:text-xl font-semibold pt-2">
         {service.title}
+      </h2>
+      <p className="text-start w-full text-sm md:text-md lg:text-lg font-normal ">
+        Some description which is short
       </p>
-      <p className="text-center text-sm md:text-lg lg:text-xl font-semibold w-full">
-        Some description which is quite short
-      </p>
+      <div className="w-full flex items-center pt-6 gap-2 justify-end">
+        <p className="text-slate-700 text-end text-sm">Learn More</p>
+        <Image src={RightArrowImage} alt="clover" width={15} height={15} />
+      </div>
     </div>
   );
 }

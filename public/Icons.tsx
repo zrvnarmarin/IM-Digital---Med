@@ -187,8 +187,8 @@ export const IconsEightTestIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="56.667"
-      height="56.667"
+      width="45.667"
+      height="45.667"
       version="1"
       viewBox="0 0 80 80"
     >
