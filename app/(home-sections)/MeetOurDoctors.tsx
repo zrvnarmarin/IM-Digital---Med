@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { HeartIcon, StarIcon, BagIcon } from "@/public/Icons";
+import "../../public/CardHoverEffect.css";
 
 // Trebaju slike na kartice
 
@@ -26,6 +27,38 @@ export default function MeetOurDoctors() {
           <DoctorCard doctor={doctor} key={doctor.name} />
         ))}
       </div>
+
+      <div className="testimotionals grid grid-cols-1 md:grid-cols-2">
+        <div className="card">
+          <div className="layer"></div>
+          <div className="content">
+            <div className="image">
+              <img
+                width="100%"
+                src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
+                alt={`j`}
+              />
+            </div>
+            <p>ggg</p>
+            <div className="details">nesto nestoo</div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="layer"></div>
+          <div className="content">
+            <div className="image">
+              <img
+                width="100%"
+                src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
+                alt={`j`}
+              />
+            </div>
+            <p>ggg</p>
+            <div className="details">nesto nestoo</div>
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 }

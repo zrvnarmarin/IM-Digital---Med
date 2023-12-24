@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ListIcon from "../../public/ListIcon.png";
+import ElectricityIcon from "../../public/ElectricityIcon.png";
 
 export default function ListSection() {
   return (
@@ -11,33 +11,63 @@ export default function ListSection() {
         <ul className="flex flex-col gap-4">
           <li className="flex gap-4 items-center text-sm">
             <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-            Our experts and consultants are highly experienced medical
-            translators, largely with healthcare, life sciences' or scientific
-            backgrounds and proprietary networks of clinicians.
+            <div className="flex flex-col gap-2 py-4">
+              <div className="flex items-center gap-2">
+                <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
+                <p className="text-xs font-medium">Elastic Scalability</p>
+              </div>
+              Our experts and consultants are highly experienced medical
+              translators, largely with healthcare, life sciences' or scientific
+              backgrounds and proprietary networks of clinicians.
+            </div>
           </li>
           <li className="flex gap-4 items-center text-sm">
             <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-            Our experts and consultants are highly experienced medical
-            translators, largely with healthcare, life sciences' or scientific
-            backgrounds and proprietary networks of clinicians.
+            <div className="flex flex-col gap-2 py-4">
+              <div className="flex items-center gap-2">
+                <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
+                <p className="text-xs font-medium">Elastic Scalability</p>
+              </div>
+              Our experts and consultants are highly experienced medical
+              translators, largely with healthcare, life sciences' or scientific
+              backgrounds and proprietary networks of clinicians.
+            </div>
           </li>
           <li className="flex gap-4 items-center text-sm">
             <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-            Our experts and consultants are highly experienced medical
-            translators, largely with healthcare, life sciences' or scientific
-            backgrounds and proprietary networks of clinicians.
+            <div className="flex flex-col gap-2 py-4">
+              <div className="flex items-center gap-2">
+                <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
+                <p className="text-xs font-medium">Elastic Scalability</p>
+              </div>
+              Our experts and consultants are highly experienced medical
+              translators, largely with healthcare, life sciences' or scientific
+              backgrounds and proprietary networks of clinicians.
+            </div>
           </li>
           <li className="flex gap-4 items-center text-sm">
             <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-            Our experts and consultants are highly experienced medical
-            translators, largely with healthcare, life sciences' or scientific
-            backgrounds and proprietary networks of clinicians.
+            <div className="flex flex-col gap-2 py-4">
+              <div className="flex items-center gap-2">
+                <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
+                <p className="text-xs font-medium">Elastic Scalability</p>
+              </div>
+              Our experts and consultants are highly experienced medical
+              translators, largely with healthcare, life sciences' or scientific
+              backgrounds and proprietary networks of clinicians.
+            </div>
           </li>
           <li className="flex gap-4 items-center text-sm">
             <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-            Our experts and consultants are highly experienced medical
-            translators, largely with healthcare, life sciences' or scientific
-            backgrounds and proprietary networks of clinicians.
+            <div className="flex flex-col gap-2 py-4">
+              <div className="flex items-center gap-2">
+                <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
+                <p className="text-xs font-medium">Elastic Scalability</p>
+              </div>
+              Our experts and consultants are highly experienced medical
+              translators, largely with healthcare, life sciences' or scientific
+              backgrounds and proprietary networks of clinicians.
+            </div>
           </li>
         </ul>
         {/* tu ide animacija sa akrticama koje se rotiraju */}
@@ -47,6 +77,7 @@ export default function ListSection() {
           </button>
         </div>
       </div>
+      
     </section>
   );
 }
