@@ -5,25 +5,50 @@ import TestImage from "../../../public/doctorOperating.jpg";
 export default function TextSection() {
   return (
     <section className="flex gap-4 h-full flex-col lg:flex-row pb-12 px-8 pt-8">
-      <div className="flex flex-col items-center gap-2 relative">
-        <p className="text-9xl text-slate-200 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
-          03
-        </p>
-        <div className="relative z-10 text-xl uppercase font-bold">
-          Our Founding Story
-        </div>
-      </div>
-      <p className="text-sm text-slate-500 pt-16">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tenetur
-        explicabo qui?
-      </p>
+      <p className="relative z-10 text-xl uppercase font-bold">Meet Our Team</p>
       <p className="text-sm text-slate-500 pt-1">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde expedita
-        eveniet doloribus quia dolorem hic nulla nihil, odio nisi fugiat ipsam
-        aut, ducimus deserunt quisquam nostrum vitae sequi amet recusandae
-        tempore! Atque minus quo eligendi?
+        We are very proud of our team that has a shared vision of delivering the
+        high-quality results, as well as ensuring the overall positive working
+        atmosphere.
       </p>
-      <Image src={TestImage} alt="clover" width={400} height={400} />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </section>
   );
 }
+
+const Card = () => {
+  return (
+    <div className="relative group rounded-lg overflow-hidden cursor-pointer">
+      {/* Background Image */}
+      <Image
+        className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
+        src={TestImage}
+        alt="Card Background"
+        width={0}
+        height={0}
+      />
+
+      {/* Text Container */}
+      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white p-4 transition duration-300 ease-in-out">
+        {/* Paragraph 1 */}
+        <p className="text-base md:text-lg lg:text-xl xl:text-2xl mb-2 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          Your First Paragraph
+        </p>
+
+        {/* Paragraph 2 */}
+        <p className="text-xs md:text-sm lg:text-base xl:text-lg">
+          Your Second Paragraph
+        </p>
+      </div>
+    </div>
+  );
+};
