@@ -3,8 +3,8 @@ import Image from "next/image";
 import Navbar from "../(home-sections)/Navbar";
 import HeroSection from "./(about-us-sections)/HeroSection";
 import CoreValuesSection from "./(about-us-sections)/CoreValuesSection";
-import { IconsEightTestIcon } from "@/public/Icons";
 import Footer from "../components/Footer";
+import OurFoundingStory from './(about-us-sections)/OurFoundingStorySection'
 
 export default function Page() {
   return (
@@ -12,38 +12,11 @@ export default function Page() {
       <Navbar />
       <HeroSection />
       <CoreValuesSection />
-
+      <OurFoundingStory />
       <Footer />
     </main>
   );
 }
-
-const coreValues = [
-  {
-    icon: IconsEightTestIcon,
-    value: "Transparency",
-    description:
-      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
-  },
-  {
-    icon: IconsEightTestIcon,
-    value: "Transparency",
-    description:
-      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
-  },
-  {
-    icon: IconsEightTestIcon,
-    value: "Transparency",
-    description:
-      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
-  },
-  {
-    icon: IconsEightTestIcon,
-    value: "Transparency",
-    description:
-      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
-  },
-];
 
 // <div className="b-2">
 //         <p className="text-[#555f60] text-start md:text-start text-md sm:text-lg leading-7">
