@@ -15,6 +15,7 @@ export default function Page() {
       <CoreValuesSection />
       <OurFoundingStory />
       <MeetOurTeamSection />
+      {/* Neki testimonialsi */}
       <Footer />
     </main>
   );

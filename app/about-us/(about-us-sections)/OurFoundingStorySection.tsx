@@ -23,7 +23,13 @@ export default function TextSection() {
         aut, ducimus deserunt quisquam nostrum vitae sequi amet recusandae
         tempore! Atque minus quo eligendi?
       </p>
-      <Image src={TestImage} alt="clover" width={400} height={400} />
+      <p className="text-sm text-slate-500 pt-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde expedita
+        eveniet doloribus quia dolorem hic nulla nihil, odio nisi fugiat ipsam
+        aut, ducimus deserunt quisquam nostrum vitae sequi amet recusandae
+        tempore! Atque minus quo eligendi?
+      </p>
+      <Image src={TestImage} alt="clover" width={400} height={400} className="rounded" />
     </section>
   );
 }

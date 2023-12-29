@@ -29,7 +29,7 @@ export default function MeetOurTeamSection() {
 
 const Card = () => {
     return (
-      <div className="relative group rounded-lg overflow-hidden cursor-pointer">
+      <div className="relative group rounded overflow-hidden cursor-pointer">
         {/* Background Image */}
         <Image
           className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"

@@ -4,8 +4,8 @@ import Navbar from '@/app/(home-sections)/Navbar';
 import Footer from '@/app/components/Footer';
 import { EmergencySupportIcon } from '@/public/Icons';
 
-export default function Page({ params }: { params: { doctorId: string }}) {
-  const doctor = doctors.find(doctor => doctor.id === parseInt(params.doctorId, 10))
+export default function Page({ params }: { params: { doctorName: string }}) {
+  const doctor = doctors.find(doctor => doctor.id === parseInt(params.doctorName, 10))
 
   return (
     <main className='flex min-h-screen flex-col items-center lg:pt-4 bg-white'>

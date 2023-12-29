@@ -35,7 +35,7 @@ export default function MeetOurDoctors() {
   );
 }
 
-const doctors = [
+export const doctors = [
   {
     name: "Olga Katarinova",
     specialisation: "Cardiologist",

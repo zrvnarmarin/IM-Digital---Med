@@ -1,71 +1,94 @@
 import React from 'react';
-import Link from 'next/link';
-import { doctors } from '@/app/data';
-import { StarIcon } from '@/public/Icons';
 import Image from 'next/image';
-import MedImg from '../../../public/med.png'
+import CloverImage from '../../../public/CloverImage.png'
+import RightArrowImage from '../../../public/RightIcon.png'
+import "../../../public/DoctorCard.css";
+import Link from 'next/link';
+
 
 export default function MeetOurTeamSection() {
   return (
-    <section className='flex gap-16 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]'>
-      <h1 className='font-bold md:text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10'>
+    <section className='flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]'>
+      <h1 className='font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10'>
         Meet Our Team
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-        <p className='text-[#555f60] text-start md:text-center text-md sm:text-lg leading-7'>
+        <p className='text-[#555f60] text-start text-sm pt-4'>
           Your health is our top priority. Meet our dedicated team of medical professionals who will guide you on your
           journey to health and well-being. Explore the expertise and compassion embodied by our best doctors. At the
           heart of our mission is your well-being, and we prioritize your health above all. 
         </p>
-        <div className='border-2 border-black rounded-lg flex items-center justify-center md:h-full'>
-          Place for the team of doctors image
-        </div>
       </div>
-      <section className='grid grid-cols-1 md:grid-cols-2 gap-8 pt-8'>
-      {doctors.map(doctor =>
-        <DoctorCard 
-          key={doctor.id} 
-          doctor={doctor} 
-        />  
-      )}
-    </section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+        {doctors.map((doctor) => (
+          <DoctorCard doctor={doctor} key={doctor.name} />
+        ))}
+      </div>
     </section>
   )
 }
 
 type Doctor = {
-  id: number, 
-  imageSrc: string,
-  href: string,
-  name: string,
-  title: string,
-  shortDescription: string,
-  description: string,
-  achievements: string[]
-}
+  name: string;
+  specialisation: string;
+  yearsOfExperience: number;
+  rating: number;
+};
 
-export function DoctorCard({ doctor } : { doctor: Doctor }) {
+export function DoctorCard({ doctor }: { doctor: Doctor }) {
   return (
-    <Link 
-      href={`/our-team/${doctor.id}`} 
-      key={doctor.name} 
-      className='cursor-pointer opacity-70 bg-white border border-gray-100 
-      hover:scale-105 duration-100 shadow-xl grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-      rounded-md text-[#2a2f31]'
-    >
-      <div className='w-full row-span-full row-span-2 h-full flex border border-black items-center justify-center rounded-md col-span-1 md:col-span-1'>
-        Image of doctor
-      </div>
-      <div className='flex flex-col md:flex-row col-span-1 md:col-span-2'>
-        <div className='flex flex-col'>
-          <h2 className='pb-4 font-bold'>{doctor.name}</h2>
-          <h2 className='text-[#555f60] text-md sm:text-lg leading-7'>{doctor.shortDescription}</h2>
+    <Link href={`${doctor.name}`} className="card bg-slate-500/5">
+      <div className="layer"></div>
+      <div className="content">
+        <div className="image">
+          <img
+            width="100%"
+            src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
+            alt={`j`}
+          />
+        </div>
+        <p className="text-center text-md md:text-lg lg:text-xl font-semibold pt-2">
+          {doctor.name}
+        </p>
+        <p className="text-center text-sm md:text-md lg:text-lg font-medium">
+          {doctor.specialisation}
+        </p>
+        <div className="flex flex-row gap-2 items-center justify-center pt-4">
+          <Image src={CloverImage} alt="clover" width={15} height={15} />
+          <p className="text-xs ">"Health is always worth fighting for."</p>
+        </div>
+        <div className="flex items-center pt-10 gap-2 justify-end">
+          <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
+          <Image src={RightArrowImage} alt="clover" width={15} height={15} />
         </div>
       </div>
-      <p className='flex flex-row gap-2 font-xs text-center  md:col-start-3 place-self-end px-2 py-2 text-[#000000] font-semibold rounded-md'>
-        <span>Read More</span>
-        <span>&rarr;</span>
-      </p>
-    </Link>  
-  )
+    </Link>
+  );
 }
+
+export const doctors = [
+  {
+    name: "Olga Katarinova",
+    specialisation: "Cardiologist",
+    yearsOfExperience: 4,
+    rating: 4.5,
+  },
+  {
+    name: "Patrice Harris",
+    specialisation: "Pediatrist",
+    yearsOfExperience: 5,
+    rating: 4.8,
+  },
+  {
+    name: "Shaun Murphy",
+    specialisation: "Dermatology",
+    yearsOfExperience: 3,
+    rating: 4.7,
+  },
+  {
+    name: "John Bell",
+    specialisation: "Orthopedist",
+    yearsOfExperience: 7,
+    rating: 4.5,
+  },
+];
