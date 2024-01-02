@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import Image from 'next/image';
 import TestImage from "../../../public/doctor-operating.avif";
 
@@ -29,29 +30,29 @@ export default function MeetOurTeamSection() {
 
 const Card = () => {
     return (
-      <div className="relative group rounded overflow-hidden cursor-pointer">
-        {/* Background Image */}
-        <Image
-          className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
-          src={TestImage}
-          alt="Card Background"
-          width={0}
-          height={0}
-        />
-  
-        {/* Text Container */}
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white p-4 transition duration-300 ease-in-out">
-          {/* Paragraph 1 */}
-          <p className="text-base md:text-lg lg:text-xl xl:text-2xl mb-2 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-            Your First Paragraph
-          </p>
-  
-          {/* Paragraph 2 */}
-          <p className="text-xs md:text-sm lg:text-base xl:text-lg">
-            Your Second Paragraph
-          </p>
+      <Link href={`/our-team/${id}`}>
+        <div className="relative group rounded overflow-hidden cursor-pointer">
+          {/* Background Image */}
+          <Image
+            className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
+            src={TestImage}
+            alt="Card Background"
+            width={0}
+            height={0}
+          />
+          {/* Text Container */}
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white p-4 transition duration-300 ease-in-out">
+            {/* Paragraph 1 */}
+            <p className="text-base md:text-lg lg:text-xl xl:text-2xl mb-2 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+              Your First Paragraph
+            </p>
+            {/* Paragraph 2 */}
+            <p className="text-xs md:text-sm lg:text-base xl:text-lg">
+              Your Second Paragraph
+            </p>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   };
   
