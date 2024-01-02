@@ -1,15 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import "../../public/DoctorCard.css";
 import CloverImage from "../../public/CloverImage.png";
 import RightArrowImage from "../../public/RightIcon.png";
-
-type Doctor = {
-  name: string;
-  specialisation: string;
-  yearsOfExperience: number;
-  rating: number;
-};
+import { doctors } from "../data";
+import { Doctor } from "../types";
+import { generateUrlFromFullName } from "../utils";
 
 export default function MeetOurDoctors() {
   return (
@@ -28,43 +25,18 @@ export default function MeetOurDoctors() {
       </div>
       <div>
       <div className="flex justify-center pt-16">
-        <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Meet The Rest</button>
+        <Link href={`/our-team`} className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Meet The Rest</Link>
       </div>
       </div>
     </section>
   );
 }
 
-export const doctors = [
-  {
-    name: "Olga Katarinova",
-    specialisation: "Cardiologist",
-    yearsOfExperience: 4,
-    rating: 4.5,
-  },
-  {
-    name: "Patrice Harris",
-    specialisation: "Pediatrist",
-    yearsOfExperience: 5,
-    rating: 4.8,
-  },
-  {
-    name: "Shaun Murphy",
-    specialisation: "Dermatology",
-    yearsOfExperience: 3,
-    rating: 4.7,
-  },
-  {
-    name: "John Bell",
-    specialisation: "Orthopedist",
-    yearsOfExperience: 7,
-    rating: 4.5,
-  },
-];
-
 export function DoctorCard({ doctor }: { doctor: Doctor }) {
+  const fullNameLink = generateUrlFromFullName(doctor.name)
+
   return (
-    <div className="card bg-slate-500/5">
+    <Link href={`/our-team/${fullNameLink}`} className="card bg-slate-500/5 cursor-pointer">
       <div className="layer"></div>
       <div className="content">
         <div className="image">
@@ -82,13 +54,13 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
         </p>
         <div className="flex flex-row gap-2 items-center justify-center pt-4">
           <Image src={CloverImage} alt="clover" width={15} height={15} />
-          <p className="text-xs ">"Health is always worth fighting for."</p>
+          <p className="text-xs ">&quot;Health is always worth fighting for.&quot;</p>
         </div>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
           <Image src={RightArrowImage} alt="clover" width={15} height={15} />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

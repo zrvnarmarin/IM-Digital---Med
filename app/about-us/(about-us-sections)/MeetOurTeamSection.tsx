@@ -30,7 +30,7 @@ export default function MeetOurTeamSection() {
 
 const Card = () => {
     return (
-      <Link href={`/our-team/${id}`}>
+      <Link href={`/our-team/${3}`}>
         <div className="relative group rounded overflow-hidden cursor-pointer">
           {/* Background Image */}
           <Image
