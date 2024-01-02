@@ -1,22 +1,26 @@
-import React from 'react';
-import Image from 'next/image';
-import CloverImage from '../../../public/CloverImage.png'
-import RightArrowImage from '../../../public/RightIcon.png'
+import React from "react";
+import Image from "next/image";
+import CloverImage from "../../../public/CloverImage.png";
+import RightArrowImage from "../../../public/RightIcon.png";
 import "../../../public/DoctorCard.css";
-import Link from 'next/link';
-
+import Link from "next/link";
+import { doctors } from "@/app/data";
+import { DoctorType } from "@/app/types";
+import { generateUrlFromFullName } from "@/app/utils";
 
 export default function MeetOurTeamSection() {
   return (
-    <section className='flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]'>
-      <h1 className='font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10'>
+    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
+      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Meet Our Team
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-        <p className='text-[#555f60] text-start text-sm pt-4'>
-          Your health is our top priority. Meet our dedicated team of medical professionals who will guide you on your
-          journey to health and well-being. Explore the expertise and compassion embodied by our best doctors. At the
-          heart of our mission is your well-being, and we prioritize your health above all. 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <p className="text-[#555f60] text-start text-sm pt-4">
+          Your health is our top priority. Meet our dedicated team of medical
+          professionals who will guide you on your journey to health and
+          well-being. Explore the expertise and compassion embodied by our best
+          doctors. At the heart of our mission is your well-being, and we
+          prioritize your health above all.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
@@ -25,19 +29,14 @@ export default function MeetOurTeamSection() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-type Doctor = {
-  name: string;
-  specialisation: string;
-  yearsOfExperience: number;
-  rating: number;
-};
+export function DoctorCard({ doctor }: { doctor: DoctorType }) {
+  const lowerCaseDoctorName = generateUrlFromFullName(doctor.name)
 
-export function DoctorCard({ doctor }: { doctor: Doctor }) {
   return (
-    <Link href={`${doctor.name}`} className="card bg-slate-500/5">
+    <Link href={`/our-team/${lowerCaseDoctorName}`} className="card bg-slate-500/5">
       <div className="layer"></div>
       <div className="content">
         <div className="image">
@@ -55,7 +54,9 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
         </p>
         <div className="flex flex-row gap-2 items-center justify-center pt-4">
           <Image src={CloverImage} alt="clover" width={15} height={15} />
-          <p className="text-xs ">"Health is always worth fighting for."</p>
+          <p className="text-xs ">
+            &ldquo;Health is always worth fighting for.&ldquo;
+          </p>
         </div>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
@@ -65,30 +66,3 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
     </Link>
   );
 }
-
-export const doctors = [
-  {
-    name: "Olga Katarinova",
-    specialisation: "Cardiologist",
-    yearsOfExperience: 4,
-    rating: 4.5,
-  },
-  {
-    name: "Patrice Harris",
-    specialisation: "Pediatrist",
-    yearsOfExperience: 5,
-    rating: 4.8,
-  },
-  {
-    name: "Shaun Murphy",
-    specialisation: "Dermatology",
-    yearsOfExperience: 3,
-    rating: 4.7,
-  },
-  {
-    name: "John Bell",
-    specialisation: "Orthopedist",
-    yearsOfExperience: 7,
-    rating: 4.5,
-  },
-];

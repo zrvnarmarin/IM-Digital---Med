@@ -5,7 +5,7 @@ import "../../public/DoctorCard.css";
 import CloverImage from "../../public/CloverImage.png";
 import RightArrowImage from "../../public/RightIcon.png";
 import { doctors } from "../data";
-import { Doctor } from "../types";
+import { DoctorType } from "../types";
 import { generateUrlFromFullName } from "../utils";
 
 export default function MeetOurDoctors() {
@@ -32,11 +32,11 @@ export default function MeetOurDoctors() {
   );
 }
 
-export function DoctorCard({ doctor }: { doctor: Doctor }) {
-  const fullNameLink = generateUrlFromFullName(doctor.name)
+export function DoctorCard({ doctor }: { doctor: DoctorType }) {
+  const lowerCaseDoctorName = generateUrlFromFullName(doctor.name)
 
   return (
-    <Link href={`/our-team/${fullNameLink}`} className="card bg-slate-500/5 cursor-pointer">
+    <Link href={`/our-team/${lowerCaseDoctorName}`} className="card bg-slate-500/5 cursor-pointer">
       <div className="layer"></div>
       <div className="content">
         <div className="image">

@@ -1,4 +1,4 @@
-export type Doctor = {
+export type DoctorType = {
     id: number;
     imageSrc: string;
     href: string;

@@ -2,7 +2,7 @@ export const doctors = [
     {
       id: 1,
       imageSrc: 'path/to/johan_smith_image.jpg',
-      href: '/dr-johan-smith',
+      href: 'johan-smith',
       name: 'Johan Smith',
       specialisation: 'Cardiologist',
       shortDescription: 'Renowned for groundbreaking cardiac procedures and pioneering research, Dr. Smith is committed to ensuring your heart health with precision and innovation.',
@@ -17,7 +17,7 @@ export const doctors = [
     {
       id: 2,
       imageSrc: 'path/to/patrice_harris_image.jpg',
-      href: 'dr-patrice-harris',
+      href: 'patrice-harris',
       name: 'Patrice Harris',
       specialisation: 'Pediatrician',
       shortDescription: 'With a passion for nurturing young lives, Dr. Harris goes beyond traditional pediatric care. Her commitment to community outreach and advocacy makes her a trusted ally for families.',
@@ -32,7 +32,7 @@ export const doctors = [
     {
       id: 3,
       imageSrc: 'path/to/shaun_murphy_image.jpg',
-      href: '/dr-shaun-murphy',
+      href: 'shaun-murphy',
       name: 'Shaun Murphy',
       specialisation: 'Dermatologist',
       shortDescription: 'Dr. Murphy combines medical expertise with an artistic touch in dermatology. Experience innovative skincare solutions and a personalized approach to your skin health.',
@@ -47,7 +47,7 @@ export const doctors = [
     {
       id: 4,
       imageSrc: 'path/to/john_bell_image.jpg',
-      href: 'dr-john-bell',
+      href: 'john-bell',
       name: 'John Bell',
       specialisation: 'Orthopedic Specialist',
       shortDescription: 'Specializing in orthopedic care, Dr. Bell brings seven years of expertise to the table. His commitment to restoring mobility and transforming lives sets him apart.',

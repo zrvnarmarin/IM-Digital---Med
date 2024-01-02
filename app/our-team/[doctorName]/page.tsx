@@ -1,11 +1,12 @@
 import React from 'react';
 import { doctors } from '@/app/data';
+import { DoctorType } from '@/app/types';
 import Navbar from '@/app/(home-sections)/Navbar';
 import Footer from '@/app/components/Footer';
 import { EmergencySupportIcon } from '@/public/Icons';
 
 export default function Page({ params }: { params: { doctorName: string }}) {
-  const doctor = doctors.find(doctor => doctor.id === parseInt(params.doctorName, 10))
+  const doctor = doctors.find(doctor => doctor.href === params.doctorName)
 
   return (
     <main className='flex min-h-screen flex-col items-center lg:pt-4 bg-white'>
@@ -23,7 +24,7 @@ export default function Page({ params }: { params: { doctorName: string }}) {
   );
 }
 
-export function DoctorDetailsSection({ doctor }: { doctor: Doctor }) {
+export function DoctorDetailsSection({ doctor }: { doctor: DoctorType }) {
   return (
     <section className='h-full grid grid-cols-1 lg:grid-cols-2 gap-16 py-16 px-8 md:px-12 lg:px-24 bg-white'>
       <div className='border-2 border-black flex items-center justify-center'>
@@ -35,7 +36,7 @@ export function DoctorDetailsSection({ doctor }: { doctor: Doctor }) {
           <div className={`flex items-center justify-center bg-red-400 w-fit h-fit p-2 rounded-lg`}>
             <EmergencySupportIcon />
           </div>
-          <p className='text-[#656666] text-xs lg:text-lg'>{doctor.title}</p>
+          <p className='text-[#656666] text-xs lg:text-lg'>{doctor.specialisation}</p>
         </div>
         <p className='text-[#656666]  lg:text-lg'>{doctor.description}</p>
         <h3 className='text-[#656666] text-xs lg:text-lg'>Achievements: </h3>
@@ -50,15 +51,4 @@ export function DoctorDetailsSection({ doctor }: { doctor: Doctor }) {
       </div>
     </section>
   )
-}
-
-type Doctor = {
-  id: number, 
-  imageSrc: string,
-  href: string,
-  name: string,
-  title: string,
-  shortDescription: string,
-  description: string,
-  achievements: string[]
 }
