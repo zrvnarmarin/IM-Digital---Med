@@ -1,3 +1,5 @@
+import { IconsEightTestIcon } from "@/public/Icons";
+
 export const doctors = [
   {
     id: 1,
@@ -81,7 +83,7 @@ export const doctors = [
 export const medicalServices = [
   {
     id: 1,
-    icon: "",
+    icon: IconsEightTestIcon,
     service: "Minimally Invasive Cardiac Procedures",
     shortDescription:
       "Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.",
@@ -101,7 +103,7 @@ export const medicalServices = [
   },
   {
     id: 2,
-    icon: "",
+    icon: IconsEightTestIcon,
     service: "Pediatric Telemedicine Consultations",
     shortDescription:
       "Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.",
@@ -121,7 +123,7 @@ export const medicalServices = [
   },
   {
     id: 3,
-    icon: "",
+    icon: IconsEightTestIcon,
     service: "State-of-the-Art Laser Therapy for Scar Reduction",
     shortDescription:
       "Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.",
@@ -141,7 +143,7 @@ export const medicalServices = [
   },
   {
     id: 4,
-    icon: "",
+    icon: IconsEightTestIcon,
     service: "Groundbreaking Joint Replacement Surgeries",
     shortDescription:
       "Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.",
@@ -160,3 +162,30 @@ export const medicalServices = [
       "While joint replacement surgeries are generally safe, potential complications such as infection or implant issues are discussed with patients. Thorough pre-operative consultations provide comprehensive information for informed decision-making.",
   },
 ];
+
+export const whyChooseUsPoints = [
+  {
+    id: 1,
+    icon: IconsEightTestIcon,
+    point: 'Experienced medical team',
+    description: 'Medical team with over 20 doctors takes care of your smile'
+  },
+  {
+    id: 2,
+    icon: IconsEightTestIcon,
+    point: 'Experienced medical team',
+    description: 'Medical team with over 20 doctors takes care of your smile'
+  },
+  {
+    id: 3,
+    icon: IconsEightTestIcon,
+    point: 'Experienced medical team',
+    description: 'Medical team with over 20 doctors takes care of your smile'
+  },
+  {
+    id: 4,
+    icon: IconsEightTestIcon,
+    point: 'Experienced medical team',
+    description: 'Medical team with over 20 doctors takes care of your smile'
+  }
+]
