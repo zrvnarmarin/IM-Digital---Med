@@ -9,7 +9,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
       <Navbar />
       <HeroSection />
-      {/* <MedicalServiceCardsSection /> */}
+      <MedicalServiceCardsSection />
       <Footer />
     </main>
   );

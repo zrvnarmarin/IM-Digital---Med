@@ -13,8 +13,8 @@ export type DoctorType = {
 
 export type ServiceType = {
   icon: () => JSX.Element;
-  iconBackground: string;
   title: string;
+  shortDescription: string;
 };
 
 export type WhyChooseUsPoint = {

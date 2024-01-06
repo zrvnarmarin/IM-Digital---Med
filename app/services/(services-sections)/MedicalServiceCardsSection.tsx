@@ -1,52 +1,63 @@
-import React from 'react'
-import Link from 'next/link'
-import { medicalServices } from '@/app/data'
+import React from "react";
+import Image from "next/image";
+import CloverImage from "../../../public/CloverImage.png";
+import RightArrowImage from "../../../public/RightIcon.png";
+import "../../../public/DoctorCard.css";
+import Link from "next/link";
+import { medicalServices } from "@/app/data";
+import { ServiceType } from "@/app/types";
 
-export default function MedicalServiceCardsSection() {
+export default function MeetOurTeamSection() {
   return (
-    <section className='grid grid-cols-1 md:grid-cols-2 gap-8 px-8'>
-      {medicalServices.map(service =>
-        <MedicalServiceCard key={service.id} service={service} />  
-      )}
-    </section>
-  )
-}
-
-type Service = {
-    id: number,
-    icon: string, 
-    service: string,
-    shortDescription: string,
-    includes: string[],
-    recovery: string,
-    examination: string,
-    surgicalProcess: string,
-    complications: string
-}
-
-export function MedicalServiceCard({ service } : { service: Service }) {
-  return (
-    <Link 
-      href={`/our-team/${service.id}`} 
-      key={service.service} 
-      className='cursor-pointer opacity-70 bg-white border border-gray-100 
-      hover:scale-105 duration-100 shadow-xl grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-       rounded-xl text-[#2a2f31]'
-    >
-      <div className='flex border row-start-1 row-end-3 border-black items-center justify-center rounded-lg col-span-1 md:col-span-1'>
-        Image of the service
+    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
+      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+        Choose our services
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <p className="text-[#555f60] text-start text-sm pt-4">
+          Our doctor make the health workj for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Incidunt aspernatur exercitationem dolorum maiores sint sequi ut, vero natus sapiente magnam!
+        </p>
       </div>
-      <div className='flex flex-col md:flex-row col-span-1 md:col-span-2'>
-        <div className='flex flex-col'>
-          <h2 className='pb-4 font-bold'>{service.service}</h2>
-          <h2 className='font-normal text-sm md:text-md'>{service.shortDescription}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+        {medicalServices.map((service) => (
+          <DoctorCard service={service} key={service.id} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function DoctorCard({ service }: { service: ServiceType }) {
+
+  return (
+    <Link href={`/services/${service.title}`} className="card bg-slate-500/5">
+      <div className="layer"></div>
+      <div className="content">
+        <div className="image">
+          <img
+            width="100%"
+            src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
+            alt={`j`}
+          />
+        </div>
+        <p className="bg-red-400 text-center text-md md:text-lg lg:text-xl font-semibold pt-2">
+          {service.title}
+        </p>
+        <p className="text-center text-sm md:text-md lg:text-lg font-medium">
+          {service.shortDescription}
+        </p>
+        <div className="flex flex-row gap-2 items-center justify-center pt-4">
+          <Image src={CloverImage} alt="clover" width={15} height={15} />
+          <p className="text-xs ">
+            &ldquo;Health is always worth fighting for.&ldquo;
+          </p>
+        </div>
+        <div className="flex items-center pt-10 gap-2 justify-end">
+          <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
+          <Image src={RightArrowImage} alt="clover" width={15} height={15} />
         </div>
       </div>
-      <p className='flex flex-row gap-2 font-xs text-center md:col-span-2 place-self-end px-2 py-2 text-[#333333] font-semibold rounded-md'>
-        <span>Read More</span>
-        <span>&rarr;</span>
-      </p>
-    </Link>  
-  )
+    </Link>
+  );
 }
-
