@@ -84,7 +84,7 @@ export const medicalServices = [
   {
     id: 1,
     icon: IconsEightTestIcon,
-    service: "Minimally Invasive Cardiac Procedures",
+    serviceTitle: "Cardiac Procedures",
     shortDescription:
       "Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.",
     includes: [
@@ -104,7 +104,7 @@ export const medicalServices = [
   {
     id: 2,
     icon: IconsEightTestIcon,
-    service: "Pediatric Telemedicine Consultations",
+    serviceTitle: "Pediatric Telemedicine Consultations",
     shortDescription:
       "Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.",
     includes: [
@@ -124,7 +124,7 @@ export const medicalServices = [
   {
     id: 3,
     icon: IconsEightTestIcon,
-    service: "State-of-the-Art Laser Therapy for Scar Reduction",
+    serviceTitle: "Laser Therapy for Scar Reduction",
     shortDescription:
       "Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.",
     includes: [
@@ -144,7 +144,7 @@ export const medicalServices = [
   {
     id: 4,
     icon: IconsEightTestIcon,
-    service: "Groundbreaking Joint Replacement Surgeries",
+    serviceTitle: "Joint Replacement Surgeries",
     shortDescription:
       "Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.",
     includes: [

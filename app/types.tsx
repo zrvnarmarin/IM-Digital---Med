@@ -12,9 +12,14 @@ export type DoctorType = {
 };
 
 export type ServiceType = {
+  id: number;
   icon: () => JSX.Element;
-  title: string;
+  serviceTitle: string;
   shortDescription: string;
+  includes: string[];
+  recovery: string;
+  examination: string;
+  complications: string;
 };
 
 export type WhyChooseUsPoint = {
