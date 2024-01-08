@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import DoctorImage from "../../public/doctorOperating.jpg";
+import { ArrowUp } from "@/public/Icons";
 
 export default function FAQSection() {
   return (
@@ -74,9 +75,15 @@ function Panel({
           {title}
         </h3>
         {isActive ? (
-          <p className="text-4xl font-semibold text-[#194C7A]">-</p>
+          <p className="text-4xl font-semibold text-[#194C7A]">
+            <div className="rotate-180">
+              <ArrowUp />
+            </div>
+          </p>
         ) : (
-          <p className="text-4xl font-semibold text-[#194C7A]">+</p>
+          <p className="text-4xl font-semibold text-[#194C7A]">
+            <ArrowUp />
+          </p>
         )}
       </div>
       {isActive ? (

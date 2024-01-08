@@ -9,8 +9,8 @@ export default function WhyPeopleChooseUs() {
   return (
     <section className="flex flex-col gap-8 py-16 px-8 bg-white">
       <div className="flex flex-col justify-center">
-        <h1 className="font-bold text-start text-xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-10">
-          Lorem ipsum dolor sit
+        <h1 className="font-bold text-start text-xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2a2f31] leading-2">
+          Why your health is safe at our hands
         </h1>
         <p className="text-[#555f60] text-start text-sm sm:text-md leading-2 pt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto

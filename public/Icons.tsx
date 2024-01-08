@@ -268,3 +268,28 @@ c16 -20 3 -46 -24 -46 -27 0 -40 26 -24 46 15 18 33 18 48 0z m-189 -22 c0 -8
     </svg>
   );
 };
+
+export const ArrowUp = () => {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="15.000000pt"
+      height="15.000000pt"
+      viewBox="0 0 64.000000 64.000000"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <g
+        transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+        fill="#000000"
+        stroke="none"
+      >
+        <path
+          d="M178 377 l-127 -102 0 -47 c-1 -27 1 -48 3 -48 2 0 63 34 134 76 150
+87 115 88 290 -15 57 -34 106 -61 108 -61 2 0 4 21 3 48 l0 47 -129 103 c-71
+56 -135 102 -142 101 -7 0 -70 -46 -140 -102z"
+        />
+      </g>
+    </svg>
+  );
+};
