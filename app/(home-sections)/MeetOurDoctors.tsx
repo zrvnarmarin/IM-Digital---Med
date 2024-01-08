@@ -10,7 +10,7 @@ import { generateUrlFromFullName } from "../utils";
 
 export default function MeetOurDoctors() {
   return (
-    <section className="flex h-full flex-col lg:flex-col w-full pt-12 pb-16 px-8 bg-[#eff3fa]">
+    <section className="flex h-full flex-col lg:flex-col w-full pt-12 pb-16 px-7 bg-[#eff3fa]">
       <h2 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Meet Our Doctor Specialists
       </h2>

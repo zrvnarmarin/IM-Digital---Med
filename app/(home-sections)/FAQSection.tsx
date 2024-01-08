@@ -7,7 +7,7 @@ import { ArrowUp } from "@/public/Icons";
 
 export default function FAQSection() {
   return (
-    <section className="w-full px-8 py-16 bg-white">
+    <section className="w-full px-7 py-16 bg-white">
       <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Frequently Asked Questions
       </h1>

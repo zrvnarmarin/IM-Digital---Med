@@ -3,7 +3,7 @@ import ElectricityIcon from "../../public/ElectricityIcon.png";
 
 export default function ListSection() {
   return (
-    <section className="flex flex-col gap-8 pb-16 px-8 bg-white">
+    <section className="flex flex-col gap-8 pb-16 px-7 bg-white">
       <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Lorem Ipsum Dolor Sit Garum
       </h1>
