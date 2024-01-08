@@ -1,28 +1,34 @@
 import React from "react";
 import Image from "next/image";
-import CloverImage from "../../../public/CloverImage.png";
-import RightArrowImage from "../../../public/RightIcon.png";
-import "../../../public/DoctorCard.css";
+import CloverImage from "../../public/CloverImage.png";
+import RightArrowImage from "../../public/RightIcon.png";
+import "../../public/DoctorCard.css";
 import Link from "next/link";
 import { medicalServices } from "@/app/data";
 import { ServiceType } from "@/app/types";
 
-export default function MedicalServiceCardsSection() {
+export default function ServicesSection() {
   return (
-    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+    <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-7 md:px-16 lg:px-20 bg-[#FFFFFF]">
+      <h1 className="text-start text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold leading-2">
         Choose our services
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <p className="text-[#555f60] text-start text-sm pt-4">
+        <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
           Our doctor make the health workj for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
           Incidunt aspernatur exercitationem dolorum maiores sint sequi ut, vero natus sapiente magnam!
         </p>
-      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
         {medicalServices.map((service) => (
           <DoctorCard service={service} key={service.id} />
         ))}
+      </div>
+      <div className="flex flex-col gap-2 items-center pt-12">
+        <Link
+          href="/contact"
+          className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border"
+        >
+          See All Services
+        </Link>
       </div>
     </section>
   );

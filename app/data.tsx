@@ -1,4 +1,5 @@
 import { IconsEightTestIcon } from "@/public/Icons";
+import ElectricityIcon from '.../public/ElectricityIcon.png'
 
 export const doctors = [
   {
@@ -63,7 +64,7 @@ export const doctors = [
     imageSrc: "path/to/john_bell_image.jpg",
     href: "john-bell",
     name: "John Bell",
-    specialisation: "Orthopedic Specialist",
+    specialisation: "Orthopedian",
     shortDescription:
       "Specializing in orthopedic care, Dr. Bell brings seven years of expertise to the table. His commitment to restoring mobility and transforming lives sets him apart.",
     description:
@@ -79,12 +80,11 @@ export const doctors = [
   },
 ];
 
-
 export const medicalServices = [
   {
     id: 1,
     icon: IconsEightTestIcon,
-    href: 'cardiac-proccedures',
+    href: "cardiac-proccedures",
     serviceTitle: "Cardiac Procedures",
     shortDescription:
       "Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.",
@@ -105,7 +105,7 @@ export const medicalServices = [
   {
     id: 2,
     icon: IconsEightTestIcon,
-    href: 'pediactric-telemedicine-consultations',
+    href: "pediactric-telemedicine-consultations",
     serviceTitle: "Pediatric Telemedicine Consultations",
     shortDescription:
       "Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.",
@@ -126,7 +126,7 @@ export const medicalServices = [
   {
     id: 3,
     icon: IconsEightTestIcon,
-    href: 'laser-therapy-for-scar-reduction',
+    href: "laser-therapy-for-scar-reduction",
     serviceTitle: "Laser Therapy for Scar Reduction",
     shortDescription:
       "Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.",
@@ -147,7 +147,7 @@ export const medicalServices = [
   {
     id: 4,
     icon: IconsEightTestIcon,
-    href: 'joint-replacement-surgeries',
+    href: "joint-replacement-surgeries",
     serviceTitle: "Joint Replacement Surgeries",
     shortDescription:
       "Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.",
@@ -171,25 +171,89 @@ export const whyChooseUsPoints = [
   {
     id: 1,
     icon: IconsEightTestIcon,
-    point: 'Experienced medical team',
-    description: 'Medical team with over 20 doctors takes care of your smile'
+    point: "Experienced medical team",
+    description: "Medical team with over 20 doctors takes care of your smile",
   },
   {
     id: 2,
     icon: IconsEightTestIcon,
-    point: 'Experienced medical team',
-    description: 'Medical team with over 20 doctors takes care of your smile'
+    point: "Experienced medical team",
+    description: "Medical team with over 20 doctors takes care of your smile",
   },
   {
     id: 3,
     icon: IconsEightTestIcon,
-    point: 'Experienced medical team',
-    description: 'Medical team with over 20 doctors takes care of your smile'
+    point: "Experienced medical team",
+    description: "Medical team with over 20 doctors takes care of your smile",
   },
   {
     id: 4,
     icon: IconsEightTestIcon,
-    point: 'Experienced medical team',
-    description: 'Medical team with over 20 doctors takes care of your smile'
-  }
-]
+    point: "Experienced medical team",
+    description: "Medical team with over 20 doctors takes care of your smile",
+  },
+];
+
+export const listItems = [
+  {
+    id: 1,
+    // icon: ElectricityIcon,
+    title: "Elastic Scalability",
+    description:
+      "Our experts and consultants are highly experienced medical translators, largely with healthcare, life sciences or scientific backgrounds and proprietary networks of clinicians.",
+  },
+  {
+    id: 2,
+    // icon: ElectricityIcon,
+    title: "Elastic Scalability",
+    description:
+      "Our experts and consultants are highly experienced medical translators, largely with healthcare, life sciences or scientific backgrounds and proprietary networks of clinicians.",
+  },
+  {
+    id: 3,
+    // icon: ElectricityIcon,
+    title: "Elastic Scalability",
+    description:
+      "Our experts and consultants are highly experienced medical translators, largely with healthcare, life sciences or scientific backgrounds and proprietary networks of clinicians.",
+  },
+  {
+    id: 4,
+    // icon: ElectricityIcon,
+    title: "Elastic Scalability",
+    description:
+      "Our experts and consultants are highly experienced medical translators, largely with healthcare, life sciences or scientific backgrounds and proprietary networks of clinicians.",
+  },
+];
+
+export const homePageFAQ = [
+  {
+    id: 1,
+    question: "What are common pediatric cardiovascular conditions?",
+    answer:
+      "Common pediatric cardiovascular conditions include congenital heart defects, arrhythmias, and heart murmurs.",
+  },
+  {
+    id: 2,
+    question: "How are pediatric cardiovascular conditions diagnosed?",
+    answer:
+      "Pediatric cardiovascular conditions are often diagnosed through physical examinations, imaging tests like echocardiograms, and electrocardiograms (ECGs).",
+  },
+  {
+    id: 3,
+    question: "What is the treatment for pediatric cardiovascular conditions?",
+    answer:
+      "Treatment for pediatric cardiovascular conditions may involve medications, surgical procedures, or interventions such as catheterization.",
+  },
+  {
+    id: 4,
+    question: "What are common dermatological conditions in children?",
+    answer:
+      "Common dermatological conditions in children include eczema, acne, impetigo, and fungal infections.",
+  },
+  {
+    id: 5,
+    question: "How can pediatric dermatological conditions be managed?",
+    answer:
+      "Management of pediatric dermatological conditions may involve topical medications, oral medications, and lifestyle modifications.",
+  },
+];

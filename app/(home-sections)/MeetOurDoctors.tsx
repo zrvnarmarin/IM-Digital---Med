@@ -10,21 +10,21 @@ import { generateUrlFromFullName } from "../utils";
 
 export default function MeetOurDoctors() {
   return (
-    <section className="flex h-full flex-col lg:flex-col w-full pt-12 pb-16 px-7 bg-[#eff3fa]">
-      <h2 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+    <section className="flex h-full flex-col lg:flex-col w-full pt-12 pb-16 px-7 md:px-10 lg:px-20 bg-[#eff3fa]">
+      <h2 className="text-start text-2xl md:text-3xl lg:text-4xl  text-[#2a2f31] font-semibold leading-2">
         Meet Our Doctor Specialists
       </h2>
-      <p className="text-[#555f60] text-start text-sm pt-4">
+      <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
         Clinical Research Training and Medical Education · Critical Care
         Medicine Additional NIH Doctors/Researchers
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-12">
         {doctors.map((doctor) => (
           <DoctorCard doctor={doctor} key={doctor.name} />
         ))}
       </div>
       <div>
-      <div className="flex justify-center pt-16">
+      <div className="flex justify-center pt-12">
         <Link href={`/our-team`} className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Meet The Rest</Link>
       </div>
       </div>
@@ -49,7 +49,7 @@ export function DoctorCard({ doctor }: { doctor: DoctorType }) {
         <p className="text-center text-md md:text-lg lg:text-xl font-semibold pt-2">
           {doctor.name}
         </p>
-        <p className="text-center text-sm md:text-md lg:text-lg font-medium">
+        <p className="text-center text-sm md:text-md lg:text-lg font-base">
           {doctor.specialisation}
         </p>
         <div className="flex flex-row gap-2 items-center justify-center pt-4">

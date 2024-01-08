@@ -18,7 +18,7 @@ export default function WhyPeopleChooseUs() {
           optio necessitatibus, deleniti voluptates veritatis aspernatur
           similique.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
           {whyChooseUsPoints.map((point) => (
             <ServiceCard key={point.point} point={point} />
           ))}
@@ -32,14 +32,14 @@ export function ServiceCard({ point }: { point: WhyChooseUsPoint }) {
   return (
     <div
       key={point.id}
-      className={`flex flex-col rounded items-center bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:cursor-pointer hover:scale-105 hover:bg-slate-500 hover:text-white duration-300`}
+      className={`flex flex-col rounded items-center bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300`}
     >
       <div
         className={`flex items-center justify-center  w-fit h-fit p-2 rounded-full bg-slate-300 duration-300`}
       >
         {point?.icon()}
       </div>
-      <h2 className="w-full text-start text-md md:text-lg font-semibold pt-4">
+      <h2 className="w-full text-center text-md md:text-lg font-semibold pt-4">
         {point.point}
       </h2>
       <p className="text-start w-full text-sm md:text-md font-normal pt-2">

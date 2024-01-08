@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import StatsSection from './(home-sections)/StatsSection'
 import { Sidebar } from './layout'
 import ListSection from './(home-sections)/ListSection'
+import ServicesSection from './(home-sections)/ServicesSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <WhyPeopleChooseUs />
       <ListSection />
       {/* <StatsSection /> */}
+      <ServicesSection />
       <MeetOurDoctors />
       <FAQSection />
       <Footer />

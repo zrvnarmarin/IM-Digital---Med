@@ -29,3 +29,16 @@ export type WhyChooseUsPoint = {
   point: string,
   description: string
 }
+
+export type ListItemType = {
+  id: number;
+  // icon: () => JSX.Element;
+  title: string;
+  description: string;
+};
+
+export type FAQType = {
+  id: number;
+  question: string;
+  answer: string
+}
