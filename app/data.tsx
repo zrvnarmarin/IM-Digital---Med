@@ -257,3 +257,84 @@ export const homePageFAQ = [
       "Management of pediatric dermatological conditions may involve topical medications, oral medications, and lifestyle modifications.",
   },
 ];
+
+export const coreValues = [
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+];
+
+export const missionItems = [
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+];
+
+export const advantages = [
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+  {
+    icon: IconsEightTestIcon,
+    value: "Transparency",
+    description:
+      "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
+  },
+];

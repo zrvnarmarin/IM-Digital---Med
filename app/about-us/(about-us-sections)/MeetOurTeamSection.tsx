@@ -6,14 +6,23 @@ import TestImage from "../../../public/doctor-operating.avif";
 
 export default function MeetOurTeamSection() {
   return (
-    <section className="flex gap-4 h-full flex-col lg:flex-row pb-12 px-8 pt-4">
-      <p className="relative z-10 text-xl uppercase font-bold">Meet Our Team</p>
-      <p className="text-sm text-slate-500 pt-1">
+    <section className="flex gap-4 h-full flex-col lg:flex-col pb-12 px-7 md:px-20 lg:px-24 pt-8">
+      <div className="flex flex-col items-center gap-2 relative">
+        <p className="text-9xl text-slate-200 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
+          04
+        </p>
+        <div className="relative z-10 text-start text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold uppercase leading-2">
+          Meet Our Team
+        </div>
+      </div>
+
+      <p className="text-sm md:text-md font-normal pt-12">
         We are very proud of our team that has a shared vision of delivering the
         high-quality results, as well as ensuring the overall positive working
         atmosphere.
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         {doctors.map((doctor) => (
           <Card
             key={doctor.id}
@@ -22,6 +31,12 @@ export default function MeetOurTeamSection() {
             doctorSpecialisation={doctor.specialisation}
           />
         ))}
+      </div>
+
+      <div className="flex justify-center pt-8 pb-8">
+        <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">
+          Meet The Rest 
+        </button>
       </div>
     </section>
   );
