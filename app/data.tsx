@@ -84,6 +84,7 @@ export const medicalServices = [
   {
     id: 1,
     icon: IconsEightTestIcon,
+    href: 'cardiac-proccedures',
     serviceTitle: "Cardiac Procedures",
     shortDescription:
       "Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.",
@@ -104,6 +105,7 @@ export const medicalServices = [
   {
     id: 2,
     icon: IconsEightTestIcon,
+    href: 'pediactric-telemedicine-consultations',
     serviceTitle: "Pediatric Telemedicine Consultations",
     shortDescription:
       "Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.",
@@ -124,6 +126,7 @@ export const medicalServices = [
   {
     id: 3,
     icon: IconsEightTestIcon,
+    href: 'laser-therapy-for-scar-reduction',
     serviceTitle: "Laser Therapy for Scar Reduction",
     shortDescription:
       "Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.",
@@ -144,6 +147,7 @@ export const medicalServices = [
   {
     id: 4,
     icon: IconsEightTestIcon,
+    href: 'joint-replacement-surgeries',
     serviceTitle: "Joint Replacement Surgeries",
     shortDescription:
       "Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.",

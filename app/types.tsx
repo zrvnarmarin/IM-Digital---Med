@@ -13,6 +13,7 @@ export type DoctorType = {
 
 export type ServiceType = {
   id: number;
+  href: string;
   icon: () => JSX.Element;
   serviceTitle: string;
   shortDescription: string;

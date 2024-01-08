@@ -31,7 +31,7 @@ export default function MeetOurTeamSection() {
 export function DoctorCard({ service }: { service: ServiceType }) {
 
   return (
-    <Link href={`/services/${service.serviceTitle}`} className="card bg-slate-500/5">
+    <Link href={`/services/${service.href}`} className="card bg-slate-500/5">
       <div className="layer"></div>
       <div className="content">
         <div className="image">
