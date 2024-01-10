@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/app/(home-sections)/Navbar";
 import Footer from "@/app/components/Footer";
-import { medicalServices } from "@/app/data";
+import { medicalServices, homePageFAQ } from "@/app/data";
 import HeroSection from "./(service-sections)/HeroSection";
-import { Accordion } from "@/app/(home-sections)/FAQSection";
+import { Accordion } from "@/app/components/Accordion";
 import TestImage from "../../../public/someDoctorImage.avif";
 
 export default function Page({ params }: { params: { serviceTitle: string } }) {
@@ -57,7 +57,7 @@ export default function Page({ params }: { params: { serviceTitle: string } }) {
               koja metoda najbolje odgovara Vašoj situaciji i potrebama
             </p>
             <h2>Moglo bi Vas zanimati:</h2>
-            <Accordion />
+            <Accordion faq={homePageFAQ} />
             <div className="bg-slate-200">
               <h2>Pogledajte naše transformacije zubnim krunicama:</h2>
               <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

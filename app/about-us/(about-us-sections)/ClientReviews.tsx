@@ -1,7 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import TestImage from "../../../public/doctorOperating.jpg";
-import HospitalImage from "../../../public/HospitalImage.jpg";
+import TestImageTwo from '../../../public/FAQ-section/doctor.png'
+import TestImageThree from '../../../public/HospitalImage.jpg'
+import '../../../public/carousel.css'
 
 export default function ClientReviews() {
   return (
@@ -12,8 +16,82 @@ export default function ClientReviews() {
         </p>
         <div className="relative z-10 text-start text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold uppercase leading-2">
           Client Reviews
+          {/* To DO: dodaj carousel koji ce imati kartice testimoniala u stilu doctors kartica */}
         </div>
       </div>
     </section>
   );
 }
+
+// const Carousel = ({
+//   slides,
+//   interval = 3000,
+// }: {
+//   slides: any;
+//   interval: number;
+// }) => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+
+//   useEffect(() => {
+//     const autoplayInterval = setInterval(() => {
+//       const nextSlide = (currentSlide + 1) % slides.length;
+//       setCurrentSlide(nextSlide);
+//     }, interval);
+
+//     return () => clearInterval(autoplayInterval);
+//   }, [currentSlide, interval, slides.length]);
+
+//   const goToSlide = (index: number) => {
+//     setCurrentSlide(index);
+//   };
+
+//   return (
+//     <div className="carousel">
+//       <div className="slides-container">
+//         {slides.map((slide: number, index: number) => (
+//           <div
+//             key={index}
+//             className={`slide ${index === currentSlide ? "active" : ""}`}
+//           >
+//             {slide}
+//           </div>
+//         ))}
+//       </div>
+//       <div className="controls">
+//         {slides.map((_, index: number) => (
+//           <button
+//             key={index}
+//             onClick={() => goToSlide(index)}
+//             className={index === currentSlide ? "active" : ""}
+//           >
+//             {index + 1}
+//           </button>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// const slides = [
+//   <Image
+//     className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
+//     src={TestImage}
+//     alt="Card Background"
+//     width={0}
+//     height={0}
+//   />,
+//   <Image
+//     className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
+//     src={TestImageTwo}
+//     alt="Card Background"
+//     width={0}
+//     height={0}
+//   />,
+//   <Image
+//     className="object-cover w-full h-54 md:h-72 lg:h-80 xl:h-96 transition duration-300 ease-in-out transform group-hover:scale-105"
+//     src={TestImageThree}
+//     alt="Card Background"
+//     width={0}
+//     height={0}
+//   />,
+// ];

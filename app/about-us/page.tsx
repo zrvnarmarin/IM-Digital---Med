@@ -20,7 +20,7 @@ export default function Page() {
       <OurFoundingStory />
       <MeetOurTeamSection />
       <AdvantagesSection />
-      <ClientReviews />
+      {/* <ClientReviews /> */}
       <MoreTextSection />
       <FinalSection />
       <Footer />
