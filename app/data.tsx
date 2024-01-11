@@ -260,24 +260,28 @@ export const homePageFAQ = [
 
 export const coreValues = [
   {
+    id: 1,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 2,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 3,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 4,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
@@ -287,24 +291,28 @@ export const coreValues = [
 
 export const missionItems = [
   {
+    id: 1,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 2,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 3,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 4,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
@@ -314,24 +322,28 @@ export const missionItems = [
 
 export const advantages = [
   {
+    id: 1,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 2,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 3,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
+    id: 4,
     icon: IconsEightTestIcon,
     value: "Transparency",
     description:

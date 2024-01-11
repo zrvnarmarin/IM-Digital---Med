@@ -31,7 +31,7 @@ export default function WhatSetUsApartSection() {
             </h2>
             <p>
                 Our team comprises experienced healthcare professionals, from skilled doctors to
-                compassionate support staff. Rest assured, you're in capable hands.
+                compassionate support staff. Rest assured, you`&lsquo;`re in capable hands.
             </p>
         </li>
       </ul>

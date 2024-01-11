@@ -15,7 +15,7 @@ export default function CoreValuesAndMissionSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
         {coreValues.map((value) => (
-          <div className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
+          <div key={value.id} className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
             {value.icon()}
             <h2 className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
               {value.value}
@@ -38,7 +38,7 @@ export default function CoreValuesAndMissionSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
         {missionItems.map((value) => (
-          <div className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
+          <div key={value.id} className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
             {value.icon()}
             <h2 className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
               {value.value}

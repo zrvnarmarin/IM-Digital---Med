@@ -17,7 +17,7 @@ export default function HeroSection() {
             {/* Hero Content (Add your text and buttons here) */}
             <div className="absolute inset-0 flex flex-col items-center justify-end text-white text-center pt-64">
               <p className="text-xs italic pb-4 px-4 text-start w-full">
-                "Health is always worth fighting for."
+              `&quot;`Health is always worth fighting for.`&quot;`
               </p>
               <div className="bg-slate-700/90 text-3xl text-start font-bold mb-4 px-4 w-full py-3 border-slate-500 border">
                 <h1>About Us</h1>
