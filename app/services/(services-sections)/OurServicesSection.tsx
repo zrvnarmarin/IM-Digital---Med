@@ -40,8 +40,9 @@ export function DoctorCard({ doctor }: { doctor: DoctorType }) {
       <div className="layer"></div>
       <div className="content">
         <div className="image">
-          <img
-            width="100%"
+          <Image
+            width={500}
+            height={500}
             src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
             alt={`j`}
           />

@@ -15,18 +15,9 @@ export default function FAQSection() {
         A frequently asked questions (FAQ) forum is often used in articles and
         online forums where common questions tend to recur.
       </p>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 pt-8">
-        <Accordion faq={homePageFAQ} />
-        <div className="flex items-center justify-center bg-black">
-          <Image
-            src={DoctorImage}
-            alt="Open Accordion Button"
-            height={100}
-            width={400}
-            className="object-cover w-full h-96 "
-          />
+        <div className="px-48">
+          <Accordion faq={homePageFAQ} />
         </div>
-      </div>
     </section>
   );
 }

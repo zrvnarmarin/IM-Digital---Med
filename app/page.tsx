@@ -14,24 +14,10 @@ import '../public/carousel.css'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
+    <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
       <Navbar />
       <HeroSection />
       <WhyPeopleChooseUs />
-      <section className='container'>
-        <div className='slider-wrapper'>
-          <div className='slider'>
-            <img id='slide-1' src={TestImage} />
-            <img id='slide-2' src={TestImage} />
-            <img id='slide-3' src={TestImage} />
-          </div>
-          <div className='slider-nav'>
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-          </div>
-        </div>
-      </section>
       <ListSection />
       {/* <StatsSection /> */}
       <ServicesSection />

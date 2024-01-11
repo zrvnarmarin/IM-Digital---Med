@@ -10,7 +10,7 @@ export default function HeroSection({
   shortServiceDescription: string;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center lg:pt-4 md:px-8 lg:px-24 pb-4">
+    <section className="flex flex-col items-center justify-center pb-4">
       <section className="flex">
         <div className="min-h-screen w-full">
           {/* Hero Section */}
