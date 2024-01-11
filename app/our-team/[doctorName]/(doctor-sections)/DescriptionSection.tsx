@@ -5,25 +5,27 @@ import { BookIcon, SthetoscopeIcon } from "@/public/Icons";
 
 export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-24 lg:pt-4 md:px-8 lg:px-24 pb-4">
+    <section className="flex flex-col items-center justify-center gap-24 pb-12 px-6 xs:px-12 sm:px-16 md:px-28 lg:px-48">
       <div className="flex flex-col gap-4">
-        <h1 className="text-[#333333] font-medium text-2xl lg:text-5xl">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold leading-2">
           {doctor.name}, dr.med.dent.
         </h1>
         <div className="flex items-center gap-2">
-          <p className="text-[#656666] text-md font-semibold lg:text-lg">
+          <p className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
             {doctor.specialisation}
           </p>
         </div>
-        <p className="text-[#656666]  lg:text-lg">{doctor.description}</p>
-        <h3 className="text-[#656666] text-md font-semibold lg:text-lg">
+        <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
+          {doctor.description}
+        </p>
+        <h3 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
           Achievements:{" "}
         </h3>
         <ul>
           {doctor.achievements.map((achievement) => (
             <li
               key={achievement}
-              className="text-[#656666] flex flex-row gap-2 lg:text-xl"
+              className="flex flex-row gap-4 text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4"
             >
               <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
                 {SthetoscopeIcon()}
@@ -32,20 +34,24 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
             </li>
           ))}
         </ul>
-        <h3 className="text-[#656666] text-md font-semibold lg:text-lg">
+        <h3 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
           Education:{" "}
         </h3>
-        <div className="flex flex-row gap-2">
-          <p className="text-[#656666] flex flex-row gap-2 lg:text-xl">
+        <div className="flex flex-row md:flex-col gap-4 pt-4">
+          <div className="flex flex-row md:flex-col gap-4 text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
             <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
               {BookIcon()}
             </span>
-            {doctor.education}
-          </p>
+            <p>{doctor.education}</p>
+          </div>
         </div>
       </div>
-      <Link href={`/contact`} className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">Contact Us</Link>
-
+      <Link
+        href={`/contact`}
+        className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border"
+      >
+        Contact Us
+      </Link>
     </section>
   );
 }

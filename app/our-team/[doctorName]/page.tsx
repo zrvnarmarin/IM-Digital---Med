@@ -9,10 +9,10 @@ export default function Page({ params }: { params: { doctorName: string } }) {
   const doctor = doctors.find((doctor) => doctor.href === params.doctorName);
 
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-white">
+    <main className="flex min-h-screen flex-col items-center bg-white">
       <Navbar />
       {doctor ? (
-        <section className="h-full grid grid-cols-1 lg:grid-cols-2 gap-16 py-16 px-8 md:px-12 lg:px-24 bg-white">
+        <section className="h-full grid grid-cols-1 gap-16 bg-white">
           <HeroSection
             doctorName={doctor.name}
             doctorSpecialisation={doctor.specialisation}

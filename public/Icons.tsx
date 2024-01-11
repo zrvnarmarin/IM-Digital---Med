@@ -211,8 +211,8 @@ export const BookIcon = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="16.000000pt"
-      height="16.000000pt"
+      width="12.000000pt"
+      height="12.000000pt"
       viewBox="0 0 32.000000 32.000000"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -243,8 +243,8 @@ export const SthetoscopeIcon = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="16.000000pt"
-      height="16.000000pt"
+      width="12.000000pt"
+      height="12.000000pt"
       viewBox="0 0 32.000000 32.000000"
       preserveAspectRatio="xMidYMid meet"
     >
