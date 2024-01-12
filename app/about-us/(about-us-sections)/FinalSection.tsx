@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function FinalSection() {
   return (
@@ -12,9 +13,9 @@ export default function FinalSection() {
         </h2>
       </div>
       <div className="flex justify-center py-4">
-        <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">
+        <Link href={`/contact`} className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">
           Contact Us 
-        </button>
+        </Link>
       </div>
     </section>
   );

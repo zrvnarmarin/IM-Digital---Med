@@ -15,7 +15,7 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
             {doctor.specialisation}
           </p>
         </div>
-        <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
+        <p className="text-start w-full text-sm md:text-md font-normal">
           {doctor.description}
         </p>
         <h3 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
@@ -25,7 +25,7 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
           {doctor.achievements.map((achievement) => (
             <li
               key={achievement}
-              className="flex flex-row gap-4 text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4"
+              className="flex flex-row gap-4 text-start w-full text-sm md:text-md font-normal"
             >
               <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
                 {SthetoscopeIcon()}
@@ -38,7 +38,7 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
           Education:{" "}
         </h3>
         <div className="flex flex-row md:flex-col gap-4 pt-4">
-          <div className="flex flex-row md:flex-col gap-4 text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
+          <div className="flex flex-row md:flex-col gap-4 text-start w-full text-sm md:text-md font-normal">
             <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
               {BookIcon()}
             </span>

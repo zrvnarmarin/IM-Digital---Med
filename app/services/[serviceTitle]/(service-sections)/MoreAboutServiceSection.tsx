@@ -4,7 +4,7 @@ import ElectricityIcon from "../../../../public/ElectricityIcon.png";
 
 export default function MoreAboutServiceSection() {
   return (
-    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
+    <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
       <h1 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
         Some Heading
       </h1>
