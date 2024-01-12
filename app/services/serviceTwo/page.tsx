@@ -22,7 +22,7 @@ export default function Page() {
 
       <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
         <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-          <span className="font-bold text-orange-500">
+          <span className="font-bold text-cyan-500">
             Service short description{" "}
           </span>
           Service short description Service short
@@ -213,7 +213,7 @@ export default function Page() {
       </section>
 
       <section className="flex gap-2 h-full flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           <Image
             width={200}
             height={200}
@@ -302,26 +302,31 @@ export default function Page() {
         <Accordion faq={homePageFAQ} />
       </section>
 
-      <section className="flex items-center justify-center gap-2 h-full flex-col sm:flex-row py-12 px-6 md:px-8 lg:px-24 bg-slate-200 border-2 border-slate-400">
+      <section className="flex flex-col items-center justify-center gap-2 py-12 px-6 md:px-8 lg:px-24 bg-slate-200 border-[1px] border-slate-400">
         <p className="text-start w-full text-sm md:text-md font-normal bg-slate-100 p-4 border border-slate-200 rounded-md mt-4">
-          Parodontoza je podmukla bolest desni koju je na početku lako
-          ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog izostanka
-          odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
-          dolazi do nezaustavljivog gubitka tkiva koje podržava zube.
-          <br />
-          <br />
-          Parodontoza je podmukla bolest desni koju je na početku lako
-          ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog izostanka
-          odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
-          dolazi do nezaustavljivog gubitka tkiva koje podržava zube.
+          Parodontoza je{" "}
+          <span className="font-bold">podmukla bolest desni</span> koju je na
+          početku lako ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog
+          izostanka
         </p>
-        <Image
-            width={200}
-            height={200}
-            src={TeamOfDoctors}
-            alt="Hero Image"
-            className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
-          />
+        <div className="grid grid-cols-2">
+          <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
+            1
+          </p>
+          <ListItem listItem={listItems[1]} />
+        </div>
+        <div className="grid grid-cols-2">
+          <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
+            2
+          </p>
+          <ListItem listItem={listItems[1]} />
+        </div>
+        <div className="grid grid-cols-2">
+          <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
+            3
+          </p>
+          <ListItem listItem={listItems[1]} />
+        </div>
       </section>
 
       <section className="w-full flex flex-col gap-4 mt-4 mb-12 py-4 px-7 md:px-16 lg:px-20 bg-slate-100 border border-slate-200">
