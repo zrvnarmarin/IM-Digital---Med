@@ -245,22 +245,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* <section className="flex gap-2 w-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-        <p className="text-start w-full text-sm md:text-md font-normal border-l-2 border-slate-200 pl-2">
-          When it gets stuck with a different service provider, we're here to
-          step-in and help make your instrument get licensed and linguistically
-          validated in time for regulatory and ethics submission and approval.
-        </p>
-        <p className="text-start w-full text-sm md:text-md font-normal border-l-2 border-slate-200 pl-2">
-          When it gets stuck with a different service provider, we're here to
-          step-in and help make your instrument get licensed and linguistically
-          validated in time for regulatory and ethics submission and approval.
-          When it gets stuck with a different service provider, we're here to
-          step-in and help make your instrument get licensed and linguistically
-          validated in time for regulatory and ethics submission and approval.
-        </p>
-      </section> */}
-
       <section className="flex flex-col gap-8 pb-16 px-7 md:px-16 lg:px-20 bg-white">
         <h1 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
           Lorem Ipsum Dolor Sit Garum
@@ -309,19 +293,19 @@ export default function Page() {
           početku lako ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog
           izostanka
         </p>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
             1
           </p>
           <ListItem listItem={listItems[1]} />
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
             2
           </p>
           <ListItem listItem={listItems[1]} />
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <p className="flex items-center justify-center font-bold text-7xl text-cyan-500 bg-gradient-to-r from-cyan-500/20 to-blue-500/20">
             3
           </p>

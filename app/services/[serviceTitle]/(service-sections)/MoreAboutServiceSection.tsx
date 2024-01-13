@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ElectricityIcon from "../../../../public/ElectricityIcon.png";
+import TeamOfDoctors from '../../../../public/TeamOfDoctors.jpg'
 
 export default function MoreAboutServiceSection() {
   return (
@@ -9,9 +10,39 @@ export default function MoreAboutServiceSection() {
         Some Heading
       </h1>
       <p className="text-sm md:text-md font-normal pt-1">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
+        Lorem ipsum <span className="font-bold">dolor sit amet consectetur</span>, adipisicing elit. Blanditiis,
         quibusdam Lorem lorem lorem lorem lorem.
       </p>
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <Image
+          width={200}
+          height={200}
+          src={TeamOfDoctors}
+          alt="Hero Image"
+          className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
+        />
+        <Image
+          width={200}
+          height={200}
+          src={TeamOfDoctors}
+          alt="Hero Image"
+          className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
+        />
+        <Image
+          width={200}
+          height={200}
+          src={TeamOfDoctors}
+          alt="Hero Image"
+          className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
+        />
+        <Image
+          width={200}
+          height={200}
+          src={TeamOfDoctors}
+          alt="Hero Image"
+          className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
+        />
+      </div>
       <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
         Some List Heading
       </p>
