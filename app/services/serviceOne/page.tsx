@@ -10,6 +10,9 @@ import { listItems } from "@/app/data";
 import ListTestImage from "../../../public/listSectionIMageTest.avif";
 import { Accordion } from "@/app/components/Accordion";
 import { homePageFAQ } from "@/app/data";
+import FirstSection from "./(service-one-sections)/FirstSection";
+import SecondSection from "./(service-one-sections)/SecondSection";
+import ThirdSection from "./(service-one-sections)/ThirdSection";
 
 export default function Page() {
   return (
@@ -19,84 +22,9 @@ export default function Page() {
         serviceTitle="Service Title Number One"
         shortServiceDescription="This is service one description"
       />
-
-      <section className="flex gap-2 h-full flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-        <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident,
-          vitae!
-        </p>
-        <div className="grid grid-cols-1 xs:grid-cols-2 gap-12">
-          <Image
-            width={0}
-            height={0}
-            src={TeamOfDoctors}
-            alt="Hero Image"
-            className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
-          />
-          <Image
-            width={0}
-            height={0}
-            src={TeamOfDoctors}
-            alt="Hero Image"
-            className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
-          />
-        </div>
-        <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-          Lorem ipsum, dolor sit amet consectetur
-        </p>
-      </section>
-
-      <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-        <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-          Service short description
-        </p>
-        <p className="text-start w-full text-sm md:text-md font-normal bg-slate-100 p-4 border border-slate-200 rounded-md mt-4">
-          Parodontoza je podmukla bolest desni koju je na početku lako
-          ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog izostanka
-          odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
-          dolazi do nezaustavljivog gubitka tkiva koje podržava zube.
-        </p>
-        <p className="text-sm md:text-md font-normal pt-1">
-          Pravom ste mjestu: naš specijalist parodontologije detaljno će
-          pregledati Vaše zubno meso te u skladu s time dati preporuku za
-          odgovarajući tretman.
-        </p>
-      </section>
-
-      <section className="flex gap-2 w-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-        <div className="flex flex-col sm:flex-row gap-12">
-          <div className="flex-col gap-12">
-            <div className="flex flex-col gap-4">
-              <p className="text-start w-full text-sm md:text-md font-normal">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                cum!
-              </p>
-              <Image
-                width={0}
-                height={0}
-                src={TeamOfDoctors}
-                alt="Hero Image"
-                className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
-              />
-            </div>
-          </div>
-          <div className="flex-col">
-            <div className="flex flex-col gap-4">
-              <p className="text-start w-full text-sm md:text-md font-normal">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                cum!
-              </p>
-              <Image
-                width={0}
-                height={0}
-                src={TeamOfDoctors}
-                alt="Hero Image"
-                className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
 
       <section className="flex gap-2 w-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
         <div className="flex justify-center">
