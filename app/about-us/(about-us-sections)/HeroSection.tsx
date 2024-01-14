@@ -2,30 +2,27 @@ import React from "react";
 import Image from "next/image";
 import HeroImage from "../../../public/jc-gellidon-9Eb-bpTXglM-unsplash.jpg";
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center lg:pt-4 md:px-8 lg:px-24 pb-4">
-      <section className="flex">
-        <div className="min-h-screen w-full">
-          {/* Hero Section */}
-          <div className="relative h-screen md:h-auto bg-black">
-            <Image
-              src={HeroImage}
-              alt="Hero Image"
-              className="object-cover w-full h-full md:h-auto opacity-60 bg-black"
-            />
-            {/* Hero Content (Add your text and buttons here) */}
-            <div className="absolute inset-0 flex flex-col items-center justify-end text-white text-center pt-64">
-              <p className="text-xs italic pb-4 px-4 text-start w-full">
-              `&quot;`Health is always worth fighting for.`&quot;`
-              </p>
-              <div className="bg-slate-700/90 text-3xl text-start font-bold mb-4 px-4 w-full py-3 border-slate-500 border">
-                <h1>About Us</h1>
-              </div>
-            </div>
-          </div>
+    <section className="relative w-full h-screen">
+      {/* Background Image */}
+      <Image
+        src={HeroImage}
+        alt="Hero Image"
+        className="object-cover w-full h-full"
+      />
+
+      {/* Text Overlay */}
+      <div className="absolute bottom-4 lg:bottom-4 left-0 right-0 w-full flex flex-col items-center justify-center text-white text-center">
+        <p className="text-xs italic pb-4 px-4 text-start w-full">
+          `&quot;`Health is always worth fighting for.`&quot;`
+        </p>
+        <div className="bg-slate-700/90 text-3xl text-start font-bold mb-4 px-4 w-full py-3 border-slate-500 border-y-[1px]">
+          <h1>About Us</h1>
         </div>
-      </section>
+      </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

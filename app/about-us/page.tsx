@@ -13,7 +13,7 @@ import ClientReviews from "./(about-us-sections)/ClientReviews";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
+    <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
       <Navbar />
       <HeroSection />
       <CoreValuesAndMissionSection />

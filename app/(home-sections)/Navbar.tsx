@@ -29,9 +29,9 @@ export default function Navbar() {
             <Link href={"/our-team"}>Our Team</Link>
           </li>
           <div>
-            <button className="hidden lg:block text-white text-md font-normal uppercase leading-7 bg-slate-600/90 hover:scale-105 duration-100 px-8 py-1 border-slate-500 border rounded-md">
+            <Link href='/contact' className="hidden lg:block text-white text-md font-normal uppercase leading-7 bg-slate-600/90 hover:scale-105 duration-100 px-8 py-1 border-slate-500 border rounded-md">
               Contact
-            </button>
+            </Link>
           </div>
         </ul>
         <div className="block lg:hidden">
