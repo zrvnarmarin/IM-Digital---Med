@@ -35,7 +35,7 @@ export default function Navbar() {
           </div>
         </ul>
         <div className="block lg:hidden">
-          <button className="flex flex-col gap-1 items-end">
+          <button className="flex flex-col gap-1 items-end bg-slate-700/90">
             <div className="w-7 rounded-md h-[2.5px] bg-[#FFFFFF]"></div>
             <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
             <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
