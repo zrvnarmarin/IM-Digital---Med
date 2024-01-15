@@ -42,7 +42,7 @@ export function Accordion({ faq } : { faq: FAQType[] }) {
     return (
       <div onClick={onShow} className="cursor-pointer">
         <div className={`flex items-center justify-between gap-6 py-4 ${!isActive ? 'border-b-[1px] border-slate-200' : 'border-none'}border-b-[1px] px-12`}>
-          <h3 className={`text-md md:text-lg lg:text-lg font-medium hover:text-red-500`}>
+          <h3 className={`text-md md:text-lg lg:text-lg font-medium hover:text-[#7ed0ec]`}>
             {question}
           </h3>
           {isActive ? (

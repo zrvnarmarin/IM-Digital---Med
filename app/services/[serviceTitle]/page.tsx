@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { serviceTitle: string } }) {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-white">
+    <main className="flex min-h-screen flex-col items-center bg-white">
       <Navbar />
       {service ? (
         <main className="h-full bg-white">

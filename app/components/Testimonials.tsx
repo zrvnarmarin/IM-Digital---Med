@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import TestimonialImage from "../../public/HospitalImage.jpg";
 import { TestimonialType } from "../types";
@@ -23,11 +24,25 @@ export default function Testimonials() {
             <RightIcon />
           </button>
         </div>
-        <div className="flex flex-row justify-center pt-2 gap-2">
-          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
-          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
-          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
+        <div className="flex flex-row justify-center pt-6 gap-2">
+          <button className="hover:scale-105 duration-200 border-none p-0">
+            <HexagonIcon />
+          </button>
+          <button className="hover:scale-105 duration-200 border-none p-0">
+            <HexagonIcon />
+          </button>
+          <button className="hover:scale-105 duration-200 border-none p-0">
+            <HexagonIcon />
+          </button>
         </div>
+      </div>
+      <div className="flex justify-center pt-8">
+        <Link
+          href={`/`}
+          className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border"
+        >
+          Read More Stories
+        </Link>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import TestImage from "../../../public/doctorOperating.jpg";
 import HospitalImage from "../../../public/HospitalImage.jpg";
+import Testimonials from "@/app/components/Testimonials";
 
 export default function MoreTextSection() {
   return (
@@ -54,6 +55,9 @@ export default function MoreTextSection() {
           height={0}
           alt="hospital"
         />
+      </div>
+      <div>
+        <Testimonials />
       </div>
     </section>
   );
