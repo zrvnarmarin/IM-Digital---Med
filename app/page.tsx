@@ -6,7 +6,6 @@ import FAQSection from './(home-sections)/FAQSection'
 import Footer from './components/Footer'
 import ListSection from './(home-sections)/ListSection'
 import ServicesSection from './(home-sections)/ServicesSection'
-import '../public/carousel.css'
 import TestimonialsSection from './(home-sections)/TestimonialsSection'
 
 export default function Home() {
