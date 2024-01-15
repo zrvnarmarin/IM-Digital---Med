@@ -1,14 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import CloverImage from "../../../public/CloverImage.png";
 import { doctors } from "@/app/data";
 import { DoctorType } from "@/app/types";
 import { generateUrlFromFullName } from "@/app/utils";
-import { RightIcon } from "@/public/Icons";
+import { CloverIcon, RightIcon } from "@/public/Icons";
 import "../../../public/DoctorCard.css";
 import Testimonials from "@/app/components/Testimonials";
-import TestImage from "../../../public/HospitalImage.jpg";
 
 export default function MeetOurTeamSection() {
   return (
@@ -30,7 +27,9 @@ export default function MeetOurTeamSection() {
           <DoctorCard doctor={doctor} key={doctor.name} />
         ))}
       </div>
-      <Testimonials />
+      <div className="pt-16">
+        <Testimonials />
+      </div>
     </section>
   );
 }
@@ -61,7 +60,7 @@ export function DoctorCard({ doctor }: { doctor: DoctorType }) {
         <div className="flex flex-row items-center justify-center pt-4">
           <div className="text-xs flex items-start">
             <span>
-              <Image src={CloverImage} alt="clover" width={20} height={20} />
+              <CloverIcon />
             </span>
             <p>&ldquo;Health is always worth fighting for.&ldquo;</p>
           </div>

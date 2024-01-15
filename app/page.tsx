@@ -1,16 +1,13 @@
-import Image from 'next/image'
 import Navbar from './(home-sections)/Navbar'
 import HeroSection from './(home-sections)/HeroSection'
 import WhyPeopleChooseUs from './(home-sections)/WhyPeopleChooseUs'
 import MeetOurDoctors from './(home-sections)/MeetOurDoctors'
 import FAQSection from './(home-sections)/FAQSection'
 import Footer from './components/Footer'
-import StatsSection from './(home-sections)/StatsSection'
-import { Sidebar } from './layout'
 import ListSection from './(home-sections)/ListSection'
 import ServicesSection from './(home-sections)/ServicesSection'
-import TestImage from '../public/doctorOperating.jpg'
 import '../public/carousel.css'
+import TestimonialsSection from './(home-sections)/TestimonialsSection'
 
 export default function Home() {
   return (
@@ -19,9 +16,9 @@ export default function Home() {
       <HeroSection />
       <WhyPeopleChooseUs />
       <ListSection />
-      {/* <StatsSection /> */}
       <ServicesSection />
       <MeetOurDoctors />
+      <TestimonialsSection />
       <FAQSection />
       <Footer />
     </main>

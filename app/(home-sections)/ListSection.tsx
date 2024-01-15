@@ -8,7 +8,7 @@ import ListTestImage from '../../public/listSectionIMageTest.avif'
 export default function ListSection() {
   return (
     <section className="flex flex-col gap-8 pb-16 px-7 md:px-16 lg:px-20 bg-white">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl  text-[#2a2f31] font-semibold leading-2">
+      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Lorem Ipsum Dolor Sit Garum
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">

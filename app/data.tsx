@@ -1,5 +1,4 @@
 import { IconsEightTestIcon } from "@/public/Icons";
-import ElectricityIcon from '.../public/ElectricityIcon.png'
 
 export const doctors = [
   {

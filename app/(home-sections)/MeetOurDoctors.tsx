@@ -2,18 +2,17 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import "../../public/DoctorCard.css";
-import CloverImage from "../../public/CloverImage.png";
-import RightArrowImage from "../../public/RightIcon.png";
 import { doctors } from "../data";
 import { DoctorType } from "../types";
 import { generateUrlFromFullName } from "../utils";
+import { CloverIcon, RightIcon } from "@/public/Icons";
 
 export default function MeetOurDoctors() {
   return (
     <section className="flex h-full flex-col lg:flex-col w-full pt-12 pb-16 px-7 md:px-10 lg:px-20 bg-[#eff3fa]">
-      <h2 className="text-start text-2xl md:text-3xl lg:text-4xl  text-[#2a2f31] font-semibold leading-2">
+      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Meet Our Doctor Specialists
-      </h2>
+      </h1>
       <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
         Clinical Research Training and Medical Education · Critical Care
         Medicine Additional NIH Doctors/Researchers
@@ -53,12 +52,12 @@ export function DoctorCard({ doctor }: { doctor: DoctorType }) {
           {doctor.specialisation}
         </p>
         <div className="flex flex-row gap-2 items-center justify-center pt-4">
-          <Image src={CloverImage} alt="clover" width={15} height={15} />
+          <CloverIcon />
           <p className="text-xs ">&quot;Health is always worth fighting for.&quot;</p>
         </div>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
-          <Image src={RightArrowImage} alt="clover" width={15} height={15} />
+          <RightIcon />
         </div>
       </div>
     </Link>
