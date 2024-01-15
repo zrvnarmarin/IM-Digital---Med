@@ -6,7 +6,7 @@ import HeroSection from './(our-team-sections)/HeroSection'
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-white">
+    <main className="flex min-h-screen flex-col items-center bg-white">
       <Navbar />
       <HeroSection />
       <MeetOurTeamSection />

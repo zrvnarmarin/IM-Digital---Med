@@ -42,3 +42,10 @@ export type FAQType = {
   question: string;
   answer: string
 }
+
+export type TestimonialType = {
+  id: number;
+  testimonial: string;
+  personFullName: string;
+  personOccupation: string;
+}

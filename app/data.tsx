@@ -350,3 +350,24 @@ export const advantages = [
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
 ];
+
+export const testimonials= [
+  // {
+  //   id: 1,
+  //   testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   personFullName: "John Doe",
+  //   personOccupation: "Software Engineer",
+  // },
+  // {
+  //   id: 2,
+  //   testimonial: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   personFullName: "Jane Smith",
+  //   personOccupation: "Marketing Specialist",
+  // },
+  {
+    id: 3,
+    testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex Johnson",
+    personOccupation: "Graphic Designer",
+  },
+];

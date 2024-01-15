@@ -1,12 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import CloverImage from "../../../public/CloverImage.png";
-import RightArrowImage from "../../../public/RightIcon.png";
-import "../../../public/DoctorCard.css";
-import Link from "next/link";
 import { doctors } from "@/app/data";
 import { DoctorType } from "@/app/types";
 import { generateUrlFromFullName } from "@/app/utils";
+import { RightIcon } from "@/public/Icons";
+import "../../../public/DoctorCard.css";
+import Testimonials from "@/app/components/Testimonials";
+import TestImage from "../../../public/HospitalImage.jpg";
 
 export default function MeetOurTeamSection() {
   return (
@@ -28,15 +30,19 @@ export default function MeetOurTeamSection() {
           <DoctorCard doctor={doctor} key={doctor.name} />
         ))}
       </div>
+      <Testimonials />
     </section>
   );
 }
 
 export function DoctorCard({ doctor }: { doctor: DoctorType }) {
-  const lowerCaseDoctorName = generateUrlFromFullName(doctor.name)
+  const lowerCaseDoctorName = generateUrlFromFullName(doctor.name);
 
   return (
-    <Link href={`/our-team/${lowerCaseDoctorName}`} className="card bg-slate-500/5">
+    <Link
+      href={`/our-team/${lowerCaseDoctorName}`}
+      className="card bg-slate-500/5"
+    >
       <div className="layer"></div>
       <div className="content">
         <div className="image">
@@ -52,15 +58,17 @@ export function DoctorCard({ doctor }: { doctor: DoctorType }) {
         <p className="text-center text-sm md:text-md lg:text-lg font-medium">
           {doctor.specialisation}
         </p>
-        <div className="flex flex-row gap-2 items-center justify-center pt-4">
-          <Image src={CloverImage} alt="clover" width={15} height={15} />
-          <p className="text-xs ">
-            &ldquo;Health is always worth fighting for.&ldquo;
-          </p>
+        <div className="flex flex-row items-center justify-center pt-4">
+          <div className="text-xs flex items-start">
+            <span>
+              <Image src={CloverImage} alt="clover" width={20} height={20} />
+            </span>
+            <p>&ldquo;Health is always worth fighting for.&ldquo;</p>
+          </div>
         </div>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
-          <Image src={RightArrowImage} alt="clover" width={15} height={15} />
+          <RightIcon />
         </div>
       </div>
     </Link>
