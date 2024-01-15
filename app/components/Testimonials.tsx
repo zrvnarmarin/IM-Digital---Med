@@ -3,6 +3,7 @@ import Image from "next/image";
 import TestimonialImage from "../../public/HospitalImage.jpg";
 import { TestimonialType } from "../types";
 import { testimonials } from "./../data";
+import { RightIcon } from "@/public/Icons";
 
 export default function Testimonials() {
   return (
@@ -10,9 +11,17 @@ export default function Testimonials() {
       <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Testimonials
       </h1>
-      {testimonials.map((testimonial) => (
-        <Testimonial key={testimonial.id} testimonialData={testimonial} />
-      ))}
+      <div className="flex-row flex gap-2 items-center">
+          <div>
+              <RightIcon />
+          </div>
+          {testimonials.map((testimonial) => (
+            <Testimonial key={testimonial.id} testimonialData={testimonial} />
+          ))}
+          <div>
+              <RightIcon />
+          </div>
+      </div>
     </section>
   );
 }
