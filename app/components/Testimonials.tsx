@@ -3,7 +3,7 @@ import Image from "next/image";
 import TestimonialImage from "../../public/HospitalImage.jpg";
 import { TestimonialType } from "../types";
 import { testimonials } from "./../data";
-import { RightIcon } from "@/public/Icons";
+import { RightIcon, HexagonIcon } from "@/public/Icons";
 
 export default function Testimonials() {
   return (
@@ -11,16 +11,23 @@ export default function Testimonials() {
       <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Testimonials
       </h1>
-      <div className="flex-row flex gap-2 items-center">
-        <button className="hidden md:block border-none p-0">
-          <RightIcon />
-        </button>
-        {testimonials.map((testimonial) => (
-          <Testimonial key={testimonial.id} testimonialData={testimonial} />
-        ))}
-        <button className="hidden md:block border-none p-0">
-          <RightIcon />
-        </button>
+      <div className="flex-row">
+        <div className="flex-row flex gap-2 items-center">
+          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
+            <RightIcon />
+          </button>
+          {testimonials.map((testimonial) => (
+            <Testimonial key={testimonial.id} testimonialData={testimonial} />
+          ))}
+          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
+            <RightIcon />
+          </button>
+        </div>
+        <div className="flex flex-row justify-center pt-2 gap-2">
+          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
+          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
+          <button className="hover:scale-105 duration-200"><HexagonIcon /></button>
+        </div>
       </div>
     </section>
   );

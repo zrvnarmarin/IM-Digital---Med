@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import CloverImage from "../../../public/CloverImage.png";
-import RightArrowImage from "../../../public/RightIcon.png";
 import "../../../public/DoctorCard.css";
 import Link from "next/link";
 import { medicalServices } from "@/app/data";
 import { ServiceType } from "@/app/types";
+import { RightIcon } from "@/public/Icons";
+import Testimonials from "@/app/components/Testimonials";
 
 export default function MedicalServiceCardsSection() {
   return (
@@ -15,7 +16,7 @@ export default function MedicalServiceCardsSection() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <p className="text-[#555f60] text-start text-sm pt-4">
-          Our doctor make the health workj for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Our doctor make the health work for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
           Incidunt aspernatur exercitationem dolorum maiores sint sequi ut, vero natus sapiente magnam!
         </p>
       </div>
@@ -23,6 +24,9 @@ export default function MedicalServiceCardsSection() {
         {medicalServices.map((service) => (
           <DoctorCard service={service} key={service.id} />
         ))}
+      </div>
+      <div className="pt-12">
+        <Testimonials />
       </div>
     </section>
   );
@@ -49,7 +53,7 @@ export function DoctorCard({ service }: { service: ServiceType }) {
         </p>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Learn More</p>
-          <Image src={RightArrowImage} alt="clover" width={15} height={15} />
+          <RightIcon />
         </div>
       </div>
     </Link>

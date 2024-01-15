@@ -378,3 +378,25 @@ export const CloverIcon = () => {
     </svg>
   );
 };
+
+export const HexagonIcon = () => {
+  return (
+    <svg
+      width="24px"
+      height="24px"
+      viewBox="-2.4 -2.4 28.80 28.80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_iconCarrier">
+        <path
+          fill="#567b9a"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12 0.5L18.6603 4.33013C19.5355 4.75546 20.215 5.72223 20.215 6.75V17.25C20.215 18.2778 19.5355 19.2445 18.6603 19.6699L12 23.5L5.33967 19.6699C4.46447 19.2445 3.785 18.2778 3.785 17.25V6.75C3.785 5.72223 4.46447 4.75546 5.33967 4.33013L12 0.5ZM12 2.24998L6.17989 6.25L3.785 8.43007V15.5699L6.17989 17.75L12 21.75L17.8201 17.75L20.215 15.5699V8.43007L17.8201 6.25L12 2.24998Z"
+        />
+        <circle cx="12" cy="12" r="4.5" fill="#7ed0ec" />
+      </g>
+    </svg>
+  );
+};
