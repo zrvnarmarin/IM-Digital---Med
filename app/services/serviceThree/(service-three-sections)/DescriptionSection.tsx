@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function IntroductorySection({ serviceShortDescription } : { serviceShortDescription: string }) {
+export default function DescriptionSection() {
   return (
-    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
+    <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
       <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-        {serviceShortDescription}
+        <span className="font-bold text-cyan-500"></span>Service short
+        description Service short
       </p>
       <p className="text-start w-full text-sm md:text-md font-normal bg-slate-100 p-4 border border-slate-200 rounded-md mt-4">
         Parodontoza je podmukla bolest desni koju je na početku lako ignorirati

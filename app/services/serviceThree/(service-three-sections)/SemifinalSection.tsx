@@ -1,38 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "@/app/(home-sections)/Navbar";
-import Footer from "@/app/components/Footer";
-import { medicalServices, homePageFAQ } from "@/app/data";
-import { Accordion } from "@/app/components/Accordion";
-import HeroSection from "./(service-sections)/HeroSection";
-import IntroductorySection from "./(service-sections)/IntroductorySection";
-import MoreToKnowSection from "./(service-sections)/MoreToKnowSection";
-import MoreAboutServiceSection from "./(service-sections)/MoreAboutServiceSection";
-import FinalSection from "@/app/about-us/(about-us-sections)/FinalSection";
 import Link from "next/link";
-import ElectricityIcon from "../../../public/ElectricityIcon.png";
-import TeamOfDoctors from "../../../public/TeamOfDoctors.jpg";
+import TeamOfDoctors from '../../../../public/TeamOfDoctors.jpg'
+import ElectricityIcon from '../../../../public/ElectricityIcon.png'
 
-export default function Page({ params }: { params: { serviceTitle: string } }) {
-  const service = medicalServices.find(
-    (service) => service.href === params.serviceTitle
-  );
-
-  return (
-    <main className="flex min-h-screen flex-col items-center bg-white">
-      <Navbar />
-      {service ? (
-        <main className="h-full bg-white">
-          <HeroSection
-            serviceTitle={service.serviceTitle}
-            shortServiceDescription={service.shortDescription}
-          />
-          <IntroductorySection
-            serviceShortDescription={service.shortDescription}
-          />
-          <MoreAboutServiceSection />
-          <MoreToKnowSection />
-          <section className="grid grid-cols-12 gap-8 pb-12 px-6 md:px-8 lg:px-24 bg-slate-100">
+export default function SemifinalSection() {
+    return (
+        <section className="grid grid-cols-12 gap-8 pb-12 px-6 md:px-8 lg:px-24 bg-slate-100">
             <div className="hidden sm:block col-span-4 rounded-md p-2 border-[1px] border-slate-400">
               <div className="flex flex-col gap-4">
                 <Image
@@ -101,33 +75,5 @@ export default function Page({ params }: { params: { serviceTitle: string } }) {
               </div>
             </div>
           </section>
-          <div className="px-6 md:px-8 lg:px-24 py-12">
-            <Accordion faq={homePageFAQ} />
-          </div>
-          <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-            <p className="text-start text-md md:text-lg lg:text-xl text-black font-semibold">
-              <span className="font-bold text-cyan-500"></span>Service short
-              description Service short
-            </p>
-            <p className="text-start w-full text-sm md:text-md font-normal bg-slate-100 p-4 border border-slate-200 rounded-md mt-4">
-              Parodontoza je podmukla bolest desni koju je na početku lako
-              ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog izostanka
-              odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1
-              jer dolazi do nezaustavljivog gubitka tkiva koje podržava zube.
-            </p>
-            <p className="text-sm md:text-md font-normal pt-1">
-              Pravom ste mjestu: naš specijalist parodontologije detaljno će
-              pregledati Vaše zubno meso te u skladu s time dati preporuku za
-              odgovarajući tretman. Uz redovite kontrole i našu specijalističku
-              obradu parodontološke situacije.
-            </p>
-          </section>
-          <FinalSection />
-        </main>
-      ) : (
-        <p>Service not found</p>
-      )}
-      <Footer />
-    </main>
-  );
+    )
 }
