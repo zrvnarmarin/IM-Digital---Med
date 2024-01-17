@@ -369,4 +369,16 @@ export const testimonials= [
     personFullName: "Alex Johnson",
     personOccupation: "Graphic Designer",
   },
+  {
+    id: 4,
+    testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex Johnson",
+    personOccupation: "Graphic Designer",
+  },
+  {
+    id: 5,
+    testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex Johnson",
+    personOccupation: "Graphic Designer",
+  },
 ];
