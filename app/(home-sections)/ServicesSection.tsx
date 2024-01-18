@@ -9,14 +9,15 @@ import { RightIcon } from "@/public/Icons";
 
 export default function ServicesSection() {
   return (
-    <section className="flex gap-2 h-full flex-col md:flex-col pb-12 px-7 md:px-16 lg:px-20 bg-[#FFFFFF]">
+    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
       <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
         Choose our services
       </h1>
-        <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
-          Our doctor make the health workj for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Incidunt aspernatur exercitationem dolorum maiores sint sequi ut, vero natus sapiente magnam!
-        </p>
+      <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2">
+        Our doctor make the health workj for you. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Incidunt aspernatur exercitationem dolorum
+        maiores sint sequi ut, vero natus sapiente magnam!
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
         {medicalServices.map((service) => (
           <DoctorCard service={service} key={service.id} />
@@ -35,9 +36,11 @@ export default function ServicesSection() {
 }
 
 export function DoctorCard({ service }: { service: ServiceType }) {
-
   return (
-    <Link href={`/services/${service.href}`} className="card bg-slate-500/5">
+    <Link
+      href={`/services/${service.href}`}
+      className="card bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300"
+    >
       <div className="layer"></div>
       <div className="content">
         <div className="image">
@@ -47,7 +50,7 @@ export function DoctorCard({ service }: { service: ServiceType }) {
             alt={`${service.serviceTitle} service`}
           />
         </div>
-        <p className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
+        <p className="leading-2 text-center text-lg md:text-xl font-semibold text-slate-600 duration-200 pt-6">
           {service.serviceTitle}
         </p>
         <p className="text-[#555f60] text-start text-sm pt-4">
@@ -55,7 +58,12 @@ export function DoctorCard({ service }: { service: ServiceType }) {
         </p>
         <div className="flex items-center pt-10 gap-2 justify-end">
           <p className="text-slate-700 text-end text-sm">Learn More</p>
-          <RightIcon />
+          <RightIcon
+            width="50"
+            height="50"
+            backgroundFillColor="#babaff"
+            iconFillColor="#ffffff"
+          />
         </div>
       </div>
     </Link>

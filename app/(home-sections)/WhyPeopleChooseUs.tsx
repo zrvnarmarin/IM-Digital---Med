@@ -1,25 +1,26 @@
 import React from "react";
-import Image from "next/image";
-import RightArrowImage from "../../public/RightIcon.png";
 import { WhyChooseUsPoint } from "../types";
 import { whyChooseUsPoints } from "../data";
 import { RightIcon } from "@/public/Icons";
 
 export default function WhyPeopleChooseUs() {
   return (
-    <section className="flex flex-col gap-8 py-16 px-7 md:px-10 lg:px-20 bg-white">
+    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
       <div className="flex flex-col justify-center">
-        <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+        <h1
+          className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2"
+          id="why-us-points-section"
+        >
           Why your health is safe at our hands
         </h1>
-        <p className="text-[#555f60] text-start text-base md:text-base lg:text-lg leading-2 pt-4">
+        {/* <p className="text-slate-600 text-start text-md md:text-base lg:text-lg leading-2 pt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           doloremque at placeat
           <span className="font-bold"> ducimus alias ad quis </span>
           optio necessitatibus, deleniti voluptates veritatis aspernatur
           similique.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
+        </p> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-8 lg:pt-12">
           {whyChooseUsPoints.map((point) => (
             <ServiceCard key={point.point} point={point} />
           ))}
@@ -33,17 +34,20 @@ export function ServiceCard({ point }: { point: WhyChooseUsPoint }) {
   return (
     <div
       key={point.id}
-      className={`flex flex-col rounded items-center bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300`}
+      className={`group flex flex-col rounded items-center bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 hover:bg-[#babaff] hover:text-white duration-300`}
     >
-      <div
-        className={`flex items-center justify-center  w-fit h-fit p-2 rounded-full bg-slate-300 duration-300`}
-      >
-        {point?.icon()}
+      <div>
+        <RightIcon
+          width="50"
+          height="50"
+          backgroundFillColor="#babaff"
+          iconFillColor="#ffffff"
+        />
       </div>
-      <h2 className="w-full text-center text-md md:text-lg font-semibold pt-4">
+      <h2 className="w-full leading-2 text-center text-lg md:text-xl font-semibold text-slate-600 duration-200 pt-6">
         {point.point}
       </h2>
-      <p className="text-start w-full text-sm md:text-md font-normal pt-2">
+      <p className="text-center w-full text-md md:text-lg font-normal text-slate-600 pt-3">
         {point.description}
       </p>
     </div>

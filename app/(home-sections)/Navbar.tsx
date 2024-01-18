@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full fixed top-0 left-0 right-0 z-50">
-      <nav className="flex flex-row justify-between items-center opacity-95 mx-2 lg:mx-8 mt-2 rounded px-4 py-2 bg-slate-700/90 border-slate-500 border">
+      <nav className="flex flex-row justify-between items-center px-4 py-2 bg-[#babaff]/70">
         <Link href={"/"}>
           <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">
             Sinergy
@@ -35,7 +35,7 @@ export default function Navbar() {
           </div>
         </ul>
         <div className="block lg:hidden">
-          <button className="flex flex-col gap-1 items-end bg-slate-700/90 p-0 border-none">
+          <button className="flex flex-col gap-1 items-end p-0 border-none">
             <div className="w-7 rounded-md h-[2.5px] bg-[#FFFFFF]"></div>
             <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
             <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
