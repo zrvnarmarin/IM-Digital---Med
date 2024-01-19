@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import ListSection from './(home-sections)/ListSection'
 import ServicesSection from './(home-sections)/ServicesSection'
 import TestimonialsSection from './(home-sections)/TestimonialsSection'
+import StatsSection from './(home-sections)/StatsSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyPeopleChooseUs />
       <ListSection />
       <ServicesSection />
+      <StatsSection />
       <MeetOurDoctors />
       <TestimonialsSection />
       <FAQSection />
@@ -23,3 +25,4 @@ export default function Home() {
     </main>
   )
 }
+
