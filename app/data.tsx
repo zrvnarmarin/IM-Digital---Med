@@ -350,7 +350,7 @@ export const advantages = [
   },
 ];
 
-export const testimonials= [
+export const testimonials = [
   // {
   //   id: 1,
   //   testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -368,5 +368,29 @@ export const testimonials= [
     testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     personFullName: "Alex Johnson",
     personOccupation: "Graphic Designer",
+    date: '24. prosinac 2023.'
   }
 ];
+
+export const stats = [
+  {
+    id: 1,
+    statNumber: 1,
+    statText: 'Strucnjaka'
+  },
+  {
+    id: 2,
+    statNumber: 1,
+    statText: 'Strucnjaka'
+  },
+  {
+    id: 3,
+    statNumber: 1,
+    statText: 'Strucnjaka'
+  },
+  {
+    id: 4,
+    statNumber: 1,
+    statText: 'Strucnjaka'
+  }
+]

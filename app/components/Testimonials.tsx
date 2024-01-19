@@ -9,22 +9,32 @@ import { RightIcon, HexagonIcon } from "@/public/Icons";
 export default function Testimonials() {
   return (
     <section className="flex gap-8 h-full flex-col md:flex-col bg-[#FFFFFF]">
-      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+      <h1 className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2">
         Testimonials
       </h1>
       <div className="flex-row">
         <div className="flex-row flex gap-2 items-center">
           <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
-            <RightIcon />
+            <RightIcon
+              width="36px"
+              height="36px"
+              backgroundFillColor="#babaff"
+              iconFillColor="#ffffff"
+            />
           </button>
           {testimonials.map((testimonial) => (
             <Testimonial key={testimonial.id} testimonialData={testimonial} />
           ))}
           <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
-            <RightIcon />
+            <RightIcon
+              width="36px"
+              height="36px"
+              backgroundFillColor="#babaff"
+              iconFillColor="#ffffff"
+            />
           </button>
         </div>
-        <div className="flex flex-row justify-center pt-6 gap-2">
+        <div className="flex flex-row justify-center pt-6 gap-4">
           <button className="hover:scale-105 duration-200 border-none p-0">
             <HexagonIcon />
           </button>
@@ -36,10 +46,10 @@ export default function Testimonials() {
           </button>
         </div>
       </div>
-      <div className="flex justify-center pt-8">
+      <div className="flex justify-center pt-8 px-6">
         <Link
-          href={`/`}
-          className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border"
+          href="/our-team"
+          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
         >
           Read More Stories
         </Link>
@@ -63,9 +73,10 @@ function Testimonial({
             className="rounded-t w-full h-full object-cover lg:rounded-l lg:rounded-tr-none"
           />
         </div>
-        <div className="flex w-full items-center rounded-b p-4 lg:w-3/5 lg:rounded-r lg:rounded-bl-none sm:px-8 sm:py-6 lg:px-12 lg:py-12 xl:px-12 xl:py-10">
-          <div className="grid gap-y-8">
-            <p className="text-[#555f60] text-start text-sm font-medium">
+        <div className="flex w-full items-center rounded-b p-4 lg:w-3/5 lg:rounded-r lg:rounded-bl-none sm:px-8 sm:py-6 lg:px-8 lg:py-8 xl:px-12 xl:py-10">
+          <div className="grid gap-y-8 md:gap-y-10 lg:gap-y-12">
+            <p className="text-start w-full text-sm md:text-md font-medium text-slate-600 pt-4 lg:pt-0">{testimonialData.date}</p>
+            <p className="text-start w-full text-md md:text-lg font-normal text-slate-600 lg:pt-0">
               <span className="-ml-1">“</span>
               {testimonialData.testimonial}
               <span className="-ml-1">“</span>
@@ -81,10 +92,10 @@ function Testimonial({
                 />
               </div>
               <div>
-                <p className="text-start text-md font-semibold">
+                <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
                   {testimonialData.personFullName}
                 </p>
-                <p className="text-start text-sm font-medium">
+                <p className="text-base md:text-md lg:text-lg">
                   {testimonialData.personOccupation}
                 </p>
               </div>

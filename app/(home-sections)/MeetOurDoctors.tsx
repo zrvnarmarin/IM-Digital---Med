@@ -16,8 +16,10 @@ export default function MeetOurDoctors() {
         Meet Our Doctor Specialists
       </h1>
       <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
-        Clinical Research Training and Medical Education · Critical Care
-        Medicine Additional NIH Doctors/Researchers
+        <span className="font-bold">Clinical Research Training</span> and Medical Education · Critical Care 
+        <span className="font-bold"> Medicine Additional NIH Doctors/Researchers</span> nical Research Training and
+        Medical Education · Critical Care Medicine Additional NIH
+        Doctors/Researchers
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-12">
         {doctors.map((doctor) => (
@@ -94,21 +96,23 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
         <div className="absolute bottom-0 left-0 right-0 p-4 transition duration-300 ease-in-out bg-[#babaff]/80 text-white opacity-0 group-hover:opacity-100">
           {/* Paragraph 1 */}
           <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
-            {doctor.name}
+            Dr. {doctor.name}
           </p>
           {/* Paragraph 2 */}
           <p className="text-base md:text-md lg:text-lg mb-2">
             {doctor.specialisation}
           </p>
           <div className="flex items-center pt-4 gap-2 justify-end">
-          <p className="text-md md:text-lg font-normal text-white">Meet Dr. {getFirstName(doctor.name)}</p>
-          <RightIcon
-            width="30"
-            height="30"
-            backgroundFillColor="#babaffcc"
-            iconFillColor="#ffffff"
-          />
-        </div>
+            <p className="text-md md:text-lg font-normal text-white">
+              Meet Dr. {getFirstName(doctor.name)}
+            </p>
+            <RightIcon
+              width="30"
+              height="30"
+              backgroundFillColor="#babaffcc"
+              iconFillColor="#ffffff"
+            />
+          </div>
         </div>
       </div>
     </Link>

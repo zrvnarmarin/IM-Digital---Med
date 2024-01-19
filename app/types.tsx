@@ -48,4 +48,11 @@ export type TestimonialType = {
   testimonial: string;
   personFullName: string;
   personOccupation: string;
+  date: string;
+}
+
+export type StatType = {
+  id: number,
+  statNumber: number,
+  statText: string
 }
