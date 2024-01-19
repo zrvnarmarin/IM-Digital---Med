@@ -20,7 +20,7 @@ export default function WhyPeopleChooseUs() {
           optio necessitatibus, deleniti voluptates veritatis aspernatur
           similique.
         </p> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-8 lg:pt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-8 lg:pt-12">
           {whyChooseUsPoints.map((point) => (
             <ServiceCard key={point.point} point={point} />
           ))}

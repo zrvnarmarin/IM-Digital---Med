@@ -20,7 +20,7 @@
   height: 100%;
   width: 100%;
   left: 0;
-  background: linear-gradient(to left, rgb(30, 47, 80), rgb(30, 47, 80));
+  background: #babaff;
   transition: 0.5s;
 }
 
@@ -39,6 +39,5 @@
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid white;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 4px solid #babaff3c;
 }
