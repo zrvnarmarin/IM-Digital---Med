@@ -14,7 +14,7 @@ export default function AdvantagesSection() {
         </h2>
       </div>
 
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pb-8 lg:pb-12">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {advantages.map((advantage) => (
           <CoreValueCard key={advantage.id} advantage={advantage} />
         ))}
