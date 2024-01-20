@@ -1,60 +1,98 @@
 import React from "react";
 import { coreValues, missionItems } from "@/app/data";
+import { RightIcon } from "@/public/Icons";
+import { CoreValueType, MissionItemType } from "@/app/types";
+import Link from "next/link";
 
 export default function CoreValuesAndMissionSection() {
   return (
-    <section className="w-full flex flex-col gap-8 pb-8 px-7 md:px-16 lg:px-20 bg-white pt-12">
-      <div className="flex flex-col items-center gap-2 relative">
-        <p className="text-9xl text-slate-200 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
-          01
-        </p>
-        <div className="relative z-10 text-start text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold uppercase leading-2">
+    <section className="flex flex-col gap-10 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
+
+      <div className="bg-[#babaff]/50 flex flex-row items-center justify-between px-8 py-8 uppercase">
+        <h2 className="font-bold text-center text-8xl text-white">1</h2>
+        <h2 className="font-bold text-center text-8xl text-white">
           Our Values
-        </div>
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pb-8 lg:pb-12">
         {coreValues.map((value) => (
-          <div key={value.id} className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
-            {value.icon()}
-            <h2 className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
-              {value.value}
-            </h2>
-            <p className="text-start w-full text-sm md:text-md font-normal pt-2">
-              {value.description}
-            </p>
-          </div>
+          <CoreValueCard key={value.id} value={value} />
         ))}
-      </div>
+      </ul>
 
-      <div className="flex flex-col items-center gap-2 relative">
-        <p className="text-9xl text-slate-200 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
-          02
-        </p>
-        <div className="relative z-10 text-start text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold uppercase leading-2">
+      <div className="bg-[#babaff]/50 flex flex-row items-center justify-between px-8 py-8 uppercase">
+        <h2 className="font-bold text-center text-8xl text-white">2</h2>
+        <h2 className="font-bold text-center text-8xl text-white">
           Our Mission
-        </div>
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10">
-        {missionItems.map((value) => (
-          <div key={value.id} className="flex flex-col rounded items-start bg-slate-500 shadow-lg bg-opacity-5 p-4 hover:scale-105 hover:bg-slate-300 hover:text-white duration-300">
-            {value.icon()}
-            <h2 className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
-              {value.value}
-            </h2>
-            <p className="text-start w-full text-sm md:text-md font-normal pt-2">
-              {value.description}
-            </p>
-          </div>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        {missionItems.map((missionItem) => (
+          <MissionItemCard key={missionItem.id} missionItem={missionItem} />
         ))}
+      </ul>
+
+      <div className="flex justify-center pt-8 px-6">
+        <Link
+          href="/contact"
+          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
+        >
+          Contact us
+        </Link>
       </div>
 
-      <div className="flex justify-center pt-8 pb-8">
-        <button className="bg-slate-700/90 text-white px-6 py-3 rounded border-slate-500 border">
-          Contact Us
-        </button>
-      </div>
     </section>
+  );
+}
+
+export function CoreValueCard({ value }: { value: CoreValueType }) {
+  return (
+    <li
+      className={`group flex flex-col rounded items-center bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 hover:bg-[#babaff] hover:text-white duration-300`}
+    >
+      <div>
+        <RightIcon
+          width="50"
+          height="50"
+          backgroundFillColor="#babaff"
+          iconFillColor="#ffffff"
+        />
+      </div>
+      <h2 className="w-full leading-2 text-center text-lg md:text-xl font-semibold text-slate-600 duration-200 pt-6">
+        {value.value}
+      </h2>
+      <p className="text-center w-full text-md md:text-lg font-normal text-slate-600 pt-3">
+        {value.description}
+      </p>
+    </li>
+  );
+}
+
+export function MissionItemCard({
+  missionItem,
+}: {
+  missionItem: MissionItemType;
+}) {
+  return (
+    <li
+      className={`group flex flex-col rounded items-center bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 hover:bg-[#babaff] hover:text-white duration-300`}
+    >
+      <div>
+        <RightIcon
+          width="50"
+          height="50"
+          backgroundFillColor="#babaff"
+          iconFillColor="#ffffff"
+        />
+      </div>
+      <h2 className="w-full leading-2 text-center text-lg md:text-xl font-semibold text-slate-600 duration-200 pt-6">
+        {missionItem.value}
+      </h2>
+      <p className="text-center w-full text-md md:text-lg font-normal text-slate-600 pt-3">
+        {missionItem.description}
+      </p>
+    </li>
   );
 }

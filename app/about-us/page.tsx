@@ -1,15 +1,13 @@
 import React from "react";
-import Image from "next/image";
 import Navbar from "../(home-sections)/Navbar";
 import HeroSection from "./(about-us-sections)/HeroSection";
 import CoreValuesAndMissionSection from "./(about-us-sections)/CoreValuesAndMissionSection";
 import Footer from "../components/Footer";
 import OurFoundingStory from "./(about-us-sections)/OurFoundingStorySection";
-import MeetOurTeamSection from "./(about-us-sections)/MeetOurTeamSection";
 import AdvantagesSection from "./(about-us-sections)/AdvantagesSection";
 import MoreTextSection from "./(about-us-sections)/MoreTextSection";
 import FinalSection from "./(about-us-sections)/FinalSection";
-import ClientReviews from "./(about-us-sections)/ClientReviews";
+import OurTeamSection from "./(about-us-sections)/OurTeamSection";
 
 export default function Page() {
   return (
@@ -18,9 +16,8 @@ export default function Page() {
       <HeroSection />
       <CoreValuesAndMissionSection />
       <OurFoundingStory />
-      <MeetOurTeamSection />
+      <OurTeamSection />
       <AdvantagesSection />
-      {/* <ClientReviews /> */}
       <MoreTextSection />
       <FinalSection />
       <Footer />
