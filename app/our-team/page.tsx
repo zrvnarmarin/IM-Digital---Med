@@ -3,6 +3,7 @@ import Navbar from '../(home-sections)/Navbar'
 import Footer from '../components/Footer'
 import MeetOurTeamSection from './(our-team-sections)/MeetOurTeamSection'
 import HeroSection from './(our-team-sections)/HeroSection'
+import TestimonialsSection from '../(home-sections)/TestimonialsSection'
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Navbar />
       <HeroSection />
       <MeetOurTeamSection />
+      <TestimonialsSection />
       <Footer />
     </main>
   )
