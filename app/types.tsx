@@ -23,7 +23,7 @@ export type ServiceType = {
   complications: string;
 };
 
-export type WhyChooseUsPoint = {
+export type WhyChooseUsPointType = {
   id: number,
   icon: () => JSX.Element,
   point: string,

@@ -1,61 +1,26 @@
 import React from "react";
-import Image from "next/image";
-import CloverImage from "../../../public/CloverImage.png";
-import "../../../public/DoctorCard.css";
-import Link from "next/link";
 import { medicalServices } from "@/app/data";
-import { ServiceType } from "@/app/types";
-import { RightIcon } from "@/public/Icons";
-import Testimonials from "@/app/components/Testimonials";
+import { ServiceCard } from "@/app/(home-sections)/ServicesSection";
+import "../../../public/DoctorCard.css";
 
-export default function MedicalServiceCardsSection() {
+export default function ServiceCardsSection() {
   return (
-    <section className="flex gap-2 h-full flex-col md:flex-col py-12 px-6 md:px-8 lg:px-24 bg-[#FFFFFF]">
-      <h1 className="font-bold text-start text-lg lg:text-3xl text-[#2a2f31] leading-10">
+    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
+      <h1 className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2">
         Choose our services
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <p className="text-[#555f60] text-start text-sm pt-4">
-          Our doctor make the health work for you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Incidunt aspernatur exercitationem dolorum maiores sint sequi ut, vero natus sapiente magnam!
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+        Our doctor make the{" "}
+        <span className="font-bold">health workj for you</span>. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Incidunt aspernatur
+        exercitationem dolorum maiores sint sequi ut, vero natus sapiente
+        magnam!
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-12">
         {medicalServices.map((service) => (
-          <DoctorCard service={service} key={service.id} />
+          <ServiceCard service={service} key={service.id} />
         ))}
       </div>
-      <div className="pt-12">
-        <Testimonials />
-      </div>
     </section>
-  );
-}
-
-export function DoctorCard({ service }: { service: ServiceType }) {
-
-  return (
-    <Link href={`/services/${service.href}`} className="card bg-slate-500/5">
-      <div className="layer"></div>
-      <div className="content">
-        <div className="image">
-          <Image
-            layout="full"
-            src={CloverImage}
-            alt={`${service.serviceTitle} service`}
-          />
-        </div>
-        <p className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
-          {service.serviceTitle}
-        </p>
-        <p className="text-[#555f60] text-start text-sm pt-4">
-          {service.shortDescription}
-        </p>
-        <div className="flex items-center pt-10 gap-2 justify-end">
-          <p className="text-slate-700 text-end text-sm">Learn More</p>
-          <RightIcon />
-        </div>
-      </div>
-    </Link>
   );
 }

@@ -3,6 +3,7 @@ import Navbar from "../(home-sections)/Navbar";
 import Footer from "../components/Footer";
 import MedicalServiceCardsSection from "./(services-sections)/MedicalServiceCardsSection";
 import HeroSection from "./(services-sections)/HeroSection";
+import TestimonialsSection from "../(home-sections)/TestimonialsSection";
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Navbar />
       <HeroSection />
       <MedicalServiceCardsSection />
+      <TestimonialsSection />
       <Footer />
     </main>
   );

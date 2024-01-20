@@ -1,5 +1,5 @@
 import React from "react";
-import { WhyChooseUsPoint } from "../types";
+import { WhyChooseUsPointType } from "../types";
 import { whyChooseUsPoints } from "../data";
 import { RightIcon } from "@/public/Icons";
 
@@ -22,7 +22,7 @@ export default function WhyPeopleChooseUs() {
         </p> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-8 lg:pt-12">
           {whyChooseUsPoints.map((point) => (
-            <ServiceCard key={point.point} point={point} />
+            <WhyPeopleChoosePointCard key={point.point} point={point} />
           ))}
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function WhyPeopleChooseUs() {
   );
 }
 
-export function ServiceCard({ point }: { point: WhyChooseUsPoint }) {
+export function WhyPeopleChoosePointCard({ point }: { point: WhyChooseUsPointType }) {
   return (
     <div
       key={point.id}
