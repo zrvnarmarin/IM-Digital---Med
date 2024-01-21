@@ -7,12 +7,12 @@ export default function WhyPeopleChooseUs() {
   return (
     <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
       <div className="flex flex-col justify-center">
-        <h1
-          className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2"
-          id="why-us-points-section"
-        >
-          Why your health is safe at our hands
-        </h1>
+        
+        <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 py-2 border-b-2 border-[#babaff]">
+          <h2 className=" text-center text-4xl text-[#babaff] leading-8 pr-4">
+            Why is your health safe at our hands
+          </h2>
+        </div>
         {/* <p className="text-slate-600 text-start text-md md:text-base lg:text-lg leading-2 pt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           doloremque at placeat
@@ -30,7 +30,11 @@ export default function WhyPeopleChooseUs() {
   );
 }
 
-export function WhyPeopleChoosePointCard({ point }: { point: WhyChooseUsPointType }) {
+export function WhyPeopleChoosePointCard({
+  point,
+}: {
+  point: WhyChooseUsPointType;
+}) {
   return (
     <div
       key={point.id}

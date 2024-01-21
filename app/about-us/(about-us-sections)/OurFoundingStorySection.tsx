@@ -10,17 +10,16 @@ import ElectricityIcon from "../../../public/ElectricityIcon.png";
 export default function OurFoundingStorySection() {
   return (
     <section className="flex flex-col gap-10 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-
-      <div className="bg-[#babaff]/50 flex flex-row items-center justify-between px-8 py-8 uppercase">
-        <h2 className="font-bold text-center text-8xl text-white">3</h2>
-        <h2 className="font-bold text-center text-8xl text-white">
-          Our founding story
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 py-2 border-b-2 border-[#babaff]">
+        <h2 className="text-center text-4xl text-[#babaff] leading-8 px-2">3.</h2>
+        <h2 className=" text-center text-4xl text-[#babaff] leading-8 pr-4">
+          Our Founding Story
         </h2>
       </div>
 
-      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-4 px-2 py-2 uppercase">
-        <h2 className="font-bold text-center text-xl text-white">3.1</h2>
-        <h2 className="font-bold text-center text-xl text-white">
+      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-3 px-2 py-2">
+        <h2 className="font-medium text-center text-xl text-white">3.1</h2>
+        <h2 className="font-medium text-center text-xl text-white">
           Our founders
         </h2>
       </div>
@@ -113,7 +112,6 @@ export default function OurFoundingStorySection() {
           <div key={key}>fjvndf</div>
         ))}
       </div> */}
-
     </section>
   );
 }
@@ -125,7 +123,7 @@ const OurFoundersSection = () => {
 
   return (
     <div>
-        <div className="flex justify-center py-10 px-6">
+      <div className="flex justify-center py-10 px-6">
         <button
           onClick={toggleModal}
           className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
@@ -169,7 +167,11 @@ const FounderCardDetails = () => {
   );
 };
 
-const FounderAchievementsListItem = ({ listItem }: { listItem: ListItemType }) => {
+const FounderAchievementsListItem = ({
+  listItem,
+}: {
+  listItem: ListItemType;
+}) => {
   return (
     <li className="flex gap-4 items-center">
       <div className="h-full flex items-center border-[1px] border-slate-200"></div>
