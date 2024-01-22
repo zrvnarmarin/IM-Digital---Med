@@ -56,7 +56,7 @@ export default function Footer() {
             </h3>
             <label
               htmlFor="phone-number"
-              className="flex flex-col text-white leading-2 text-xs"
+              className="flex flex-col text-white leading-2 gap-2 text-xs"
             >
               To make your stay special and even more memorable
               <input
@@ -65,15 +65,6 @@ export default function Footer() {
                 className="border-none text-md md:text-lg font-normal text-slate-600 px-6 py-3"
               />
             </label>
-          </div>
-
-          <div className="pt-12 flex flex-col items-end gap-2">
-            <h2 className="text-md md:text-lg gap-3 font-semibold text-white pb-4 leading-2">
-              Subscribe to Our newsletter.
-            </h2>
-            <p className="text-gray-200 leading-2 text-xs hover:underline hover:underline-offset-4 hover:decoration-[#1D7349]">
-              To make your stay special-and even more memorable.
-            </p>
           </div>
         </div>
       </div>
