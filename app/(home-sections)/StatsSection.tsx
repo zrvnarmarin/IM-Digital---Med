@@ -20,7 +20,7 @@ function StatElement({ stat }: { stat: StatType }) {
       <h2 className="font-bold text-center text-8xl text-white">
         {stat.statNumber}
       </h2>
-      <p className="font-semibold text-2xl text-white">{stat.statText}</p>
+      <p className="font-semibold text-center text-2xl text-white">{stat.statText}</p>
     </li>
   );
 }

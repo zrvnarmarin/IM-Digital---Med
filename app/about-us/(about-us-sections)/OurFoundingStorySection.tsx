@@ -10,10 +10,9 @@ import ElectricityIcon from "../../../public/ElectricityIcon.png";
 export default function OurFoundingStorySection() {
   return (
     <section className="flex flex-col gap-10 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 py-2 border-b-2 border-[#babaff]">
-        <h2 className="text-center text-4xl text-[#babaff] leading-8 px-2">3.</h2>
-        <h2 className=" text-center text-4xl text-[#babaff] leading-8 pr-4">
-          Our Founding Story
+      <div className="w-full bg-white flex flex-row items-center justify-center gap-2 py-2 ">
+        <h2 className=" text-center text-4xl text-[#babaff] leading-8 px-8 pb-2 border-b-2 border-[#babaff] ">
+          3. Our Founding Story
         </h2>
       </div>
 

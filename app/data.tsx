@@ -375,22 +375,22 @@ export const testimonials = [
 export const stats = [
   {
     id: 1,
-    statNumber: 1,
-    statText: 'Strucnjaka'
+    statNumber: 245,
+    statText: 'Usluga'
   },
   {
     id: 2,
-    statNumber: 1,
-    statText: 'Strucnjaka'
+    statNumber: 5644,
+    statText: 'Zadovoljnih klijenata'
   },
   {
     id: 3,
-    statNumber: 1,
-    statText: 'Strucnjaka'
+    statNumber: 3,
+    statText: 'Nečega'
   },
   {
     id: 4,
-    statNumber: 1,
-    statText: 'Strucnjaka'
+    statNumber: 398,
+    statText: 'Ljudi nekakvih tamo'
   }
 ]

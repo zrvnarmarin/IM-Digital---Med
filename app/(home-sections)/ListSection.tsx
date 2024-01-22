@@ -7,10 +7,12 @@ import ListTestImage from "../../public/listSectionIMageTest.avif";
 
 export default function ListSection() {
   return (
-    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-      <h1 className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2">
-        What are we doing different than others
-      </h1>
+    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-8 md:px-14 lg:px-28 xl:px-32 2xl:px-48 bg-white">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+          Why are we different
+        </h2>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <ul className="flex flex-col gap-4">
           {listItems.map((listItem) => (
@@ -37,12 +39,12 @@ const ListItem = ({ listItem }: { listItem: ListItemType }) => {
   return (
     <li className="flex gap-4 items-center">
       <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-      <div className="flex flex-col gap-2 py-4">
+      <div className="flex flex-col gap-4 py-4">
         <div className="flex items-center gap-4">
           <div className="bg-[#babaff] rounded-full p-2 border border-[#8484f2] ">
             <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
           </div>
-          <p className="leading-2 text-center text-lg md:text-xl font-semibold text-slate-600 duration-200">
+          <p className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-semibold text-slate-600 duration-200">
             {listItem.title}
           </p>
         </div>

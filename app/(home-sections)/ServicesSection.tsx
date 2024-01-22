@@ -10,9 +10,11 @@ import { RightIcon } from "@/public/Icons";
 export default function ServicesSection() {
   return (
     <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-      <h1 className="font-bold text-start text-xl lg:text-3xl text-slate-600 leading-2">
-        Choose our services
-      </h1>
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+          Choose our services
+        </h2>
+      </div>
       <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
         Our doctor make the <span className="font-bold">health workj for you</span>. Lorem ipsum, dolor sit amet
         consectetur adipisicing elit. Incidunt aspernatur exercitationem dolorum
