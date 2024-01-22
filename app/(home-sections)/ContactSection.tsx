@@ -91,7 +91,7 @@ export default function ContactSection() {
               htmlFor="phone-number"
               className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
             >
-              I{`'`}m interested in
+              Your question
               <textarea
                 name="user-request"
                 rows={5}
@@ -118,9 +118,9 @@ export default function ContactSection() {
 
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Lokacije</p>
-            <div className="w-full flex flex-col justify-between gap-4 text-md md:text-lg font-normal text-slate-600">
+            <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
 
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-4">
                 <LocationPinIcon width={27} height={27} />
                 <div>
                   <p className="font-medium">Hondlova Aleja </p>
@@ -128,7 +128,7 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-4">
               <LocationPinIcon width={27} height={27} />
                 <div>
                   <p className="font-medium">Red Mall Square </p>
@@ -141,16 +141,16 @@ export default function ContactSection() {
 
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Kontakt</p>
-            <div className="w-full flex flex-col justify-between gap-4 text-md md:text-lg font-normal text-slate-600">
+            <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
 
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-4">
                 <EmailIcon width={25} height={25} />
                 <div>
                   <p className="font-medium">76marin76@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-4">
                 <ContactIcon width={25} height={25} />
                 <div>
                   <p className="font-medium">+38515587459</p>
