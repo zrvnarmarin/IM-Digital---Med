@@ -487,3 +487,22 @@ export const ContactIcon = ({ width = 24, height = 24 }) => {
     </svg>
   );
 };
+
+export const FacebookIcon = ({ width = 24, height = 24 }) => {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 50.000000 50.000000"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <g
+        transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+        fill="#ffffff"
+        stroke="none"
+      ></g>
+    </svg>
+  );
+};
