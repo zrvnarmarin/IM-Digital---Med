@@ -99,7 +99,7 @@ export default function ContactSection() {
               />
             </label>
             <div className="flex justify-center pt-8 px-6">
-              <button className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase">
+              <button className="bg-[#9595ff] text-white font-semibold px-6 py-3 uppercase">
                 Send
               </button>
             </div>
@@ -110,7 +110,7 @@ export default function ContactSection() {
         <div className="flex flex-col items-center bg-[#babaff]/10">
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Radno vrijeme</p>
-            <div className="w-full flex flex-row justify-between text-md md:text-lg font-normal text-slate-600">
+            <div className="w-full flex flex-row gap-2 text-md md:text-lg font-normal text-slate-600">
               <p>Pon - Pet: </p>
               <p>08:00 - 16:00h</p>
             </div>
