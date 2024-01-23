@@ -1,9 +1,10 @@
 import { ContactIcon, EmailIcon, LocationPinIcon } from "@/public/Icons";
 import React from "react";
+import SectionWrapper from "../components/wrappers/SectionWrapper";
 
 export default function ContactSection() {
   return (
-    <section className="w-full flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
+    <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
         <h2 className="w-full leading-2 text-start text-xl md:text-lg lg:text-xl font-medium text-[#babaff]">
           Get in touch with us
@@ -164,6 +165,6 @@ export default function ContactSection() {
 
         <div className="hidden lg:flex items-center justify-center"></div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

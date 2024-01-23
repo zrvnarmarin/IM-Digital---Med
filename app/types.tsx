@@ -1,4 +1,4 @@
-import { IconsEightTestIcon } from "@/public/Icons";
+import { StaticImageData } from "next/image";
 
 export type DoctorType = {
   id: number;
@@ -78,4 +78,12 @@ export type AdvantageType = {
   icon: () => JSX.Element;
   value: string;
   description: string;
+}
+
+export type NewsCardType = {
+  id: number;
+  href: string;
+  title: string;
+  imageSrc: StaticImageData;
+  date: string;
 }

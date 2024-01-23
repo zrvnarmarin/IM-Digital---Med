@@ -2,10 +2,11 @@ import React from "react";
 import { WhyChooseUsPointType } from "../types";
 import { whyChooseUsPoints } from "../data";
 import { RightIcon } from "@/public/Icons";
+import SectionWrapper from "../components/wrappers/SectionWrapper";
 
 export default function WhyPeopleChooseUs() {
   return (
-    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
+    <SectionWrapper>
       <div className="flex flex-col justify-center">
         <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
           <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
@@ -18,7 +19,7 @@ export default function WhyPeopleChooseUs() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 

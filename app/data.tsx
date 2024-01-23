@@ -1,4 +1,5 @@
 import { IconsEightTestIcon } from "@/public/Icons";
+import TestImage from "../public/HospitalImage.jpg";
 
 export const doctors = [
   {
@@ -394,3 +395,62 @@ export const stats = [
     statText: 'Ljudi nekakvih tamo'
   }
 ]
+
+export const news = [
+  {
+    id: 1,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 2,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 3,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 4,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 5,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 6,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 7,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+  {
+    id: 8,
+    href: "first-news",
+    title: "News Number One",
+    imageSrc: TestImage,
+    date: "12. prosinca 2023.",
+  },
+];

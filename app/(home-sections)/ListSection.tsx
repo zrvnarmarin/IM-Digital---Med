@@ -4,10 +4,11 @@ import ElectricityIcon from "../../public/ElectricityIcon.png";
 import { ListItemType } from "../types";
 import { listItems } from "../data";
 import ListTestImage from "../../public/listSectionIMageTest.avif";
+import SectionWrapper from "../components/wrappers/SectionWrapper";
 
 export default function ListSection() {
   return (
-    <section className="flex flex-col gap-8 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-8 md:px-14 lg:px-28 xl:px-32 2xl:px-48 bg-white">
+    <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
         <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
           Why are we different
@@ -31,7 +32,7 @@ export default function ListSection() {
           Contact Us
         </Link>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 

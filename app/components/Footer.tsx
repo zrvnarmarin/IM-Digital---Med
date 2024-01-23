@@ -4,7 +4,7 @@ import { FacebookIcon } from "@/public/Icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#babaff]/90 to-[#babaff]/70 px-8 pt-8 mt-16 pb-4 flex flex-col w-full h-full relative">
+    <footer className="bg-gradient-to-r from-[#babaff]/90 to-[#babaff]/70 px-8 md:px-14 lg:px-28 xl:px-42 2xl:px-48 pt-8 mt-16 pb-4 flex flex-col w-full h-full relative">
       <div className="flex flex-col">
         <Link href={"/"}>
           <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">
