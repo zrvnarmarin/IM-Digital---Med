@@ -40,7 +40,7 @@ export default function HeroSection() {
         {/* Element at the very bottom */}
         <div className="bg-[#babaff]/50 text-3xl text-center font-bold px-4 w-full py-3">
           <h1 className="text-center text-2xl xs:text-4xl font-bold text-white p-6 uppercase">
-            Zdravlje je na prvom mjestu
+            Zdravlje je na drugom mjestu
           </h1>
           <div className="w-full flex justify-center rotate-90 duration-200 animate-bounce cursor-pointer">
             <Link href="#why-us-points-section">
