@@ -9,30 +9,28 @@ export default function Navbar() {
 
   return (
     <header className="w-full fixed top-0 left-0 right-0 z-50">
-      <nav className="flex flex-row justify-between items-center px-4 py-2 bg-[#babaff]/70">
+      <nav className="flex flex-row justify-between items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-2 bg-[#babaff]/70">
         <Link href={"/"}>
           <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">
             Sinergy
           </p>
         </Link>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
-          <li className="text-[#FFFFFF] xl:text-md font-normal leading-7">
+          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="text-[#FFFFFF] xl:text-md font-normal leading-7">
+          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
             <Link href={"/about-us"}>About Us</Link>
           </li>
-          <li className="text-[#FFFFFF] xl:text-md font-normal leading-7">
+          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
             <Link href={"/services"}>Services</Link>
           </li>
-          <li className="text-[#FFFFFF] xl:text-md font-normal leading-7">
+          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
             <Link href={"/our-team"}>Our Team</Link>
           </li>
-          <div>
-            <Link href='/contact' className="hidden lg:block text-white text-md font-normal uppercase leading-7 bg-slate-600/90 hover:scale-105 duration-100 px-8 py-1 border-slate-500 border rounded-md">
-              Contact
-            </Link>
-          </div>
+          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+            <Link href={"/contact"}>Contact</Link>
+          </li>
         </ul>
         <div className="block lg:hidden">
           <button className="flex flex-col gap-1 items-end p-0 border-none">
