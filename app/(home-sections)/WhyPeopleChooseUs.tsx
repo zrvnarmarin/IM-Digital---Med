@@ -44,7 +44,7 @@ export function WhyPeopleChoosePointCard({
       <h2 className="w-full leading-2 text-center text-md md:text-lg lg:text-xl font-semibold text-slate-600 duration-200 pt-6">
         {point.point}
       </h2>
-      <p className="text-center w-full text-md md:text-lg font-normal text-slate-600 pt-3">
+      <p className="text-center w-full text-sm md:text-md xl:text-lg font-medium text-slate-500 pt-3">
         {point.description}
       </p>
     </div>

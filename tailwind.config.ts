@@ -20,7 +20,7 @@ const config: Config = {
         'lg': '1024px',    // Large screens, such as laptops (between 768px and 1023px)
         'xl': '1280px',    // Extra-large screens, such as desktops (between 1024px and 1279px)
         '2xl': '1440px',   // Larger desktop screens (between 1280px and 1535px)
-        '3xl': '1920px'
+        '3xl': '1680px'
       }
     },
   },
