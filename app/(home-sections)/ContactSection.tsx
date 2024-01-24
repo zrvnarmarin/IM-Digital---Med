@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-xl md:text-lg lg:text-xl font-medium text-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
           Get in touch with us
         </h2>
       </div>

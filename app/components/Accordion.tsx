@@ -59,7 +59,7 @@ export function Accordion({ faq } : { faq: FAQType[] }) {
         </div>
         {isActive ? (
           <div className="pt-2 text-start px-4">
-            <p className="text-start w-full text-md md:text-lg lg:text-xl font-normal text-slate-600 pb-4">
+            <p className="text-start w-full text-md md:text-lg font-normal text-slate-600 py-4">
               {answer}
             </p>
           </div>

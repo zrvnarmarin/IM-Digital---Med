@@ -10,12 +10,12 @@ export default function ListSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
           Why are we different
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <ul className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-4">
+        <ul className="flex flex-col gap-4 lg:gap-8">
           {listItems.map((listItem) => (
             <ListItem key={listItem.id} listItem={listItem} />
           ))}
@@ -45,11 +45,11 @@ const ListItem = ({ listItem }: { listItem: ListItemType }) => {
           <div className="bg-[#babaff] rounded-full p-2 border border-[#8484f2] ">
             <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
           </div>
-          <p className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-semibold text-slate-600 duration-200">
+          <p className="w-full  text-md md:text-lg lg:text-xl font-semibold text-slate-600">
             {listItem.title}
           </p>
         </div>
-        <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+        <p className="text-start w-full text-sm md:text-md lg:text-base font-medium text-slate-500 pt-2">
           {listItem.description}
         </p>
       </div>

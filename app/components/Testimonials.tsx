@@ -10,11 +10,11 @@ export default function Testimonials() {
   return (
     <section className="flex gap-8 h-full flex-col md:flex-col bg-[#FFFFFF]">
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
           Testimonials
         </h2>
       </div>
-      <div className="flex-row">
+      <div className="flex-row pt-2">
         <div className="flex-row flex gap-2 items-center">
           <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
             <RightIcon

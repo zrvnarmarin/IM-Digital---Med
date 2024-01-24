@@ -14,7 +14,7 @@ export default function MeetOurDoctors() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
           Meet our doctors specialists
         </h2>
       </div>
@@ -24,7 +24,7 @@ export default function MeetOurDoctors() {
         Medical Education · Critical Care Medicine Additional NIH
         Doctors/Researchers
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}

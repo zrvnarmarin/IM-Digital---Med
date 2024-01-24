@@ -9,7 +9,7 @@ export default function WhyPeopleChooseUs() {
     <SectionWrapper>
       <div className="flex flex-col justify-center">
         <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-          <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+          <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
             Why is your health safe
           </h2>
         </div>
@@ -41,10 +41,10 @@ export function WhyPeopleChoosePointCard({
           iconFillColor="#ffffff"
         />
       </div>
-      <h2 className="w-full leading-2 text-center text-md md:text-lg lg:text-xl font-semibold text-slate-600 duration-200 pt-6">
+      <h2 className="w-full text-center text-xl font-semibold text-slate-600 pt-6">
         {point.point}
       </h2>
-      <p className="text-center w-full text-sm md:text-md xl:text-lg font-medium text-slate-500 pt-3">
+      <p className="text-center w-full text-sm md:text-md lg:text-base font-medium text-slate-500 pt-4">
         {point.description}
       </p>
     </div>

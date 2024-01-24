@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat, League_Spartan } from 'next/font/google'
+import { Inter, Montserrat, League_Spartan, Merriweather } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+const rubik = Merriweather({ subsets: ['latin'], weight: ['300'] })
 const montserrat = Montserrat({ subsets: ['latin']})
-const leagueSpartan = League_Spartan({ subsets: ['latin']})
 
 
 export const metadata: Metadata = {
