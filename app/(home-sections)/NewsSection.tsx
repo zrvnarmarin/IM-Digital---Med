@@ -11,8 +11,8 @@ import { NewsCardType } from "../types";
 export default function NewsSection() {
   return (
     <SectionWrapper>
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           News
         </h2>
       </div>
@@ -51,18 +51,20 @@ const NewsCard = ({ news }: { news: NewsCardType }) => {
         <div 
         className="absolute h-full top-1/2 left-1/2 transform -translate-x-1/2 
             -translate-y-1/2 p-4 transition duration-300 ease-in-out w-full bg-[#babaff]/70
-            text-white opacity-0 group-hover:opacity-100 flex flex-col justify-center gap-4 items-center"
+            text-white opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center"
         >
           <p className="text-base md:text-md lg:text-lg mb-2">{news.date}</p>
-          <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
-            {news.title}
-          </p>
-          <RightIcon
-            backgroundFillColor="#ffffff"
-            iconFillColor="#babaff"
-            width="48px"
-            height="48px"
-          />
+          <div className="flex flex-col gap-2 items-center pt-8">
+            <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
+              {news.title}
+            </p>
+            <RightIcon
+              width="40"
+              height="40"
+              backgroundFillColor="#babaffcc"
+              iconFillColor="#ffffff"
+            />
+          </div>
         </div>
       </li>
     </Link>

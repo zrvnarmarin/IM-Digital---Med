@@ -10,55 +10,31 @@ import ElectricityIcon from "../../../public/ElectricityIcon.png";
 export default function OurFoundingStorySection() {
   return (
     <section className="flex flex-col gap-10 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Our Founding Story
         </h2>
       </div>
 
       <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-3 px-2 py-2">
-        <h2 className="font-medium text-center text-xl text-white">3.1</h2>
-        <h2 className="font-medium text-center text-xl text-white">
+        <h2 className="w-fit text-center text-md font-semibold text-white lg:font-semibold">3.1</h2>
+        <h2 className="text-center text-md font-semibold text-white lg:font-semibold">
           Our founders
         </h2>
       </div>
-
-      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
-        <span className="font-bold">Lorem ipsum dolor sit</span> amet
-        consectetur adipisicing elit. Esse tenetur explicabo qui? Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Esse tenetur explicabo{" "}
-        <span className="font-bold"> Lorem ipsum dolor sit</span> qui?Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Esse tenetur
-        explicabo qui?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Esse tenetur explicabo qui?Lorem ipsum dolor sit amet{" "}
-        <span className="font-bold"> Lorem ipsum dolor sit</span> consectetur
-        adipisicing elit. Esse tenetur explicabo qui?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Esse tenetur explicabo qui?Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Esse tenetur explicabo
-        qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        tenetur explicabo qui?Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Esse tenetur explicabo qui?Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Esse tenetur explicabo qui?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Esse tenetur explicabo qui?Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Esse tenetur explicabo
-        qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        tenetur explicabo qui?Lorem{" "}
-        <span className="font-bold"> Lorem ipsum dolor sit</span> ipsum dolor
-        sit amet consectetur adipisicing elit. Esse tenetur explicabo qui?
-      </p>
 
       <div className="grid grid-cols-1 gap-2">
         <OurFoundersSection />
       </div>
 
-      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-4 px-2 py-2 uppercase">
-        <h2 className="font-bold text-center text-xl text-white">3.2</h2>
-        <h2 className="font-bold text-center text-xl text-white">
-          Our Something
+      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-3 px-2 py-2">
+        <h2 className="w-fit text-center text-md font-semibold text-white lg:font-semibold">3.2</h2>
+        <h2 className="text-center text-md font-semibold text-white lg:font-semibold">
+          Our something
         </h2>
       </div>
 
-      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+      <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-4">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde expedita
         <span className="font-bold"> Lorem ipsum dolor sit</span> hic nulla
         nihil, odio nisi fugiat ipsam aut, ducimus deserunt quisquam nostrum
@@ -77,21 +53,21 @@ export default function OurFoundingStorySection() {
         <span className="font-bold"> Lorem ipsum dolor sit</span> recusandae
         tempore! Atque minus quo eligendi?
       </p>
-      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+      <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde expedita
         eveniet doloribus quia dolorem hic nulla nihil, odio nisi fugiat ipsam
         aut, ducimus deserunt quisquam nostrum vitae sequi amet recusandae
         tempore! Atque minus quo eligendi?
       </p>
 
-      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-4 px-2 py-2 uppercase">
-        <h2 className="font-bold text-center text-xl text-white">3.3</h2>
-        <h2 className="font-bold text-center text-xl text-white">
-          Our Something
+      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-3 px-2 py-2">
+        <h2 className="w-fit text-center text-md font-semibold text-white lg:font-semibold">3.3</h2>
+        <h2 className="text-center text-md font-semibold text-white lg:font-semibold">
+          Our founders
         </h2>
       </div>
 
-      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+      <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-4">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde expedita
         <span className="font-bold"> Lorem ipsum dolor sit</span> hic nulla
         nihil, odio nisi fugiat ipsam aut, ducimus deserunt quisquam nostrum
@@ -102,6 +78,7 @@ export default function OurFoundingStorySection() {
         <span className="font-bold"> Lorem ipsum dolor sit</span> recusandae
         tempore! Atque minus quo eligendi?
       </p>
+
 
       {/* TO DO: make a grid section like on borderline.eu about us and each section has image and text below, and theyre in grid */}
 
@@ -115,6 +92,44 @@ export default function OurFoundingStorySection() {
   );
 }
 
+const GridSection = () => {
+  const data = [
+    {
+      imageSrc: TestImage,
+      heading: 'Item 1',
+      paragraph: 'Description for Item 1...',
+    },
+    {
+      imageSrc: TestImage,
+      heading: 'Item 2',
+      paragraph: 'Description for Item 2...',
+    },
+    {
+      imageSrc: TestImage,
+      heading: 'Item 3',
+      paragraph: 'Description for Item 3...',
+    },
+  ];
+
+  return (
+    <div className="container mx-auto">
+      <div className="grid grid-cols-1 gap-8">
+        {data.map((item, index) => (
+          <div key={index} className="flex flex-row bg-gray-100 p-4 rounded-lg">
+            <div className="mb-4 w-1/3 max-h-[100px]">
+              <Image src={item.imageSrc} alt={`Item ${index + 1}`} className="w-full h-auto rounded" />
+            </div>
+            <div className="flex flex-col">
+              <h2 className="text-xl font-semibold mb-2">{item.heading}</h2>
+              <p>{item.paragraph}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const OurFoundersSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -123,18 +138,8 @@ const OurFoundersSection = () => {
   return (
     <div>
       <div className="flex justify-center py-10 px-6">
-        <button
-          onClick={toggleModal}
-          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
-        >
-          Read founders Achievements
-        </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        {[1, 2].map((__, key) => (
-          <FounderCard isOpen={isOpen} key={key} />
-        ))}
-      </div>
+      <GridSection />
     </div>
   );
 };

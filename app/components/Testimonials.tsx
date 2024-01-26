@@ -9,8 +9,8 @@ import { RightIcon, HexagonIcon } from "@/public/Icons";
 export default function Testimonials() {
   return (
     <section className="flex gap-8 h-full flex-col md:flex-col bg-[#FFFFFF]">
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Testimonials
         </h2>
       </div>

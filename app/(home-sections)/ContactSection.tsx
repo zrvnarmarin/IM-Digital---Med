@@ -5,8 +5,8 @@ import SectionWrapper from "../components/wrappers/SectionWrapper";
 export default function ContactSection() {
   return (
     <SectionWrapper>
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Get in touch with us
         </h2>
       </div>

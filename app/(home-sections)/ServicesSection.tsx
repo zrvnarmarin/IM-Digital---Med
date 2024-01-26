@@ -5,14 +5,14 @@ import "../../public/DoctorCard.css";
 import Link from "next/link";
 import { medicalServices } from "@/app/data";
 import { ServiceType } from "@/app/types";
-import { RightIcon } from "@/public/Icons";
+import { RightIcon, ShieldIcon } from "@/public/Icons";
 import SectionWrapper from "../components/wrappers/SectionWrapper";
 
 export default function ServicesSection() {
   return (
     <SectionWrapper>
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Choose our services
         </h2>
       </div>
@@ -37,31 +37,31 @@ export function ServiceCard({ service }: { service: ServiceType }) {
   return (
     <Link
       href={`/services/${service.href}`}
-      className="card bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300"
+      className="card bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300 group"
     >
       <div className="layer"></div>
       <div className="content">
-        <div className="image">
-          <Image
-            layout="full"
-            src={CloverImage}
-            alt={`${service.serviceTitle} service`}
-          />
+        <div className="w-full flex items-center justify-center">
+          <ShieldIcon />
         </div>
-        <p className="w-full text-center text-xl font-semibold text-slate-600 pt-10">
+        <p className="text-center text-md font-semibold lg:font-semibold text-slate-600 group-hover:text-white duration-300 pt-6">
           {service.serviceTitle}
         </p>
-        <p className="text-start w-full text-md md:text-lg font-normal text-slate-600 pt-8">
+        <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-8">
           {service.shortDescription}
         </p>
-        <div className="flex items-center pt-12 gap-2 justify-end">
-          <p className="text-start text-md lg:text-lg font-normal text-slate-500 pt-2">Learn More</p>
-          <RightIcon
-            width="50"
-            height="50"
-            backgroundFillColor="#babaff"
-            iconFillColor="#ffffff"
-          />
+        <div className="flex items-center pt-8 gap-2 justify-end">
+          <p className="text-start w-fit text-sm md:text-md 2xl:text-lg font-medium text-slate-500">
+            Learn More
+          </p>
+          <div>
+            <RightIcon
+              width="30"
+              height="30"
+              backgroundFillColor="#babaff10"
+              iconFillColor="#64748b"
+            />
+          </div>
         </div>
       </div>
     </Link>

@@ -8,21 +8,14 @@ import Link from "next/link";
 export default function MoreTextSection() {
   return (
     <section className="flex flex-col gap-10 pt-10 sm:pt-12 md:pt-16 lg:pt-28 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 bg-white">
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-lg md:text-lg lg:text-xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Lorem ipsum
         </h2>
       </div>
 
-      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-4 px-2 py-2 uppercase">
-        <h2 className="font-bold text-center text-xl text-white">6.1</h2>
-        <h2 className="font-bold text-center text-xl text-white">
-          Lorem ipsum dolor sit
-        </h2>
-      </div>
-
       <div>
-        <p className="text-start w-full text-md md:text-lg font-normal text-slate-600 bg-[#babaff]/10 p-4 mt-4">
+        <p className="text-start w-full text-sm md:text-md 2xl:text-lg bg-[#babaff]/10 rounded font-medium text-slate-500 p-4">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
           expedita eveniet doloribus quia dolorem hic nulla nihil, odio nisi
           fugiat ipsam aut, ducimus deserunt quisquam nostrum vitae sequi amet
@@ -35,19 +28,6 @@ export default function MoreTextSection() {
           nulla nihil, odio nisi fugiat ipsam aut, ducimus deserunt quisquam
           nostrum vitae sequi amet recusandae tempore! Atque minus quo eligendi?
         </p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {[1, 2, 3, 4].map((__, key) => (
-          <FounderCard key={key} />
-        ))}
-      </div>
-
-      <div className="w-fit bg-[#babaff]/50 flex flex-row items-center gap-4 px-2 py-2 uppercase">
-        <h2 className="font-bold text-center text-xl text-white">6.2</h2>
-        <h2 className="font-bold text-center text-xl text-white">
-          Before and After
-        </h2>
       </div>
 
       {/* TO DO: na sliku staviti link kao na slici od hero sekcije na galeriju slika prije/poslije */}

@@ -13,17 +13,11 @@ import SectionWrapper from "../components/wrappers/SectionWrapper";
 export default function MeetOurDoctors() {
   return (
     <SectionWrapper>
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Meet our doctors specialists
         </h2>
       </div>
-      <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
-        <span className="font-bold">Clinical Research Training</span> and Medical Education · Critical Care 
-        <span className="font-bold"> Medicine Additional NIH Doctors/Researchers</span> nical Research Training and
-        Medical Education · Critical Care Medicine Additional NIH
-        Doctors/Researchers
-      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
@@ -40,44 +34,6 @@ export default function MeetOurDoctors() {
     </SectionWrapper>
   );
 }
-
-// export function DoctorCard({ doctor }: { doctor: DoctorType }) {
-//   const lowerCaseDoctorName = generateUrlFromFullName(doctor.name)
-
-//   return (
-//     <Link href={`/our-team/${lowerCaseDoctorName}`} className="card bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300">
-//       <div className="layer"></div>
-//       <div className="content">
-//         <div className="image">
-//           <img
-//             width="100%"
-//             src={`https://vignette.wikia.nocookie.net/supernatural-diaries/images/b/b2/Cara-delevingne-profile.jpg/revision/latest?cb=20140217060511`}
-//             alt={`j`}
-//           />
-//         </div>
-//         <p className="text-center text-md md:text-lg lg:text-xl font-semibold pt-2">
-//           {doctor.name}
-//         </p>
-//         <p className="text-center text-sm md:text-md lg:text-lg font-base">
-//           {doctor.specialisation}
-//         </p>
-//         <div className="flex flex-row gap-2 items-center justify-center pt-4">
-//           <CloverIcon />
-//           <p className="text-xs ">&quot;Health is always worth fighting for.&quot;</p>
-//         </div>
-//         <div className="flex items-center pt-10 gap-2 justify-end">
-//           <p className="text-slate-700 text-end text-sm">Meet Dr. Olga</p>
-//           <RightIcon
-//             width="50"
-//             height="50"
-//             backgroundFillColor="#babaff"
-//             iconFillColor="#ffffff"
-//           />
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// }
 
 const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
   const lowerCaseDoctorName = generateUrlFromFullName(doctor.name);
@@ -109,12 +65,14 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
             <p className="text-md md:text-lg font-normal text-white">
               Meet Dr. {getFirstName(doctor.name)}
             </p>
+            <div>
             <RightIcon
               width="30"
               height="30"
               backgroundFillColor="#babaffcc"
               iconFillColor="#ffffff"
             />
+          </div>
           </div>
         </div>
       </div>

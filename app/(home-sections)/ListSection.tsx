@@ -9,8 +9,8 @@ import SectionWrapper from "../components/wrappers/SectionWrapper";
 export default function ListSection() {
   return (
     <SectionWrapper>
-      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2 border-b-2 border-[#babaff]">
-        <h2 className="w-full leading-2 text-start text-2xl font-medium text-[#babaff]">
+      <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
+        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
           Why are we different
         </h2>
       </div>
@@ -49,7 +49,7 @@ const ListItem = ({ listItem }: { listItem: ListItemType }) => {
             {listItem.title}
           </p>
         </div>
-        <p className="text-start w-full text-sm md:text-md lg:text-base font-medium text-slate-500 pt-2">
+        <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-2">
           {listItem.description}
         </p>
       </div>
