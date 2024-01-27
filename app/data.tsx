@@ -85,9 +85,9 @@ export const medicalServices = [
     id: 1,
     icon: IconsEightTestIcon,
     href: "cardiac-proccedures",
-    serviceTitle: "Cardiac Procedures",
+    serviceTitle: "Cardiac Things For Heart",
     shortDescription:
-      "Experience cutting-edge cardiac procedures with minimal incisions, promoting quicker recovery and enhanced outcomes.",
+      "Experience cutting-edge cardiac procedures with minimal incisions",
     includes: [
       "Cardiac catheterization for precise diagnosis.",
       "Angioplasty to open narrowed or blocked vessels.",
@@ -106,9 +106,9 @@ export const medicalServices = [
     id: 2,
     icon: IconsEightTestIcon,
     href: "pediactric-telemedicine-consultations",
-    serviceTitle: "Pediatric Telemedicine Consultations",
+    serviceTitle: "Pediatric Telemedicine",
     shortDescription:
-      "Access remote healthcare services for your child with virtual consultations, ensuring timely and convenient care.",
+      "Access remote healthcare services for your child with virtual consultations",
     includes: [
       "Video consultations for face-to-face communication.",
       "Prescription services for necessary medications.",
@@ -129,7 +129,7 @@ export const medicalServices = [
     href: "laser-therapy-for-scar-reduction",
     serviceTitle: "Laser Therapy for Scar Reduction",
     shortDescription:
-      "Benefit from advanced laser treatments designed to reduce and improve the appearance of scars, enhancing both skin health and confidence.",
+      "Benefit from advanced laser treatments designed to reduce and improve",
     includes: [
       "Fractional laser therapy for targeted scar treatment.",
       "Scar revision techniques to optimize results.",
@@ -150,7 +150,7 @@ export const medicalServices = [
     href: "joint-replacement-surgeries",
     serviceTitle: "Joint Replacement Surgeries",
     shortDescription:
-      "Experience life-changing joint replacement surgeries designed to restore mobility and improve overall musculoskeletal health.",
+      "Experience life-changing joint replacement surgeries designed to restore mobility ",
     includes: [
       "Total joint replacement for severely damaged joints.",
       "Revision joint replacement for addressing previous implant issues.",
@@ -171,7 +171,7 @@ export const whyChooseUsPoints = [
   {
     id: 1,
     icon: IconsEightTestIcon,
-    point: "Experienced medical team",
+    point: "Vrhunski stručni tim",
     description: "Medical team with over 20 doctors takes care of your smile",
   },
   {

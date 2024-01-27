@@ -14,8 +14,8 @@ export default function MeetOurDoctors() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
-          Meet our doctors specialists
+        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+          Meet Our Doctor Specialists
         </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-6">
@@ -66,13 +66,13 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
               Meet Dr. {getFirstName(doctor.name)}
             </p>
             <div>
-            <RightIcon
-              width="30"
-              height="30"
-              backgroundFillColor="#babaffcc"
-              iconFillColor="#ffffff"
-            />
-          </div>
+              <RightIcon
+                width="30"
+                height="30"
+                backgroundFillColor="#babaffcc"
+                iconFillColor="#ffffff"
+              />
+            </div>
           </div>
         </div>
       </div>

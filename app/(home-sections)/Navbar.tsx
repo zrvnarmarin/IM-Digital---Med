@@ -4,11 +4,14 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// <header className="w-full fixed top-0 left-0 right-0 z-50"> --> for complete navbar to be fixed and across the hero section, on top of it
+
+
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full fixed top-0 left-0 right-0 z-50">
+    <header className="w-full">
       <nav className="flex flex-row justify-between items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-2 bg-[#babaff]/70">
         <Link href={"/"}>
           <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">

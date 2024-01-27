@@ -10,7 +10,7 @@ export default function Testimonials() {
   return (
     <section className="flex gap-8 h-full flex-col md:flex-col bg-[#FFFFFF]">
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
+        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
           Testimonials
         </h2>
       </div>
@@ -78,7 +78,7 @@ function Testimonial({
         <div className="flex w-full items-center rounded-b p-4 lg:w-3/5 lg:rounded-r lg:rounded-bl-none sm:px-8 sm:py-6 lg:px-8 lg:py-8 xl:px-12 xl:py-10">
           <div className="grid gap-y-8 md:gap-y-10 lg:gap-y-12">
             <p className="text-start w-full text-sm md:text-md font-medium text-slate-600 pt-4 lg:pt-0">{testimonialData.date}</p>
-            <p className="text-start w-full text-md md:text-lg font-normal text-slate-600 lg:pt-0">
+            <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-8 lg:pt-0">
               <span className="-ml-1">“</span>
               {testimonialData.testimonial}
               <span className="-ml-1">“</span>
@@ -94,10 +94,10 @@ function Testimonial({
                 />
               </div>
               <div>
-                <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
+                <p className="text-slate-500 font-normal text-xl xl:text-2xl">
                   {testimonialData.personFullName}
                 </p>
-                <p className="text-base md:text-md lg:text-lg">
+                <p className="text-slate-500 font-normal text-xs xl:text-md">
                   {testimonialData.personOccupation}
                 </p>
               </div>

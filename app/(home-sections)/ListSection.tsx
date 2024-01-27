@@ -10,7 +10,7 @@ export default function ListSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
+        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
           Why are we different
         </h2>
       </div>
@@ -45,11 +45,11 @@ const ListItem = ({ listItem }: { listItem: ListItemType }) => {
           <div className="bg-[#babaff] rounded-full p-2 border border-[#8484f2] ">
             <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
           </div>
-          <p className="w-full  text-md md:text-lg lg:text-xl font-semibold text-slate-600">
+          <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
             {listItem.title}
           </p>
         </div>
-        <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-2">
+        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
           {listItem.description}
         </p>
       </div>

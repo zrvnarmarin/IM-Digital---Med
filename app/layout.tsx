@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat, League_Spartan, Merriweather } from 'next/font/google'
+import { Montserrat, Roboto_Condensed } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 
-const rubik = Merriweather({ subsets: ['latin'], weight: ['300'] })
 const montserrat = Montserrat({ subsets: ['latin']})
-
+const robotoCondensed = Roboto_Condensed({ subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={robotoCondensed.className}>
         {children}
       </body>
     </html>

@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import CloverImage from "../../public/CloverImage.png";
 import "../../public/DoctorCard.css";
 import Link from "next/link";
 import { medicalServices } from "@/app/data";
 import { ServiceType } from "@/app/types";
 import { RightIcon, ShieldIcon } from "@/public/Icons";
 import SectionWrapper from "../components/wrappers/SectionWrapper";
+import { TestSVG } from "./WhyPeopleChooseUs";
 
 export default function ServicesSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
+        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
           Choose our services
         </h2>
       </div>
@@ -42,16 +42,16 @@ export function ServiceCard({ service }: { service: ServiceType }) {
       <div className="layer"></div>
       <div className="content">
         <div className="w-full flex items-center justify-center">
-          <ShieldIcon />
+          <TestSVG />
         </div>
-        <p className="text-center text-md font-semibold lg:font-semibold text-slate-600 group-hover:text-white duration-300 pt-6">
+        <p className="w-full text-center text-slate-500 font-normal text-xl xl:text-2xl group-hover:text-white duration-300 pt-6">
           {service.serviceTitle}
         </p>
-        <p className="text-start w-full text-sm md:text-md 2xl:text-lg font-medium text-slate-500 pt-8">
+        <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-8">
           {service.shortDescription}
         </p>
         <div className="flex items-center pt-8 gap-2 justify-end">
-          <p className="text-start w-fit text-sm md:text-md 2xl:text-lg font-medium text-slate-500">
+          <p className="text-start w-fit text-sm md:text-md 2xl:text-lg font-medium group-hover:text-white duration-100 text-slate-500">
             Learn More
           </p>
           <div>

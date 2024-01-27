@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TeamOfDoctors from "../../public/DoctorSmiling (1).jpg";
+import TeamOfDoctors from "../../public/usman-yousaf-SakqLf78KVo-unsplash.jpg";
 import { RightIcon } from "@/public/Icons";
 
 export default function HeroSection() {
@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
 
         {/* Element at the very bottom */}
-        <div className="bg-[#babaff]/50 text-3xl text-center font-bold px-4 w-full py-3">
+        <div className="bg-[#babaff]/90 text-3xl text-center font-bold px-4 w-full py-3">
           <h1 className="text-center text-2xl xs:text-4xl font-bold text-white p-6 uppercase">
             Zdravlje je na drugom mjestu
           </h1>

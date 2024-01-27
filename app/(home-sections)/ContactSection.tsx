@@ -6,16 +6,16 @@ export default function ContactSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="w-full leading-2 text-start text-2xl lg:text-4xl font-bold text-slate-600">
+        <h2 className="ext-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
           Get in touch with us
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Heading and description */}
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center bg-[#babaff]/10">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2">
-            <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+            <p className="w-full text-start text-slate-500 font-normal text-xl xl:text-2xl">
               Tell us all about your project right here, or send us an email at
               <span className="font-semibold text-[#babaff]">
                 {" "}
@@ -29,7 +29,7 @@ export default function ContactSection() {
         <div className="flex gap-4 items-center bg-[#babaff]/10">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2 py-4">
-            <p className="text-start w-full text-md md:text-lg font-normal text-slate-600">
+            <p className="tw-full text-start text-slate-500 font-normal text-xl xl:text-2xl">
               By filling out this form, our call center will contact you within
               24 hours to arrange your appointment.
               <span className="font-semibold text-[#babaff]">
@@ -100,7 +100,7 @@ export default function ContactSection() {
               />
             </label>
             <div className="flex justify-center pt-8 px-6">
-              <button className="bg-[#9595ff] text-white font-semibold px-6 py-3 uppercase">
+              <button className="bg-[#acacff] text-white font-semibold px-6 py-3 uppercase">
                 Send
               </button>
             </div>
