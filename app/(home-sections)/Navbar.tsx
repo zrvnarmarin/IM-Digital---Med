@@ -12,34 +12,34 @@ export default function Navbar() {
 
   return (
     <header className="w-full">
-      <nav className="flex flex-row justify-between items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-2 bg-[#babaff]/70">
+      <nav className="flex flex-row justify-between lg:justify-center gap-24 items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-2 bg-white">
         <Link href={"/"}>
-          <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">
+          <p className="text-center text-4xl text leading-10 font-medium italic uppercase text-[#babaff]">
             Sinergy
           </p>
         </Link>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
-          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+          <li className="text-lg xl:text-xl font-light text-[#babaff]">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+          <li className="text-lg xl:text-xl font-light text-[#babaff]">
             <Link href={"/about-us"}>About Us</Link>
           </li>
-          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+          <li className="text-lg xl:text-xl font-light text-[#babaff]">
             <Link href={"/services"}>Services</Link>
           </li>
-          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+          <li className="text-lg xl:text-xl font-light text-[#babaff]">
             <Link href={"/our-team"}>Our Team</Link>
           </li>
-          <li className="text-md md:text-lg gap-4 font-medium text-white  leading-2 ">
+          <li className="text-lg xl:text-xl font-light text-[#babaff]">
             <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>
         <div className="block lg:hidden">
           <button className="flex flex-col gap-1 items-end p-0 border-none">
-            <div className="w-7 rounded-md h-[2.5px] bg-[#FFFFFF]"></div>
-            <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
-            <div className="w-7 h-[2.5px] rounded-md bg-[#FFFFFF]"></div>
+            <div className="w-7 rounded-md h-[2.5px] bg-[#babaff]"></div>
+            <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
+            <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
           </button>
         </div>
       </nav>
