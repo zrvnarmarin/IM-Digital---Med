@@ -76,9 +76,9 @@ function Testimonial({
           />
         </div>
         <div className="flex w-full items-center rounded-b p-4 lg:w-3/5 lg:rounded-r lg:rounded-bl-none sm:px-8 sm:py-6 lg:px-8 lg:py-8 xl:px-12 xl:py-10">
-          <div className="grid gap-y-8 md:gap-y-10 lg:gap-y-12">
+          <div className="grid gap-y-4 md:gap-y-6 lg:gap-y-10">
             <p className="text-start w-full text-sm md:text-md font-medium text-slate-600 pt-4 lg:pt-0">{testimonialData.date}</p>
-            <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-8 lg:pt-0">
+            <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 sm:pt-2 pt-0 lg:pt-0">
               <span className="-ml-1">“</span>
               {testimonialData.testimonial}
               <span className="-ml-1">“</span>

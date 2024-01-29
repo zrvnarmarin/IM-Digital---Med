@@ -11,10 +11,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full">
+    <header className="w-full sticky top-0 right-0 left-0 z-50">
       <nav className="flex flex-row justify-between lg:justify-center gap-24 items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-2 bg-white">
         <Link href={"/"}>
-          <p className="text-center text-4xl text leading-10 font-medium italic uppercase text-[#babaff]">
+          <p className="text-center text-4xl text leading-10 font-normal italic uppercase text-[#babaff]">
             Sinergy
           </p>
         </Link>

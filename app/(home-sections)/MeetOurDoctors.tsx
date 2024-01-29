@@ -76,6 +76,12 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
           </div>
         </div>
       </div>
+      <p className="text-start w-full text-base xl:text-lg font-normal text-slate-500 group-hover:text-white duration-100 pt-4">
+        Dr. {doctor.name}
+      </p>
+      <p className="text-start w-full text-sm xl:text-md font-light text-slate-500 group-hover:text-white duration-100 pt-2">
+        {doctor.specialisation}
+      </p>
     </Link>
   );
 };
