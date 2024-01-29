@@ -11,12 +11,12 @@ export default function ServiceCardsSection() {
       </h1>
       <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
         Our doctor make the{" "}
-        <span className="font-bold">health workj for you</span>. Lorem ipsum,
+        <span className="text-[#babaff]">health workj for you</span>. Lorem ipsum,
         dolor sit amet consectetur adipisicing elit. Incidunt aspernatur
         exercitationem dolorum maiores sint sequi ut, vero natus sapiente
         magnam!
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {medicalServices.map((service) => (
           <ServiceCard service={service} key={service.id} />
         ))}

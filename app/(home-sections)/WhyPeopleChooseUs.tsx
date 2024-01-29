@@ -31,7 +31,7 @@ export function WhyPeopleChoosePointCard({
   return (
     <div
       key={point.id}
-      className={`group flex flex-col rounded items-center  p-4 md:p-6 lg:p-8 hover:bg-[#f8f8ff] hover:text-white duration-300`}
+      className={`group flex flex-col rounded items-center  p-4 md:p-6 lg:p-8 border border-slate-200 hover:bg-[#f8f8ff] hover:text-white duration-300`}
     >
       <div>
         <TestSVG />
