@@ -8,7 +8,7 @@ import MoreToKnowSection from "./(service-three-sections)/MoreToKnowSection";
 import SemifinalSection from "./(service-three-sections)/SemifinalSection";
 import AccordionSection from "./(service-three-sections)/AccordionSection";
 import DescriptionSection from "./(service-three-sections)/DescriptionSection";
-import FinalSection from "@/app/about-us/(about-us-sections)/FinalSection";
+// import FinalSection from "./(service-three-sections)/SemifinalSection.tsx";
 
 export default function Page() {
   return (
@@ -22,7 +22,7 @@ export default function Page() {
           <SemifinalSection />
           <AccordionSection />
           <DescriptionSection />
-          <FinalSection />
+          {/* <FinalSection /> */}
         </main>
       <Footer />
     </main>

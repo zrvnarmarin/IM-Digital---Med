@@ -23,7 +23,7 @@ export default function MeetOurDoctors() {
           {" "}nical Research Training and Medical Education · Critical Care Medicine
           Additional NIH Doctors/Researchers
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}

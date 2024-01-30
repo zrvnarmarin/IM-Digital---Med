@@ -2,49 +2,49 @@ import React from "react";
 import Link from "next/link";
 import { DoctorType } from "@/app/types";
 import { BookIcon, SthetoscopeIcon } from "@/public/Icons";
+import SectionWrapper from "@/app/components/wrappers/SectionWrapper";
+import { TestSVG } from "@/app/(home-sections)/WhyPeopleChooseUs";
 
 export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-24 pb-12 px-6 xs:px-12 sm:px-16 md:px-28 lg:px-48">
+    <SectionWrapper>
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#2a2f31] font-semibold leading-2">
-          {doctor.name}, dr.med.dent.
-        </h1>
-        <div className="flex items-center gap-2">
-          <p className="text-center text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
-            {doctor.specialisation}
-          </p>
-        </div>
-        <p className="text-start w-full text-sm md:text-md font-normal">
+        <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+          {doctor.name}, dr.med
+        </h2>
+
+        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
           {doctor.description}
         </p>
-        <h3 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
+
+        <h3 className="text-start w-full text-slate-500 font-normal text-lg xl:text-xl uppercase">
           Achievements:{" "}
         </h3>
         <ul>
           {doctor.achievements.map((achievement) => (
             <li
               key={achievement}
-              className="flex flex-row gap-4 text-start w-full text-sm md:text-md font-normal"
+              className="flex flex-row gap-4 items-center text-base xl:text-lg font-light text-slate-500 pt-4"
             >
-              <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
-                {SthetoscopeIcon()}
-              </span>
-              {achievement} <br /> <br />
+              <TestSVG />
+              {achievement}
             </li>
           ))}
         </ul>
-        <h3 className="text-start text-md md:text-lg lg:text-xl text-black font-semibold pt-2">
+
+        <h2 className="text-start w-full text-slate-500 font-normal text-lg xl:text-xl uppercase pt-4">
           Education:{" "}
-        </h3>
+        </h2>
+
         <div className="flex flex-row md:flex-col gap-4 pt-4">
-          <div className="flex flex-row md:flex-col gap-4 text-start w-full text-sm md:text-md font-normal">
-            <span className="font-bold text-2xl text-[#3CAEAA] pt-2">
-              {BookIcon()}
-            </span>
-            <p>{doctor.education}</p>
+          <div className="flex flex-row gap-4 items-center text-base xl:text-lg font-light text-slate-500">
+            <TestSVG />
+            <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
+              {doctor.education}
+            </p>
           </div>
         </div>
+
       </div>
       <Link
         href={`/contact`}
@@ -52,6 +52,6 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
       >
         Contact Us
       </Link>
-    </section>
+    </SectionWrapper>
   );
 }

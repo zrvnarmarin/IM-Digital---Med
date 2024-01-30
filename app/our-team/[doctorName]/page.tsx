@@ -12,13 +12,13 @@ export default function Page({ params }: { params: { doctorName: string } }) {
     <main className="flex min-h-screen flex-col items-center bg-white">
       <Navbar />
       {doctor ? (
-        <section className="h-full grid grid-cols-1 gap-16 bg-white">
+        <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
           <HeroSection
             doctorName={doctor.name}
             doctorSpecialisation={doctor.specialisation}
           />
           <DescriptionSection doctor={doctor} />
-        </section>
+        </main>
       ) : (
         <p>Doctor not found</p>
       )}
