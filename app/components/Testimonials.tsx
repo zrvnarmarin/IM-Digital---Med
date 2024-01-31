@@ -97,9 +97,9 @@ function Testimonial({
                 <p className="text-slate-500 font-normal text-xl xl:text-2xl">
                   {testimonialData.personFullName}
                 </p>
-                <p className="text-slate-500 font-normal text-xs xl:text-md">
+                {/* <p className="text-slate-500 font-normal text-xs xl:text-md">
                   {testimonialData.personOccupation}
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

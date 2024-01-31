@@ -18,7 +18,7 @@ export default function MeetOurDoctors() {
           Meet Our Doctor Specialists
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
@@ -53,15 +53,7 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
         </div>
         {/* Text Container */}
         <div className="absolute bottom-0 left-0 right-0 p-4 transition duration-300 ease-in-out bg-[#babaff]/80 text-white opacity-0 group-hover:opacity-100">
-          {/* Paragraph 1 */}
-          <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
-            Dr. {doctor.name}
-          </p>
-          {/* Paragraph 2 */}
-          <p className="text-base md:text-md lg:text-lg mb-2">
-            {doctor.specialisation}
-          </p>
-          <div className="flex items-center pt-4 gap-2 justify-end">
+          <div className="flex items-center gap-2 justify-end">
             <p className="text-md md:text-lg font-normal text-white">
               Meet Dr. {getFirstName(doctor.name)}
             </p>

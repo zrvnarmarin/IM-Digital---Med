@@ -17,8 +17,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <WhyPeopleChooseUs />
-      <ListSection />
       <ServicesSection />
+      <ListSection />
       <StatsSection />
       <MeetOurDoctors />
       <TestimonialsSection />

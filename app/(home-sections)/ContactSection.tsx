@@ -10,7 +10,7 @@ export default function ContactSection() {
           Get in touch with us
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Heading and description */}
         <div className="flex gap-4 items-center bg-[#babaff]/10">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>

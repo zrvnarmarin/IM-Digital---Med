@@ -24,14 +24,6 @@ export default function ListSection() {
           <Image src={ListTestImage} alt="test" width={0} height={0} />
         </div>
       </div>
-      <div className="flex justify-center pt-8 px-6">
-        <Link
-          href="/contact"
-          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
-        >
-          Contact Us
-        </Link>
-      </div>
     </SectionWrapper>
   );
 }

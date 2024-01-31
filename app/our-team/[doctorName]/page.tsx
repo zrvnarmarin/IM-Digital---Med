@@ -4,6 +4,7 @@ import Navbar from "@/app/(home-sections)/Navbar";
 import Footer from "@/app/components/Footer";
 import HeroSection from "./(doctor-sections)/HeroSection";
 import DescriptionSection from "./(doctor-sections)/DescriptionSection";
+import GetAppointmentSection from "./(doctor-sections)/GetAppointmentSection";
 
 export default function Page({ params }: { params: { doctorName: string } }) {
   const doctor = doctors.find((doctor) => doctor.href === params.doctorName);
@@ -18,6 +19,7 @@ export default function Page({ params }: { params: { doctorName: string } }) {
             doctorSpecialisation={doctor.specialisation}
           />
           <DescriptionSection doctor={doctor} />
+          <GetAppointmentSection />
         </main>
       ) : (
         <p>Doctor not found</p>

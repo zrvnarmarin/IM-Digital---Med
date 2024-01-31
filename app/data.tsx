@@ -59,25 +59,25 @@ export const doctors = [
     fieldOfInterests: ["Dermatology", "Aesthetic Medicine"],
     education: "Doctor of Medicine (MD), Dermatology Residency",
   },
-  {
-    id: 4,
-    imageSrc: "path/to/john_bell_image.jpg",
-    href: "john-bell",
-    name: "John Bell",
-    specialisation: "Orthopedian",
-    shortDescription:
-      "Specializing in orthopedic care, Dr. Bell brings seven years of expertise to the table. His commitment to restoring mobility and transforming lives sets him apart.",
-    description:
-      "Dr. John Bell, our Orthopedic Specialist, brings seven years of expertise in mending bones and restoring mobility. Driven by a personal sports injury, Dr. Bell understands the profound impact of orthopedic care on one's quality of life. Beyond his surgical precision, Dr. Bell actively engages in research, contributing to advancements in orthopedic treatments. His commitment to patient-centric care and comprehensive rehabilitation has earned him a solid 4.5-star rating, making him a trusted ally in the journey to musculoskeletal well-being.",
-    achievements: [
-      "Successfully performed a groundbreaking joint replacement surgery, restoring mobility to a patient who had been wheelchair-bound for over a decade.",
-      "Contributed to the development of a cutting-edge orthopedic implant, improving the longevity and effectiveness of joint replacements.",
-      'Received the "Orthopedic Surgeon of Excellence" award for consistently achieving exceptional patient outcomes and satisfaction rates.',
-      "Established an orthopedic mentorship program, guiding and inspiring the next generation of orthopedic surgeons.",
-    ],
-    fieldOfInterests: ["Orthopedics", "Rehabilitation"],
-    education: "Doctor of Medicine (MD), Orthopedic Surgery Residency",
-  },
+  // {
+  //   id: 4,
+  //   imageSrc: "path/to/john_bell_image.jpg",
+  //   href: "john-bell",
+  //   name: "John Bell",
+  //   specialisation: "Orthopedian",
+  //   shortDescription:
+  //     "Specializing in orthopedic care, Dr. Bell brings seven years of expertise to the table. His commitment to restoring mobility and transforming lives sets him apart.",
+  //   description:
+  //     "Dr. John Bell, our Orthopedic Specialist, brings seven years of expertise in mending bones and restoring mobility. Driven by a personal sports injury, Dr. Bell understands the profound impact of orthopedic care on one's quality of life. Beyond his surgical precision, Dr. Bell actively engages in research, contributing to advancements in orthopedic treatments. His commitment to patient-centric care and comprehensive rehabilitation has earned him a solid 4.5-star rating, making him a trusted ally in the journey to musculoskeletal well-being.",
+  //   achievements: [
+  //     "Successfully performed a groundbreaking joint replacement surgery, restoring mobility to a patient who had been wheelchair-bound for over a decade.",
+  //     "Contributed to the development of a cutting-edge orthopedic implant, improving the longevity and effectiveness of joint replacements.",
+  //     'Received the "Orthopedic Surgeon of Excellence" award for consistently achieving exceptional patient outcomes and satisfaction rates.',
+  //     "Established an orthopedic mentorship program, guiding and inspiring the next generation of orthopedic surgeons.",
+  //   ],
+  //   fieldOfInterests: ["Orthopedics", "Rehabilitation"],
+  //   education: "Doctor of Medicine (MD), Orthopedic Surgery Residency",
+  // },
 ];
 
 export const medicalServices = [
@@ -255,6 +255,12 @@ export const homePageFAQ = [
     question: "How can pediatric dermatological conditions be managed?",
     answer:
       "Management of pediatric dermatological conditions may involve topical medications, oral medications, and lifestyle modifications.",
+  },
+  {
+    id: 6,
+    question: "Zasto je metallica najbolji bend?",
+    answer:
+      "Zato sto je to stvarno zaista tako.",
   },
 ];
 
