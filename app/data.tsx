@@ -267,32 +267,70 @@ export const coreValues = [
   {
     id: 1,
     icon: IconsEightTestIcon,
-    value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
     id: 2,
     icon: IconsEightTestIcon,
-    value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
     id: 3,
     icon: IconsEightTestIcon,
-    value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
   {
     id: 4,
     icon: IconsEightTestIcon,
-    value: "Transparency",
     description:
       "Lorem ipsu, dolor sit amet consectur apkilitis elit. Libero, tone lota.",
   },
 ];
+
+export const aboutUsThirdSectionArray = [
+  {
+    id: 1,
+    text: 'lorem ipsum dolor igorrrrrrrrrrnmfvbkf vxr'
+  },
+  {
+    id: 2,
+    text: 'lorem ipsum dolor igor igor igor gorfjgniudfobf'
+  },
+  {
+    id: 3,
+    text: 'lorem ipsum dolor igorrrrrrrrrrrrrrrr'
+  },
+  {
+    id: 4,
+    text: 'lorem ipsum dolor igo sojdhvui josdvosdb sdvb r'
+  }
+]
+
+export const aboutUsFifthSectionArray = [
+  {
+    id: 1,
+    title: 'Title neki 1',
+    text: 'bok svim,a ja sam neki opis 1'
+  },
+  {
+    id: 2,
+    title: 'Title neki 2',
+    text: 'bok svim,a ja sam neki opis 2'
+  },
+  {
+    id: 3,
+    title: 'Title neki 3',
+    text: 'bok svim,a ja sam neki opis 3'
+  },
+  {
+    id: 4,
+    title: 'Title neki 4',
+    text: 'bok svima, ja sam neki opis 4'
+  }
+]
 
 export const missionItems = [
   {

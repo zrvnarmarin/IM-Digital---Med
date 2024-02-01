@@ -8,7 +8,7 @@ import { RightIcon } from "@/public/Icons";
 import { coreValues } from "../data";
 import { DoctorType } from "@/app/types";
 import { TestSVG } from "../(home-sections)/WhyPeopleChooseUs";
-import { doctors } from "../data";
+import { doctors, aboutUsThirdSectionArray, aboutUsFifthSectionArray } from "../data";
 import { generateUrlFromFullName, getFirstName } from "../utils";
 import DoctorImage from "../../public/DoctorSmiling.jpg";
 import TestimonialsSection from "../(home-sections)/TestimonialsSection";
@@ -87,7 +87,7 @@ export const SecondSection = () => {
                 <TestSVG />
               </div>
               <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 pt-2">
-                Ovo je neka deskripcija koja ima neko znacenje
+                {coreValue.description}
               </p>
             </div>
           </li>
@@ -126,7 +126,7 @@ export const ThirdSection = () => {
 
       <div className="flex flex-col gap-12 rounded-md">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col justify-center gap-4">
             <Image
               width={0}
               height={0}
@@ -140,10 +140,10 @@ export const ThirdSection = () => {
               Service short description{" "}
             </p>
             <ul className="w-full flex flex-col gap-4">
-              {[1, 2, 3].map((listItem) => (
+              {aboutUsThirdSectionArray.map((listItem) => (
                 <li
-                  key={listItem}
-                  className="flex flex-col gap-42 items-center text-sm"
+                  key={listItem.id}
+                  className="flex flex-col gap-42 items-start text-sm"
                 >
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex items-center  gap-2 rounded-full border-slate-800 p-2">
@@ -157,8 +157,7 @@ export const ThirdSection = () => {
                       </div>
                     </div>
                     <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-                      Ovo je neka deskripcija koja ima neko znacenje neko
-                      znacenje neko znacenje neko
+                      {listItem.text}
                     </p>
                   </div>
                 </li>
@@ -258,9 +257,9 @@ export const FifthSection = () => {
         Something about clinic
       </p>
       <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {[1, 2, 3].map((something) => (
+        {aboutUsFifthSectionArray.map((item) => (
           <li
-            key={something}
+            key={item.id}
             className="flex gap-4 items-center text-sm border-[1px] border-slate-200 hover:bg-[#f8f8ff] hover:text-white duration-300 rounded-md p-2"
           >
             <div className="h-full flex items-center"></div>
@@ -269,10 +268,10 @@ export const FifthSection = () => {
                 <TestSVG />
               </div>
               <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
-                Naslov neki
+                {item.title}
               </p>
               <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
-                Ovo je neka deskripcija koja ima neko znacenje
+                {item.text}
               </p>
             </div>
           </li>
@@ -356,7 +355,7 @@ export const SixthSection = () => {
           Meet Our Team
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
