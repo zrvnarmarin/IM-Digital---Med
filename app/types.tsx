@@ -87,3 +87,11 @@ export type NewsCardType = {
   imageSrc: StaticImageData;
   date: string;
 }
+
+export type ServiceCategoryType = {
+  id: number,
+  name: string,
+  description: string;
+  href: string;
+  services: string[];
+}

@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SomeDoctorImage from "../../../../public/doctorSmallImage.webp";
-import SectionWrapper from "@/app/components/wrappers/SectionWrapper";
 
 export default function HeroSection({
   doctorName,

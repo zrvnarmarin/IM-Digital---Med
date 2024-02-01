@@ -259,8 +259,7 @@ export const homePageFAQ = [
   {
     id: 6,
     question: "Zasto je metallica najbolji bend?",
-    answer:
-      "Zato sto je to stvarno zaista tako.",
+    answer: "Zato sto je to stvarno zaista tako.",
   },
 ];
 
@@ -372,35 +371,36 @@ export const testimonials = [
   // },
   {
     id: 3,
-    testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    testimonial:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     personFullName: "Alex Johnson",
     personOccupation: "Graphic Designer",
-    date: '24. prosinac 2023.'
-  }
+    date: "24. prosinac 2023.",
+  },
 ];
 
 export const stats = [
   {
     id: 1,
     statNumber: 245,
-    statText: 'Usluga'
+    statText: "Usluga",
   },
   {
     id: 2,
     statNumber: 5644,
-    statText: 'Zadovoljnih klijenata'
+    statText: "Zadovoljnih klijenata",
   },
   {
     id: 3,
     statNumber: 3,
-    statText: 'Nečega'
+    statText: "Nečega",
   },
   {
     id: 4,
     statNumber: 398,
-    statText: 'Ljudi nekakvih tamo'
-  }
-]
+    statText: "Ljudi nekakvih tamo",
+  },
+];
 
 export const news = [
   {
@@ -460,3 +460,145 @@ export const news = [
     date: "12. prosinca 2023.",
   },
 ];
+
+export const serviceCategories = [
+  {
+    id: 1,
+    name: "Stomatologija",
+    description: "Ovo je neka deksirpcija za stomatologiju",
+    href: "stomatologija",
+    services: [
+      'Stavljanje dentalnih implantata',
+      'Izbjeljivanje zuba',
+      'Popravak zubnih plombi',
+      'Ortodoncija'
+    ]
+  },
+  {
+    id: 2,
+    name: "Pulmologija",
+    description: "Ovo je neka deksirpcija za pulomologiju",
+    href: "pulmologija",
+    services: [
+      'Spirometrija',
+      'Bronhoskopija'
+    ]
+  }
+];
+
+// export const serviceCategories = [
+//   {
+//     id: 1,
+//     name: "Stomatologija",
+//     description: "Ovo je neka deksirpcija za stomatologiju",
+//     href: "stomatologija",
+//     services: [
+//       {
+//         id: 1,
+//         serviceCategory: "Stomatologija",
+//         name: "Stavljanje dentalnih implantata",
+//         introDescription: "Neki intro description",
+//         longDescription: "Ovo je neki long description tog servicea",
+//       },
+//       {
+//         id: 2,
+//         serviceCategory: "Stomatologija",
+//         name: "Izbeljivanje zuba",
+//         introDescription: "Neki intro description za izbeljivanje zuba",
+//         longDescription:
+//           "Ovo je neki long description za uslugu izbeljivanja zuba",
+//       },
+//       {
+//         id: 3,
+//         serviceCategory: "Stomatologija",
+//         name: "Popravka zubnih plombi",
+//         introDescription: "Neki intro description za popravku zubnih plombi",
+//         longDescription:
+//           "Ovo je neki long description za uslugu popravke zubnih plombi",
+//       },
+//       {
+//         id: 4,
+//         serviceCategory: "Stomatologija",
+//         name: "Ortodoncija",
+//         introDescription: "Neki intro description za ortodonciju",
+//         longDescription: "Ovo je neki long description za uslugu ortodoncije",
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "Pulmologija",
+//     description: "Ovo je neka deksirpcija za pulomologiju",
+//     href: "pulmologija",
+//     services: [
+//       {
+//         id: 5,
+//         serviceCategory: "Pulmologija",
+//         name: "Spirometrija",
+//         introDescription: "Neki intro description za spirometriju",
+//         longDescription: "Ovo je neki long description za uslugu spirometrije",
+//       },
+//       {
+//         id: 6,
+//         serviceCategory: "Pulmologija",
+//         name: "Bronhoskopija",
+//         introDescription: "Neki intro description za bronhoskopiju",
+//         longDescription: "Ovo je neki long description za uslugu bronhoskopije",
+//       },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     name: "Interna medicina",
+//     description: "Ovo je neka deksirpcija za internu medicinu",
+//     href: "interna-medicina",
+//     services: [
+//       {
+//         id: 7,
+//         serviceCategory: "Interna medicina",
+//         name: "Kardiološki pregled",
+//         introDescription: "Neki intro description za kardiološki pregled",
+//         longDescription:
+//           "Ovo je neki long description za uslugu kardiološkog pregleda",
+//       },
+//     ],
+//   },
+//   {
+//     id: 4,
+//     name: "Radiologija",
+//     description: "Ovo je neka deksirpcija za radiologiju",
+//     href: "radiologija",
+//     services: [],
+//   },
+// ];
+
+// export const services = [
+//   {
+//     id: 1,
+//     serviceCategory: 'Stomatologija',
+//     name: 'Stavljanje dentalnih implantata',
+//     introDescription: 'Neki intro description',
+//     longDescription: 'Ovo je neki long description tog servicea',
+//   },
+//   {
+//     id: 2,
+//     serviceCategory: 'Stomatologija',
+//     name: 'Izbeljivanje zuba',
+//     introDescription: 'Neki intro description za izbeljivanje zuba',
+//     longDescription: 'Ovo je neki long description za uslugu izbeljivanja zuba',
+//   },
+//   {
+//     id: 3,
+//     serviceCategory: 'Stomatologija',
+//     name: 'Popravka zubnih plombi',
+//     introDescription: 'Neki intro description za popravku zubnih plombi',
+//     longDescription: 'Ovo je neki long description za uslugu popravke zubnih plombi',
+//   },
+//   {
+//     id: 4,
+//     serviceCategory: 'Stomatologija',
+//     name: 'Ortodoncija',
+//     introDescription: 'Neki intro description za ortodonciju',
+//     longDescription: 'Ovo je neki long description za uslugu ortodoncije',
+//   }
+// ]
