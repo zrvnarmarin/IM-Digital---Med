@@ -6,6 +6,9 @@ import Footer from "@/app/components/Footer";
 import HeroImage from "../../../public/DoctorSmiling.jpg";
 import Link from "next/link";
 import SectionWrapper from "@/app/components/wrappers/SectionWrapper";
+import { TestSVG } from "@/app/(home-sections)/WhyPeopleChooseUs";
+import { RightIcon } from "@/public/Icons";
+import { generateUrlFromFullName } from "@/app/utils";
 
 export default function Page({
   params,
@@ -26,7 +29,7 @@ export default function Page({
             serviceCategoryName={serviceCategory.name}
             serviceCategoryDescription={serviceCategory.description}
           />
-          <Services serviceCategoryName={serviceCategory.name} />
+          <Services serviceCategory={serviceCategory.href} serviceCategoryName={serviceCategory.name} />
         </main>
       ) : (
         <p>Service Category Not Found</p>
@@ -84,16 +87,24 @@ export function HeroSection({
   );
 }
 
-export const Services = ({ serviceCategoryName } : { serviceCategoryName: string }) => {
-  const services = serviceCategories
-    .filter(serviceCategory => serviceCategory.name === serviceCategoryName)
-    .map(filteredServiceCategory => filteredServiceCategory.services)
-  
+export const Services = ({
+  serviceCategory,
+  serviceCategoryName,
+}: {
+  serviceCategory: string
+  serviceCategoryName: string;
+}) => {
+  const servicesNames = serviceCategories
+    .filter((serviceCategory) => serviceCategory.name === serviceCategoryName)
+    .map((filteredServiceCategory) => filteredServiceCategory.services)
+    .flat();
+
   return (
     <SectionWrapper>
+      {serviceCategoryName}
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
         <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
-          Services {serviceCategoryName}
+          Services
         </h2>
         <input
           type="text"
@@ -101,11 +112,45 @@ export const Services = ({ serviceCategoryName } : { serviceCategoryName: string
           placeholder="Pretražite usluge"
           className="rounded-md text-md md:text-lg border border-[#babaff] w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
         />
-        {JSON.stringify(services)}
-        {/* {services.map(service =>
-
-        )} */}
       </div>
+      {servicesNames.map((serviceName) => (
+        <ServiceNameCard
+          key={serviceName}
+          serviceCategoryHref={serviceCategory}
+          serviceName={serviceName}
+        />
+      ))}
     </SectionWrapper>
+  );
+};
+
+export const ServiceNameCard = ({ serviceCategoryHref, serviceName }: { serviceCategoryHref: string, serviceName: string }) => {
+  const serviceHref = generateUrlFromFullName(serviceName)
+
+  return (
+    <Link
+      href={`/services/${serviceCategoryHref}/${serviceHref}`}
+      className="card rounded-md bg-[#babaff]/10 p-4 hover:scale-105 duration-300 group flex items-center justify-between gap-4"
+    >
+      <div className="flex flex-row items-center gap-6">
+        <div className="">
+          <TestSVG />
+        </div>
+        <p className="text-center text-slate-500 font-normal text-xl xl:text-2xl duration-300">
+          {serviceName}
+        </p>
+      </div>
+
+      <div className="hidden duration-300 group-hover:flex items-center gap-2 justify-end">
+        <div>
+          <RightIcon
+            width="40"
+            height="40"
+            backgroundFillColor="#babaff10"
+            iconFillColor="#64748b"
+          />
+        </div>
+      </div>
+    </Link>
   );
 };
