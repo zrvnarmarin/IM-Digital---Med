@@ -95,3 +95,15 @@ export type ServiceCategoryType = {
   href: string;
   services: string[];
 }
+
+export type ServiceObjectType = {
+  id: number;
+  serviceCategory: string;
+  name: string;
+  introDescription?: string;
+  aboutTheProcedure?: string;
+  howToPrepare?: string;
+  duringTheProcedure?: string;
+  recoveryTime?: string;
+  precaution?: string;
+}

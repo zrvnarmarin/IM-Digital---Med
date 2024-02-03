@@ -8,6 +8,16 @@ export function generateUrlFromFullName(fullName: string) {
   return hyphenatedName;
 }
 
+export function generateFullNameFromUrl(inputString: string) {
+  // Replace hyphens with spaces and convert to lowercase
+  const formattedString = inputString.replace(/-/g, ' ').toLowerCase();
+  
+  // Capitalize the first letter of each word
+  const finalString = formattedString.replace(/\b\w/g, (match) => match.toUpperCase());
+
+  return finalString;
+}
+
 export function getFirstName(fullName: string) {
   // Split the full name into an array of words
   const nameArray = fullName.split(' ');

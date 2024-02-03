@@ -101,7 +101,6 @@ export const Services = ({
 
   return (
     <SectionWrapper>
-      {serviceCategoryName}
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
         <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
           Services
@@ -130,18 +129,18 @@ export const ServiceNameCard = ({ serviceCategoryHref, serviceName }: { serviceC
   return (
     <Link
       href={`/services/${serviceCategoryHref}/${serviceHref}`}
-      className="card rounded-md bg-[#babaff]/10 p-4 hover:scale-105 duration-300 group flex items-center justify-between gap-4"
+      className="card rounded-md bg-[#babaff]/10 py-3 px-5 duration-300 group flex items-center justify-between gap-4"
     >
       <div className="flex flex-row items-center gap-6">
         <div className="">
           <TestSVG />
         </div>
-        <p className="text-center text-slate-500 font-normal text-xl xl:text-2xl duration-300">
+        <p className="text-center text-slate-500 font-normal text-xl xl:text-2xl duration-200 group-hover:text-[#babaff]">
           {serviceName}
         </p>
       </div>
 
-      <div className="hidden duration-300 group-hover:flex items-center gap-2 justify-end">
+      <div className=" duration-300 items-center gap-2 justify-end">
         <div>
           <RightIcon
             width="40"
