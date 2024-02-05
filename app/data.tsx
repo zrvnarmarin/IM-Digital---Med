@@ -395,18 +395,18 @@ export const advantages = [
 ];
 
 export const testimonials = [
-  // {
-  //   id: 1,
-  //   testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   personFullName: "John Doe",
-  //   personOccupation: "Software Engineer",
-  // },
-  // {
-  //   id: 2,
-  //   testimonial: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  //   personFullName: "Jane Smith",
-  //   personOccupation: "Marketing Specialist",
-  // },
+  {
+    id: 1,
+    testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    personFullName: "John Doe",
+    personOccupation: "Software Engineer",
+  },
+  {
+    id: 2,
+    testimonial: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    personFullName: "Jane Smith",
+    personOccupation: "Marketing Specialist",
+  },
   {
     id: 3,
     testimonial:

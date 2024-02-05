@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "@/app/(home-sections)/Navbar";
 import Footer from "@/app/components/Footer";
 import HeroSection from './(service-three-sections)/HeroSection';
 import IntroductorySection from "./(service-three-sections)/IntroductorySection";
@@ -13,7 +12,6 @@ import DescriptionSection from "./(service-three-sections)/DescriptionSection";
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-white">
-      <Navbar />
         <main className="h-full bg-white">
           <HeroSection />
           <IntroductorySection />

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ElectricityIcon from "../../public/ElectricityIcon.png";
 import SectionWrapper from "../components/wrappers/SectionWrapper";
-import Navbar from "../(home-sections)/Navbar";
 import HeroImage from "../../public/HospitalImage.jpg";
 import { RightIcon } from "@/public/Icons";
 import { coreValues } from "../data";
@@ -16,8 +15,7 @@ import Footer from "../components/Footer";
 
 export default function AboutUs() {
   return (
-    <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
-      <Navbar />
+    <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
       <HeroSection />
       <SecondSection />
       <ThirdSection />

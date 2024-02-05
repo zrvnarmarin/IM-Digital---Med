@@ -43,14 +43,14 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
           <li className="text-xl xl:text-xl font-light text-slate-400">
             <Link href={"/our-team"}>Our Team</Link>
           </li>
-          {/* <li className="text-xl xl:text-xl font-normal text-[#babaff]">
-              <Link href={"/contact"}>Contact</Link>
-            </li> */}
+          <li className="text-xl xl:text-xl font-light text-slate-400">
+              <Link href={"/testimonials"}>Testimonials</Link>
+            </li>
           <li>
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="bg-[#babaff]/50 text-white font-semibold px-8 py-3 uppercase rounded-md"
+                className="bg-[#02aeef]/50 text-white font-semibold px-8 py-3 uppercase rounded-md"
               >
                 Contact Us
               </Link>

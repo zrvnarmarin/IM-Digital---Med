@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "@/app/(home-sections)/Navbar";
 import Footer from "@/app/components/Footer";
 import HeroSection from "./(service-one-sections)/HeroSection";
 import FirstSection from "./(service-one-sections)/FirstSection";
@@ -19,7 +18,6 @@ import LastSectionServiceOne from "./(service-one-sections)/LastSectionServiceOn
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center lg:pt-4 bg-[#FFFFFF]">
-      <Navbar />
       <HeroSection
         serviceTitle="Service Title Number One"
         shortServiceDescription="This is service one description"

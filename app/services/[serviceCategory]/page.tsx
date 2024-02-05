@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { serviceCategories } from "@/app/data";
-import Navbar from "@/app/(home-sections)/Navbar";
 import Footer from "@/app/components/Footer";
 import HeroImage from "../../../public/DoctorSmiling.jpg";
 import Link from "next/link";
@@ -21,7 +20,6 @@ export default function Page({
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-white">
-      <Navbar />
       {serviceCategory ? (
         <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
           <HeroSection

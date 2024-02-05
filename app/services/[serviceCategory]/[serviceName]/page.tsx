@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import Footer from "@/app/components/Footer";
-import Navbar from "@/app/(home-sections)/Navbar";
 import { services } from "@/app/data";
 import HeroSection from "./service-sections/HeroSection";
 import PageLinksSection from './service-sections/PageLinksSection'
@@ -18,7 +16,6 @@ export default function Page({ params }: { params: { serviceName: string } }) {
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-white">
-      <Navbar />
       <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
         <HeroSection serviceName={params.serviceName} />
         <PageLinksSection />

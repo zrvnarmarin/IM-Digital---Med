@@ -50,8 +50,9 @@ export type TestimonialType = {
   testimonial: string;
   personFullName: string;
   personOccupation: string;
-  date: string;
-}
+  date?: string; 
+};
+
 
 export type StatType = {
   id: number,

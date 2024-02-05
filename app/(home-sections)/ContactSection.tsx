@@ -78,13 +78,13 @@ export default function ContactSection() {
               />
             </label>
             <label
-              htmlFor="phone-number"
+              htmlFor="service"
               className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
             >
               I{`'`}m interested in
               <input
                 type="text"
-                id="phone-number"
+                id="service"
                 className="border-none text-md md:text-lg font-normal text-slate-600 px-6 py-3"
               />
             </label>

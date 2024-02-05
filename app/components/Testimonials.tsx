@@ -60,7 +60,7 @@ export default function Testimonials() {
   );
 }
 
-function Testimonial({
+export function Testimonial({
   testimonialData,
 }: {
   testimonialData: TestimonialType;
