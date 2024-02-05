@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Montserrat, Roboto_Condensed } from 'next/font/google'
+import { Montserrat, Roboto_Condensed, Neuton } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import Navigation from './components/Navigation'
 
-const montserrat = Montserrat({ subsets: ['latin']})
+const montserrat = Neuton({ subsets: ['latin'], weight: ['400']})
 const robotoCondensed = Roboto_Condensed({ subsets: ['latin']})
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoCondensed.className}>
+        <Navigation />
         {children}
       </body>
     </html>
@@ -27,7 +29,7 @@ export default function RootLayout({
 
 export const Sidebar = () => {
   return (
-    <aside className="fixed bottom-0 top-0 left-0 bg-gray-800 text-white h-screen w-1/4">
+    <aside className="fixed bottom-0 top-0 left-0 bg-gray-800 text-white h-screen w-1/4 z-50">
       <div className="p-4">
         <h2 className="text-2xl font-bold mb-4">Sidebar</h2>
         <ul>
