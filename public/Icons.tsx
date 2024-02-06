@@ -281,7 +281,7 @@ export const ArrowUp = () => {
     >
       <g
         transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
-        fill="#babaff"
+        fill="#7fd5f6"
         stroke="none"
       >
         <path
@@ -300,7 +300,7 @@ export const RightIcon = ({
   width,
   height,
 }: {
-  backgroundFillColor: string;
+  backgroundFillColor?: string;
   iconFillColor: string;
   width: string;
   height: string;

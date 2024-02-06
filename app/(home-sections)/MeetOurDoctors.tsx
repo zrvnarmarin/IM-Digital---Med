@@ -14,7 +14,7 @@ export default function MeetOurDoctors() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Meet Our Doctor Specialists
         </h2>
       </div>
@@ -26,7 +26,7 @@ export default function MeetOurDoctors() {
       <div className="flex justify-center pt-8 px-6">
         <Link
           href="/our-team"
-          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
+          className="bg-[#02aeef]/50 text-white font-semibold px-8 py-3 rounded-md"
         >
           Meet The Rest
         </Link>
@@ -52,26 +52,25 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
           />
         </div>
         {/* Text Container */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 transition duration-300 ease-in-out bg-[#babaff]/80 text-white opacity-0 group-hover:opacity-100">
+        <div className="absolute bottom-0 left-0 right-0 p-4 transition duration-300 ease-in-out bg-[#80d6f7] text-white opacity-0 group-hover:opacity-100">
           <div className="flex items-center gap-2 justify-end">
-            <p className="text-md md:text-lg font-normal text-white">
+            <p className="text-white text-center font-medium text-lg xl:text-xl ">
               Meet Dr. {getFirstName(doctor.name)}
             </p>
             <div>
               <RightIcon
                 width="30"
                 height="30"
-                backgroundFillColor="#babaffcc"
                 iconFillColor="#ffffff"
               />
             </div>
           </div>
         </div>
       </div>
-      <p className="text-start w-full text-base xl:text-lg font-normal text-slate-500 group-hover:text-white duration-100 pt-4">
+      <p className="text-slate-500 text-start font-medium text-lg xl:text-xl w-full group-hover:text-white duration-100 pt-4">
         Dr. {doctor.name}
       </p>
-      <p className="text-start w-full text-sm xl:text-md font-light text-slate-500 group-hover:text-white duration-100 pt-2">
+      <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-2">
         {doctor.specialisation}
       </p>
     </Link>

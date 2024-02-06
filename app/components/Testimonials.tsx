@@ -10,7 +10,7 @@ export default function Testimonials() {
   return (
     <section className="flex gap-8 h-full flex-col md:flex-col bg-[#FFFFFF]">
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-4xl font-bold text-slate-600">
           Testimonials
         </h2>
       </div>
@@ -20,18 +20,16 @@ export default function Testimonials() {
             <RightIcon
               width="36px"
               height="36px"
-              backgroundFillColor="#babaff"
+              backgroundFillColor="#02aeef"
               iconFillColor="#ffffff"
             />
           </button>
-          {testimonials.map((testimonial) => (
-            <Testimonial key={testimonial.id} testimonialData={testimonial} />
-          ))}
+            <Testimonial key={testimonials[2].id} testimonialData={testimonials[2]} />
           <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
             <RightIcon
               width="36px"
               height="36px"
-              backgroundFillColor="#babaff"
+              backgroundFillColor="#02aeef"
               iconFillColor="#ffffff"
             />
           </button>
@@ -51,7 +49,7 @@ export default function Testimonials() {
       <div className="flex justify-center text-center pt-8 px-6">
         <Link
           href="/our-team"
-          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
+          className="bg-[#02aeef]/50 text-white font-semibold px-8 py-3 rounded-md"
         >
           Read More Stories
         </Link>

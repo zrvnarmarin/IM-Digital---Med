@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Montserrat, Roboto_Condensed, Neuton } from 'next/font/google'
+import { Montserrat, Roboto_Condensed, Neuton, Inter } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link'
 import Navigation from './components/Navigation'
 
 const montserrat = Neuton({ subsets: ['latin'], weight: ['400']})
-const robotoCondensed = Roboto_Condensed({ subsets: ['latin']})
+const robotoCondensed = Inter({ subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',

@@ -31,7 +31,7 @@ export default function HeroSection() {
             <div className="flex justify-start pt-4">
               <Link
                 href="/contact"
-                className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase rounded-md"
+                className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3"
               >
                 Contact Us
               </Link>

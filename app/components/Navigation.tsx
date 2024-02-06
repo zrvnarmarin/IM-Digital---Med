@@ -26,31 +26,31 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
     <header className="w-full sticky top-0 left-0 right-0 z-50">
       <nav className="flex flex-row justify-between lg:justify-center gap-24 items-center px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-3 bg-white/95 drop-shadow border-b-[1px] border-slate-200">
         <Link href={"/"}>
-          <p className="text-center text-4xl text leading-10 font-normal italic uppercase text-[#babaff]">
+          <p className="text-center text-4xl text leading-10 font-normal italic uppercase text-[#02aeef]/50">
             Sinergy
           </p>
         </Link>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
-          <li className="text-xl xl:text-xl font-light text-slate-400">
+          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="text-xl xl:text-xl font-light text-slate-400">
+          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
             <Link href={"/about-us"}>About Us</Link>
           </li>
-          <li className="text-xl xl:text-xl font-light text-slate-400">
+          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
             <Link href={"/services"}>Services</Link>
           </li>
-          <li className="text-xl xl:text-xl font-light text-slate-400">
+          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
             <Link href={"/our-team"}>Our Team</Link>
           </li>
-          <li className="text-xl xl:text-xl font-light text-slate-400">
-              <Link href={"/testimonials"}>Testimonials</Link>
-            </li>
+          {/* <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+            <Link href={"/testimonials"}>Testimonials</Link>
+          </li> */}
           <li>
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="bg-[#02aeef]/50 text-white font-semibold px-8 py-3 uppercase rounded-md"
+                className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3"
               >
                 Contact Us
               </Link>

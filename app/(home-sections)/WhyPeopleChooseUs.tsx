@@ -2,14 +2,13 @@ import React from "react";
 import { WhyChooseUsPointType } from "../types";
 import { whyChooseUsPoints } from "../data";
 import SectionWrapper from "../components/wrappers/SectionWrapper";
-import { ShieldIcon } from "@/public/Icons";
 
 export default function WhyPeopleChooseUs() {
   return (
     <SectionWrapper>
       <div className="flex flex-col justify-center">
         <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-          <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+          <h2 className="text-center text-4xl font-bold text-slate-600">
             Why is your health safe
           </h2>
         </div>
@@ -31,12 +30,12 @@ export function WhyPeopleChoosePointCard({
   return (
     <div
       key={point.id}
-      className={`group flex flex-col rounded-md items-center  p-4 md:p-6 lg:p-8 border border-slate-200 hover:bg-[#f8f8ff] hover:text-white duration-300`}
+      className={`group flex flex-col rounded-md items-center p-4 md:p-6 lg:p-8 border drop-shadow-2xl border-slate-200 hover:bg-[#02aeef]/5 hover:text-white duration-300`}
     >
       <div>
         <TestSVG />
       </div>
-      <h2 className="text-slate-500 text-center font-normal px-6 py-3 text-xl xl:text-2xl pt-2 lg:pt-4">
+      <h2 className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl pt-2 lg:pt-4">
         {point.point}
       </h2>
       <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 pt-2 lg:pt-4">
@@ -67,7 +66,7 @@ export const TestSVG = () => {
           width="120.00"
           height="120.00"
           rx="60"
-          fill="#babaff"
+          fill="#80d6f7"
         />
       </g>
 

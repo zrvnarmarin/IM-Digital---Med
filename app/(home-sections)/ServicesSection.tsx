@@ -12,7 +12,7 @@ export default function ServicesSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Choose our services
         </h2>
       </div>
@@ -24,7 +24,7 @@ export default function ServicesSection() {
       <div className="flex justify-center pt-8 px-6">
         <Link
           href="/services"
-          className="bg-[#babaff]/50 text-white font-semibold px-6 py-3 uppercase"
+          className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3"
         >
           See all Services
         </Link>
@@ -37,17 +37,17 @@ export function ServiceCard({ service }: { service: ServiceType }) {
   return (
     <Link
       href={`/services/${service.href}`}
-      className="card bg-[#babaff]/10 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300 group"
+      className="card bg-[#02aeef]/5 p-4 md:p-6 lg:p-8 hover:scale-105 duration-300 group drop-shadow-2xl"
     >
       <div className="layer"></div>
       <div className="content">
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center pt-4">
           <TestSVG />
         </div>
-        <p className="w-full text-center text-slate-500 font-normal text-xl xl:text-2xl group-hover:text-white duration-300 pt-6">
+        <p className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl lg:pt-4 group-hover:text-white duration-300 pt-6">
           {service.serviceTitle}
         </p>
-        <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-8">
+        <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 group-hover:text-white duration-100 pt-4">
           {service.shortDescription}
         </p>
         <div className="flex items-center pt-8 gap-2 justify-end">

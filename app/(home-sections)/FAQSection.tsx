@@ -8,7 +8,7 @@ export default function FAQSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Frequently Asked Questions
         </h2>
       </div>

@@ -41,8 +41,8 @@ export function Accordion({ faq } : { faq: FAQType[] }) {
   }) {
     return (
       <div onClick={onShow} className="cursor-pointer">
-        <div className={`group flex items-center justify-between gap-6 bg-[#babaff]/10 py-4  ${!isActive ? 'border-b-[1px] border-slate-200' : 'border-none'}border-b-[1px] px-4`}>
-          <h3 className={`w-full text-start text-slate-500 font-normal text-xl xl:text-2xl group-hover:text-[#babaff] duration-200`}>
+        <div className={`group flex items-center justify-between gap-6 bg-[#02aeef]/5 py-4  ${!isActive ? 'border-b-[1px] border-slate-200' : 'border-none'}border-b-[1px] px-4`}>
+          <h3 className={`w-full text-slate-500 font-medium text-lg xl:text-xl group-hover:text-[#02aeef] duration-200`}>
             {question}
           </h3>
           {isActive ? (

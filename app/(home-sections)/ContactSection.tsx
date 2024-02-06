@@ -6,18 +6,18 @@ export default function ContactSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="ext-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Get in touch with us
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Heading and description */}
-        <div className="flex gap-4 items-center bg-[#babaff]/10">
+        <div className="flex gap-4 items-center bg-[#02aeef]/5">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2">
-            <p className="w-full text-start text-slate-500 font-normal text-xl xl:text-2xl">
+            <p className="text-slate-500 text-start font-medium text-lg xl:text-xl">
               Tell us all about your project right here, or send us an email at
-              <span className="font-semibold text-[#babaff]">
+              <span className="font-semibold text-[#02aeef]/50">
                 {" "}
                 info@clinicname.com
               </span>
@@ -26,13 +26,13 @@ export default function ContactSection() {
         </div>
 
         {/* Delete section */}
-        <div className="flex gap-4 items-center bg-[#babaff]/10">
+        <div className="flex gap-4 items-center bg-[#02aeef]/5">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2 py-4">
-            <p className="tw-full text-start text-slate-500 font-normal text-xl xl:text-2xl">
+            <p className="text-slate-500 text-start font-medium text-lg xl:text-xl">
               By filling out this form, our call center will contact you within
               24 hours to arrange your appointment.
-              <span className="font-semibold text-[#babaff]">
+              <span className="font-semibold text-[#02aeef]/50">
                 {" "}
                 info@clinicname.com
               </span>
@@ -41,7 +41,7 @@ export default function ContactSection() {
         </div>
 
         {/* Form */}
-        <div className="flex gap-4 items-center rounded bg-[#babaff]/10 pr-5 pt-6 pb-6">
+        <div className="flex gap-4 items-center rounded bg-[#02aeef]/5 pr-5 pt-6 pb-6">
           <div className="h-full flex items-center"></div>
           <form className="flex flex-col gap-2 w-full">
             <label
@@ -100,7 +100,7 @@ export default function ContactSection() {
               />
             </label>
             <div className="flex justify-center pt-8 px-6">
-              <button className="bg-[#acacff] text-white font-semibold px-6 py-3 uppercase">
+              <button className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3">
                 Send
               </button>
             </div>
@@ -108,7 +108,7 @@ export default function ContactSection() {
         </div>
 
         {/* Company data */}
-        <div className="flex flex-col items-center bg-[#babaff]/10">
+        <div className="flex flex-col items-center bg-[#02aeef]/5">
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Radno vrijeme</p>
             <div className="w-full flex flex-row gap-2 text-md md:text-lg font-normal text-slate-600">

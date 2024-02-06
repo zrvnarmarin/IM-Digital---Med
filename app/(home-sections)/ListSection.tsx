@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import ElectricityIcon from "../../public/ElectricityIcon.png";
+import ElectricityIcon from "../../public/hospitalIcon.png";
 import { ListItemType } from "../types";
 import { listItems } from "../data";
 import ListTestImage from "../../public/listSectionIMageTest.avif";
@@ -10,7 +9,7 @@ export default function ListSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Why are we different
         </h2>
       </div>
@@ -34,10 +33,10 @@ const ListItem = ({ listItem }: { listItem: ListItemType }) => {
       <div className="h-full flex items-center border-[1px] border-slate-200"></div>
       <div className="flex flex-col gap-4 py-4">
         <div className="flex items-center gap-4">
-          <div className="bg-[#babaff] rounded-full p-2 border border-[#8484f2] ">
+          <div className="bg-[#02aeef]/50 rounded-full p-2 ">
             <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
           </div>
-          <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
+          <p className="w-full text-slate-500 font-medium text-lg xl:text-xl">
             {listItem.title}
           </p>
         </div>
