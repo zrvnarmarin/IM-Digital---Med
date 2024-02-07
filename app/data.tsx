@@ -482,21 +482,7 @@ export const news = [
     title: "News Number One",
     imageSrc: TestImage,
     date: "12. prosinca 2023.",
-  },
-  {
-    id: 7,
-    href: "first-news",
-    title: "News Number One",
-    imageSrc: TestImage,
-    date: "12. prosinca 2023.",
-  },
-  {
-    id: 8,
-    href: "first-news",
-    title: "News Number One",
-    imageSrc: TestImage,
-    date: "12. prosinca 2023.",
-  },
+  }
 ];
 
 export const serviceCategories = [

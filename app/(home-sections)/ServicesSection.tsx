@@ -24,7 +24,7 @@ export default function ServicesSection() {
       <div className="flex justify-center pt-8 px-6">
         <Link
           href="/services"
-          className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3"
+          className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3"
         >
           See all Services
         </Link>

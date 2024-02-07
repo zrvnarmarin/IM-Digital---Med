@@ -46,7 +46,7 @@ export default function ContactSection() {
           <form className="flex flex-col gap-2 w-full">
             <label
               htmlFor="name"
-              className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
+              className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2"
             >
               Name
               <input
@@ -57,7 +57,7 @@ export default function ContactSection() {
             </label>
             <label
               htmlFor="email"
-              className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
+              className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2"
             >
               Email
               <input
@@ -68,7 +68,7 @@ export default function ContactSection() {
             </label>
             <label
               htmlFor="phone-number"
-              className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
+              className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2"
             >
               Phone Number
               <input
@@ -79,7 +79,7 @@ export default function ContactSection() {
             </label>
             <label
               htmlFor="service"
-              className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
+              className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2"
             >
               I{`'`}m interested in
               <input
@@ -90,7 +90,7 @@ export default function ContactSection() {
             </label>
             <label
               htmlFor="phone-number"
-              className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2"
+              className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2"
             >
               Your question
               <textarea
@@ -100,7 +100,7 @@ export default function ContactSection() {
               />
             </label>
             <div className="flex justify-center pt-8 px-6">
-              <button className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3">
+              <button className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3">
                 Send
               </button>
             </div>
@@ -110,7 +110,7 @@ export default function ContactSection() {
         {/* Company data */}
         <div className="flex flex-col items-center bg-[#02aeef]/5">
           <div className="flex flex-col gap-6 p-4 w-full">
-            <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Radno vrijeme</p>
+            <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Radno vrijeme</p>
             <div className="w-full flex flex-row gap-2 text-md md:text-lg font-normal text-slate-600">
               <p>Pon - Pet: </p>
               <p>08:00 - 16:00h</p>
@@ -118,7 +118,7 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col gap-6 p-4 w-full">
-            <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Lokacije</p>
+            <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Lokacije</p>
             <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
 
               <div className="flex flex-row gap-4">
@@ -141,7 +141,7 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col gap-6 p-4 w-full">
-            <p className="flex flex-col text-md md:text-lg gap-3 font-semibold text-slate-600 leading-2 uppercase">Kontakt</p>
+            <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Kontakt</p>
             <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
 
               <div className="flex flex-row gap-4">

@@ -26,7 +26,7 @@ export default function MeetOurDoctors() {
       <div className="flex justify-center pt-8 px-6">
         <Link
           href="/our-team"
-          className="bg-[#02aeef]/50 text-white font-semibold px-8 py-3 rounded-md"
+          className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 text-white font-semibold px-8 py-3 rounded-md"
         >
           Meet The Rest
         </Link>
