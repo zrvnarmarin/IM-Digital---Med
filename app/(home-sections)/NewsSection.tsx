@@ -36,7 +36,7 @@ export default function NewsSection() {
 const NewsCard = ({ news }: { news: NewsCardType }) => {
   return (
     <Link href={`/news/${news.href}`}>
-      <li className="relative group overflow-hidden cursor-pointer rounded">
+      <li className="relative group overflow-hidden cursor-pointer rounded shadow-lg">
         {/* Background Image */}
         <div className="group-hover:scale-105 transition duration-500 ease-in-out">
           <Image

@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TeamOfDoctors from "../../public/usman-yousaf-SakqLf78KVo-unsplash.jpg";
-import { RightIcon } from "@/public/Icons";
+import TeamOfDoctors from "../../public/doctorsDiscussing.jpg";
 
 export default function HeroSection() {
   return (

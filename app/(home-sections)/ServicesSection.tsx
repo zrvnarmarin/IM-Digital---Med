@@ -42,7 +42,7 @@ export function ServiceCard({ service }: { service: ServiceType }) {
       <div className="layer"></div>
       <div className="content">
         <div className="w-full flex items-center justify-center pt-4">
-          <TestSVG />
+          <TestSVG iconFill="#ffffff" backgroundFill= "#80d6f7" />
         </div>
         <p className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl lg:pt-4 group-hover:text-white duration-300 pt-6">
           {service.serviceTitle}

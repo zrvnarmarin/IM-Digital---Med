@@ -33,7 +33,7 @@ export function WhyPeopleChoosePointCard({
       className={`group flex flex-col rounded-md items-center p-4 md:p-6 lg:p-8 border drop-shadow-2xl border-slate-200 hover:bg-[#02aeef]/5 hover:text-white duration-300`}
     >
       <div>
-        <TestSVG />
+      <TestSVG iconFill="#ffffff" backgroundFill= "#80d6f7" />
       </div>
       <h2 className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl pt-2 lg:pt-4">
         {point.point}
@@ -45,10 +45,12 @@ export function WhyPeopleChoosePointCard({
   );
 }
 
-export const TestSVG = () => {
+export const TestSVG = ({ iconFill, backgroundFill } : { iconFill?: string, backgroundFill?: string }) => {
+  // "#80d6f7" - blue
+  // "#ffffff" - white
   return (
     <svg
-      fill="#ffffff"
+      fill={iconFill}
       width="50px"
       height="50px"
       viewBox="-10 -10 120.00 120.00"
@@ -66,7 +68,7 @@ export const TestSVG = () => {
           width="120.00"
           height="120.00"
           rx="60"
-          fill="#80d6f7"
+          fill={backgroundFill}
         />
       </g>
 

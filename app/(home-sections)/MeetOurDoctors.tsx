@@ -40,7 +40,7 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
 
   return (
     <Link href={`/our-team/${lowerCaseDoctorName}`}>
-      <div className="relative group rounded overflow-hidden cursor-pointer">
+      <div className="relative group rounded overflow-hidden cursor-pointer shadow-md">
         {/* Background Image */}
         <div className="group-hover:opacity-75 transition duration-300 ease-in-out">
           <Image
