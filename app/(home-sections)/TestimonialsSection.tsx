@@ -5,7 +5,7 @@ import SectionWrapper from "../components/wrappers/SectionWrapper";
 export default function TestimonialsSection() {
   return (
     <SectionWrapper>
-      <Testimonials />
+      <Testimonials showReadMoreButton={false} />
     </SectionWrapper>
   );
 }

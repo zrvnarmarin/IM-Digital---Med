@@ -27,7 +27,7 @@ export default function AboutUs() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
-      <TestimonialsSection />
+      <TestimonialsSection  />
       <SeventhSection />
       <Footer />
     </main>
@@ -411,12 +411,12 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
 
 const SeventhSection = () => {
   return (
-    <section className="w-full flex flex-col gap-4 mt-12 mb-12 py-4 px-7 md:px-16 lg:px-20 bg-[#babaff]/10 border border-slate-200">
+    <section className="w-full flex flex-col gap-4 mt-12 mb-12 py-4 px-7 md:px-16 lg:px-20 bg-[#02aeef]/5">
       <div className="flex flex-col gap-2 pt-8">
-        <h2 className="text-center text-md md:text-lg lg:text-xl text-black font-semibold">
+        <h2 className="text-center w-full text-md xs:text-xl font-medium text-slate-500">
           Your health is our main priority
         </h2>
-        <h2 className="text-center text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center w-full text-2xl xs:text-4xl font-medium text-slate-500">
           Place your trust in our experts
         </h2>
       </div>
@@ -431,3 +431,17 @@ const SeventhSection = () => {
     </section>
   );
 };
+
+<div className=" bg-[#02aeef]/5 py-8 px-8 lg:py-16 lg:px-24 rounded-md">
+        <h1 className="text-center w-full text-2xl xs:text-4xl font-medium text-slate-500">
+          Želite se naručiti kod ovog liječnika?
+        </h1>
+        <div className="flex justify-center text-center pt-8 px-6">
+          <Link
+            href="/our-team"
+            className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-lg text-white font-medium px-6 py-3"
+          >
+            Send enquery
+          </Link>
+        </div>
+      </div>

@@ -42,7 +42,7 @@ export const SearchTestimonialsSection = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
-        <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h2 className="text-center text-4xl font-bold text-slate-600">
           Search testimonials
         </h2>
         <input

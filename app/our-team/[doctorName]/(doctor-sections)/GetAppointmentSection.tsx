@@ -4,7 +4,7 @@ import SectionWrapper from "@/app/components/wrappers/SectionWrapper";
 export default function GetAppointmentSection() {
   return (
     <SectionWrapper>
-      <div className=" bg-[#02aeef]/5 py-8 px-8 lg:py-16 lg:px-24 rounded-md">
+      <div className="bg-[#02aeef]/5 py-8 px-8 lg:py-16 lg:px-24 rounded-md">
         <h1 className="text-center w-full text-2xl xs:text-4xl font-medium text-slate-500">
           Želite se naručiti kod ovog liječnika?
         </h1>
