@@ -9,8 +9,8 @@ export default function RecoveryTimeSection ({
     return (
       <SectionWrapper>
         <div id="recovery-time" className="flex flex-row items-center gap-6">
-          <TestSVG />
-          <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <TestSVG iconFill="#ffffff" backgroundFill= "#80d6f7" />
+          <h2 className="text-start text-xl xs:text-2xl font-semibold text-slate-600">
             Recovery Time
           </h2>
         </div>

@@ -10,24 +10,16 @@ export default function ServiceCardsSection() {
   return (
     <SectionWrapper>
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
-        <h1 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+        <h1 className="text-center text-4xl font-bold text-slate-600">
           Choose our services
         </h1>
         <input
           type="text"
           id="email"
           placeholder="Pretražite kategorije usluga"
-          className="rounded-md text-md md:text-lg border border-[#babaff] w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
+          className="rounded-md text-md md:text-lg border border-[#80d6f7] w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
         />
       </div>
-
-      {/* <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
-        Our doctor make the{" "}
-        <span className="text-[#babaff]">health workj for you</span>. Lorem
-        ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur
-        exercitationem dolorum maiores sint sequi ut, vero natus sapiente
-        magnam!
-      </p> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {serviceCategories.map((serviceCategory) => (
@@ -49,11 +41,11 @@ export function ServiceCategoryCard({
   return (
     <Link
       href={`/services/${serviceCategory.href}`}
-      className="card rounded-md bg-[#babaff]/10 p-4 hover:scale-105 duration-300 group flex items-center justify-between gap-4"
+      className="card rounded-md bg-[#02aeef]/5 p-4 hover:scale-105 duration-300 group flex items-center justify-between gap-4"
     >
       <div className="flex flex-row items-center gap-6">
         <div className="">
-          <TestSVG />
+          <TestSVG iconFill="#ffffff" backgroundFill="#80d6f7" />
         </div>
         <p className="text-center text-slate-500 font-normal text-xl xl:text-2xl duration-300">
           {serviceCategory.name}

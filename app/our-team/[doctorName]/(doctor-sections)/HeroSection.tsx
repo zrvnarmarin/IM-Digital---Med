@@ -11,20 +11,20 @@ export default function HeroSection({
   doctorSpecialisation: string;
 }) {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-[#babaff]/10">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-[#02aeef]/5">
       <div className="bg-[#babaff]/10 py-8 px-6 lg:bottom-4 left-0 right-0 w-full flex flex-col gap-2 text-white text-center">
         <Link
           href="our-team"
-          className="text-start w-full text-slate-500 font-normal text-lg xl:text-xl uppercase py-4"
+          className="text-start w-full text-base xl:text-lg font-medium text-slate-500 hover:text-[#80d6f7] duration-100 pt-2 uppercase py-4"
         >
           {`<<`} Our Team
         </Link>
 
-        <h1 className="text-start w-full text-2xl xs:text-4xl font-medium text-slate-500">
+        <h1 className="text-start text-4xl font-bold text-slate-600">
           {doctorName}, dr.med.
         </h1>
 
-        <h1 className="text-start w-full text-slate-500 font-normal text-lg xl:text-xl uppercase">
+        <h1 className="text-start w-full text-base xl:text-lg font-normal text-slate-500 uppercase">
           {doctorSpecialisation}
         </h1>
       </div>

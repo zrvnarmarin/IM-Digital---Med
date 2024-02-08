@@ -12,12 +12,12 @@ export default function AboutTheProcedureSection ({
           id="about-the-procedure"
           className="flex flex-row items-center gap-6"
         >
-          <TestSVG />
-          <h2 className="text-start text-2xl xs:text-4xl font-medium text-slate-600 underline-offset-8 decoration-1 underline decoration-[#babaff]">
+          <TestSVG iconFill="#ffffff" backgroundFill= "#80d6f7" />
+          <h2 className="text-start text-xl xs:text-2xl font-semibold text-slate-600">
             About the procedure
           </h2>
         </div>
-        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
+        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
           {aboutTheProcedure}
         </p>
       </SectionWrapper>

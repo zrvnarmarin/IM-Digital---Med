@@ -9,7 +9,7 @@ export default function PageLinksSection() {
         {servicePropertiesNavigationLinks.map((navigationLink) => (
           <Link href={`#${navigationLink.href}`}>
             <li className="flex flex-col gap-2 items-center justify-center cursor-pointer py-2 px-4">
-              <TestSVG />
+            <TestSVG iconFill="#ffffff" backgroundFill= "#80d6f7" />
               <p className="text-center text-sm xl:text-base font-normal text-slate-500">
                 {navigationLink.title}
               </p>
