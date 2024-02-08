@@ -12,10 +12,10 @@ export default function ContactSection() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Heading and description */}
-        <div className="flex gap-4 items-center bg-[#02aeef]/5">
+        <div className="flex gap-4 items-center bg-[#02aeef]/5 rounded-r-md">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
-          <div className="flex flex-col gap-2">
-            <p className="text-slate-500 text-start font-medium text-lg xl:text-xl">
+          <div className="flex flex-col gap-2 py-4">
+            <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">
               Tell us all about your project right here, or send us an email at
               <span className="font-semibold text-[#02aeef]/50">
                 {" "}
@@ -26,10 +26,10 @@ export default function ContactSection() {
         </div>
 
         {/* Delete section */}
-        <div className="flex gap-4 items-center bg-[#02aeef]/5">
+        <div className="flex gap-4 items-center bg-[#02aeef]/5 rounded-r-md">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2 py-4">
-            <p className="text-slate-500 text-start font-medium text-lg xl:text-xl">
+            <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">
               By filling out this form, our call center will contact you within
               24 hours to arrange your appointment.
               <span className="font-semibold text-[#02aeef]/50">
@@ -41,7 +41,7 @@ export default function ContactSection() {
         </div>
 
         {/* Form */}
-        <div className="flex gap-4 items-center rounded bg-[#02aeef]/5 pr-5 pt-6 pb-6">
+        <div className="flex items-center rounded-md bg-[#02aeef]/5 p-4">
           <div className="h-full flex items-center"></div>
           <form className="flex flex-col gap-2 w-full">
             <label
@@ -108,10 +108,10 @@ export default function ContactSection() {
         </div>
 
         {/* Company data */}
-        <div className="flex flex-col items-center bg-[#02aeef]/5">
+        <div className="flex flex-col items-center bg-[#02aeef]/5 rounded-md">
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Radno vrijeme</p>
-            <div className="w-full flex flex-row gap-2 text-md md:text-lg font-normal text-slate-600">
+            <div className="w-full flex flex-row gap-2 text-slate-500 font-medium text-sm xl:text-md leading-2">
               <p>Pon - Pet: </p>
               <p>08:00 - 16:00h</p>
             </div>
@@ -119,21 +119,21 @@ export default function ContactSection() {
 
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Lokacije</p>
-            <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
+            <div className="w-full flex flex-col justify-between gap-6 text-slate-500 font-medium text-lg xl:text-xl leading-2">
 
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row items-center gap-4">
                 <LocationPinIcon width={27} height={27} />
                 <div>
-                  <p className="font-medium">Hondlova Aleja </p>
-                  <p className="text-xs">Ulica Nečeg i Nešto 23a, 10000 Zagreb</p>
+                  <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">Hondlova Aleja </p>
+                  <p className="text-slate-500 font-medium text-xs xl:text-sm leading-2">Ulica Nečeg i Nešto 23a, 10000 Zagreb</p>
                 </div>
               </div>
 
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row items-center gap-4">
               <LocationPinIcon width={27} height={27} />
                 <div>
-                  <p className="font-medium">Red Mall Square </p>
-                  <p className="text-xs">Ulica Nečeg i Nešto 23a, 10000 Zagreb</p>
+                  <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">Red Mall Square </p>
+                  <p className="text-slate-500 font-medium text-xs xl:text-sm leading-2">Ulica Nečeg i Nešto 23a, 10000 Zagreb</p>
                 </div>
               </div>
 
@@ -144,17 +144,17 @@ export default function ContactSection() {
             <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Kontakt</p>
             <div className="w-full flex flex-col justify-between gap-6 text-md md:text-lg font-normal text-slate-600">
 
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row items-center gap-4">
                 <EmailIcon width={25} height={25} />
                 <div>
-                  <p className="font-medium">76marin76@gmail.com</p>
+                  <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">76marin76@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row items-center gap-4">
                 <ContactIcon width={25} height={25} />
                 <div>
-                  <p className="font-medium">+38515587459</p>
+                  <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">+38515587459</p>
                 </div>
               </div>
 

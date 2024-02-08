@@ -62,9 +62,9 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
             onClick={onOpenSidebar}
             className="flex flex-col gap-1 items-end p-0 border-none"
           >
-            <div className="w-7 rounded-md h-[2.5px] bg-[#babaff]"></div>
-            <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
-            <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
+            <div className="w-7 rounded-md h-[2.5px] bg-[#02aeef]/50"></div>
+            <div className="w-7 h-[2.5px] rounded-md bg-[#02aeef]/50"></div>
+            <div className="w-7 h-[2.5px] rounded-md bg-[#02aeef]/50"></div>
           </button>
         </div>
       </nav>
