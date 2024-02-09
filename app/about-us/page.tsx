@@ -16,7 +16,7 @@ import { generateUrlFromFullName, getFirstName } from "../utils";
 import DoctorImage from "../../public/DoctorSmiling.jpg";
 import TestimonialsSection from "../(home-sections)/TestimonialsSection";
 import Footer from "../components/Footer";
-import TestImage from '../../public/someDoctorImage.avif'
+import TestImage from "../../public/someDoctorImage.avif";
 
 export default function AboutUs() {
   return (
@@ -27,7 +27,7 @@ export default function AboutUs() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
-      <TestimonialsSection  />
+      <TestimonialsSection />
       <SeventhSection />
       <Footer />
     </main>
@@ -150,9 +150,14 @@ export const ThirdSection = () => {
                 >
                   <div className="flex flex-row items-center gap-2">
                     <div className="flex items-center  gap-2 rounded-full border-slate-800 p-2">
-                    <div className="bg-[#02aeef]/50 rounded-full p-2 ">
-            <Image src={ElectricityIcon} alt="icon" width={15} height={15} />
-          </div>
+                      <div className="bg-[#02aeef]/50 rounded-full p-2 ">
+                        <Image
+                          src={ElectricityIcon}
+                          alt="icon"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
                     </div>
                     <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
                       {listItem.text}
@@ -257,53 +262,32 @@ export const FifthSection = () => {
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {aboutUsFifthSectionArray.map((item) => (
           <div
-          key={item.id}
-          className={`group flex flex-col rounded-md items-center p-4 md:p-6 lg:p-8 border drop-shadow-2xl border-slate-200 hover:bg-[#02aeef]/5 hover:text-white duration-300`}
-        >
-          <div>
-            <TestSVG iconFill="#ffffff" backgroundFill="#80d6f7" />
+            key={item.id}
+            className={`group flex flex-col rounded-md items-center p-4 md:p-6 lg:p-8 border drop-shadow-2xl border-slate-200 hover:bg-[#02aeef]/5 hover:text-white duration-300`}
+          >
+            <div>
+              <TestSVG iconFill="#ffffff" backgroundFill="#80d6f7" />
+            </div>
+            <h2 className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl pt-2 lg:pt-4">
+              {item.title}
+            </h2>
+            <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 pt-2 lg:pt-4">
+              {item.text}
+            </p>
           </div>
-          <h2 className="text-slate-500 text-center font-medium px-6 py-3 text-lg xl:text-xl pt-2 lg:pt-4">
-            {item.title}
-          </h2>
-          <p className="text-center w-full text-base xl:text-lg font-light text-slate-500 pt-2 lg:pt-4">
-            {item.text}
-          </p>
-        </div>
         ))}
       </ul>
 
-      <div className="flex flex-col gap-4">
-        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-          <span className="font-bold text-[#80d6f7]">
-            Pravom ste mjestu: naš specijalist
+      <div className="flex flex-row gap-6">
+        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
+          <span className="text-[#80d6f7]">
+            Paradontoza je podmukla bolest{" "}
           </span>{" "}
-          parodontologije detaljno će pregledati Vaše zubno meso te u skladu s
-          time dati preporuku za odgovarajući tretman. Pravom ste mjestu: naš
-          specijalist parodontologije detaljno će pregledati{" "}
-          <span className="font-bold text-[#80d6f7]">
-            Vaše zubno meso te u skladu
-          </span>{" "}
-          s time dati preporuku za odgovarajući tretman. s time dati preporuku
-          za odgovarajući tretman.s time dati preporuku za odgovarajući
-          tretman.s time dati preporuku za odgovarajući tretman.s time dati
-          preporuku za odgovarajući tretman.
-        </p>
-
-        <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-          <span className="font-bold text-[#80d6f7]">
-            Pravom ste mjestu: naš specijalist
-          </span>{" "}
-          parodontologije detaljno će pregledati Vaše zubno meso te u skladu s
-          time dati preporuku za odgovarajući tretman. Pravom ste mjestu: naš
-          specijalist parodontologije detaljno će pregledati{" "}
-          <span className="font-bold text-[#80d6f7]">
-            Vaše zubno meso te u skladu
-          </span>{" "}
-          s time dati preporuku za odgovarajući tretman. s time dati preporuku
-          za odgovarajući tretman.s time dati preporuku za odgovarajući
-          tretman.s time dati preporuku za odgovarajući tretman.s time dati
-          preporuku za odgovarajući tretman.
+          desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
+          vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana
+          <span className="text-[#80d6f7]">
+            ali zato vrlo brzo zbog izostanka
+          </span>
         </p>
 
         <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
@@ -312,31 +296,18 @@ export const FifthSection = () => {
           </span>{" "}
           desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
           vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana
-          preraste u Vaš problem br.1 jer dolazi do nezaustavljivog gubitka
-          tkiva koje podržava zube. Parodontoza je podmukla bolest desni koju je
-          na početku lako ignorirati jer ne uzrokuje bol,{" "}
           <span className="text-[#80d6f7]">
             ali zato vrlo brzo zbog izostanka
           </span>
-          odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
-          dolazi do nezaustavljivog gubitka tkiva koje podržava zube.
-          Parodontoza je podmukla bolest desni koju je na početku lako
-          ignorirati jer ne uzrokuje bol, ali zato vrlo brzo zbog izostanka
-          odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
-          dolazi do nezaustavljivog{" "}
-          <span className="text-[#80d6f7]">
-            gubitka tkiva koje podržava zube
-          </span>
-          .
         </p>
-        <div className="flex justify-center pt-8 px-6">
-          <Link
-            href="/aboutus"
-            className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3"
-          >
-            Link to somewhere
-          </Link>
-        </div>
+      </div>
+      <div className="flex justify-center pt-8 px-6">
+        <Link
+          href="/aboutus"
+          className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3"
+        >
+          Link to somewhere
+        </Link>
       </div>
     </SectionWrapper>
   );
@@ -390,11 +361,7 @@ const DoctorCard = ({ doctor }: { doctor: DoctorType }) => {
               Meet Dr. {getFirstName(doctor.name)}
             </p>
             <div>
-              <RightIcon
-                width="30"
-                height="30"
-                iconFillColor="#ffffff"
-              />
+              <RightIcon width="30" height="30" iconFillColor="#ffffff" />
             </div>
           </div>
         </div>
@@ -433,15 +400,15 @@ const SeventhSection = () => {
 };
 
 <div className=" bg-[#02aeef]/5 py-8 px-8 lg:py-16 lg:px-24 rounded-md">
-        <h1 className="text-center w-full text-2xl xs:text-4xl font-medium text-slate-500">
-          Želite se naručiti kod ovog liječnika?
-        </h1>
-        <div className="flex justify-center text-center pt-8 px-6">
-          <Link
-            href="/our-team"
-            className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-lg text-white font-medium px-6 py-3"
-          >
-            Send enquery
-          </Link>
-        </div>
-      </div>
+  <h1 className="text-center w-full text-2xl xs:text-4xl font-medium text-slate-500">
+    Želite se naručiti kod ovog liječnika?
+  </h1>
+  <div className="flex justify-center text-center pt-8 px-6">
+    <Link
+      href="/our-team"
+      className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-lg text-white font-medium px-6 py-3"
+    >
+      Send enquery
+    </Link>
+  </div>
+</div>;

@@ -6,7 +6,7 @@ import HeroImage from "../../../../../public/DoctorSmiling.jpg";
 export default function HeroSection({ serviceName }: { serviceName: string }) {
     return (
       <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-[#02aeef]/5">
-        <div className="bg-[#babaff]/10 py-8 px-6 lg:bottom-4 left-0 right-0 w-full flex flex-col gap-2 text-white text-center">
+        <div className="bg-[#02aeef]/5 py-8 px-6 lg:bottom-4 left-0 right-0 w-full flex flex-col gap-2 text-white text-center">
           <Link
             href={`/services`}
             className="text-start w-full text-base xl:text-lg font-medium text-slate-500 hover:text-[#80d6f7] duration-100 pt-2 uppercase py-4"

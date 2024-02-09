@@ -19,7 +19,8 @@ export default function ListSection() {
             <ListItem key={listItem.id} listItem={listItem} />
           ))}
         </ul>
-        <div className="hidden lg:flex items-center justify-center">
+        <div className="hidden lg:flex flex-col items-center justify-around">
+          <Image src={ListTestImage} alt="test" width={0} height={0} />
           <Image src={ListTestImage} alt="test" width={0} height={0} />
         </div>
       </div>

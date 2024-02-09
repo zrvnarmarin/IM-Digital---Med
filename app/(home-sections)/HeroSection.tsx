@@ -24,7 +24,7 @@ export default function HeroSection() {
                 Sinergy
               </h1> */}
               <p className="text-start text-lg sm:text-4xl leading-2 font-medium md:text-3xl text-white">
-                Where expertise <br /> meets the results
+              Exemplary Care, <br /> Endless Well-being
               </p>
             </div>
             <div className="flex justify-start pt-4">
@@ -32,7 +32,7 @@ export default function HeroSection() {
                 href="/contact"
                 className="bg-[#02aeef]/50 rounded-md shadow-2xl text-white font-medium px-6 py-3"
               >
-                Contact Us
+                Get Started
               </Link>
             </div>
           </div>

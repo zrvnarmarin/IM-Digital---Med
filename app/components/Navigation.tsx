@@ -32,9 +32,6 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
         </Link>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
           <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
             <Link href={"/about-us"}>About Us</Link>
           </li>
           <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
@@ -77,7 +74,7 @@ export function Sidebar({ onCloseSidebar }: { onCloseSidebar: () => void }) {
     <aside className="fixed bottom-0 top-0 left-0 flex flex-col bg-white text-white h-screen w-full z-50 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-3 bg-slate-700-300/95 drop-shadow border-b-[1px] border-slate-200">
       <div className="flex items-center justify-between">
         <Link href={"/"}>
-          <p className="text-start text-4xl text leading-10 font-normal italic uppercase text-[#babaff]">
+          <p className="text-center text-4xl text leading-10 font-normal italic uppercase text-[#02aeef]/50">
             Sinergy
           </p>
         </Link>
@@ -85,32 +82,26 @@ export function Sidebar({ onCloseSidebar }: { onCloseSidebar: () => void }) {
           onClick={onCloseSidebar}
           className="flex flex-col gap-1 items-end p-0 border-none"
         >
-          <div className="w-7 rounded-md h-[2.5px] bg-[#babaff]"></div>
-          <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
-          <div className="w-7 h-[2.5px] rounded-md bg-[#babaff]"></div>
+          <div className="w-7 rounded-md h-[2.5px] bg-[#02aeef]/50"></div>
+          <div className="w-7 h-[2.5px] rounded-md bg-[#02aeef]/50"></div>
+          <div className="w-7 h-[2.5px] rounded-md bg-[#02aeef]/50"></div>
         </button>
       </div>
 
       <ul className="flex flex-col gap-6 py-8">
-        <li className="flex flex-row items-center justify-between text-xl xl:text-xl font-light text-slate-400 hover:bg-[#babaff]/10 rounded-md p-2 hover:text-white duration-100 cursor-pointer">
-          <Link href={"/"}>Home</Link>
-          <div className="rotate-90">
-            <ArrowUp />
-          </div>
-        </li>
-        <li className="flex flex-row items-center justify-between text-xl xl:text-xl font-light text-slate-400 p-2 hover:bg-[#babaff]/10 rounded-md hover:text-white duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/about-us"}>About Us</Link>
           <div className="rotate-90">
             <ArrowUp />
           </div>
         </li>
-        <li className="flex flex-row items-center justify-between text-xl xl:text-xl font-light text-slate-400 hover:bg-[#babaff]/10 rounded-md p-2 hover:text-white duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/services"}>Services</Link>
           <div className="rotate-90">
             <ArrowUp />
           </div>
         </li>
-        <li className="flex flex-row items-center justify-between text-xl xl:text-xl font-light text-slate-400 hover:bg-[#babaff]/10 rounded-md p-2 hover:text-white duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/our-team"}>Our Team</Link>
           <div className="rotate-90">
             <ArrowUp />
