@@ -46,7 +46,7 @@ export const SearchTestimonialsSection = () => {
         <h1 className="text-center text-4xl font-bold text-slate-600">
           Testimonials
         </h1>
-        <div className="flex flex-row">
+        <div className="flex flex-row shadow-lg">
           <div className="bg-[#02aeef]/50 shadow-lg duration-100 text-white font-semibold px-8 py-3 rounded-l-md">
             <MagnifierIcon width="30px" height="30px" />
           </div>

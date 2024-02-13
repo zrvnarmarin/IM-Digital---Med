@@ -53,7 +53,7 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
           <li>
             <div className="flex justify-center">
               <Link
-                href="/services"
+                href="/contact"
                 className="bg-[#02aeef]/70 hover:bg-[#02aeef]/90 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3"
               >
                 Contact Us
