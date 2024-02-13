@@ -12,7 +12,7 @@ export default function WhyPeopleChooseUs() {
             Why is your health safe
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-8 lg:pt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 pt-8 lg:pt-12">
           {whyChooseUsPoints.map((point) => (
             <WhyPeopleChoosePointCard key={point.point} point={point} />
           ))}
