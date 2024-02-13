@@ -313,11 +313,11 @@ export const RightIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       stroke=""
-      stroke-width="0.00024000000000000003"
+      strokeWidth="0.00024000000000000003"
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <path
@@ -329,14 +329,14 @@ export const RightIcon = ({
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
           fill={iconFillColor}
         ></path>{" "}
@@ -357,11 +357,11 @@ export const CloverIcon = () => {
       // xmlns:xlink="http://www.w3.org/1999/xlink"
       enable-background="new 0 0 470 470"
       stroke="#5f8fad"
-      stroke-width="0.0047"
+      strokeWidth="0.0047"
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <path
@@ -373,10 +373,10 @@ export const CloverIcon = () => {
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         stroke="#CCCCCC"
-        stroke-width="2.82"
+        strokeWidth="2.82"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -518,9 +518,9 @@ export const ShieldIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-194.56 -194.56 901.12 901.12"
       stroke="#ffffff"
-      stroke-width="0.00512"
+      strokeWidth="0.00512"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0">
         <path
           transform="translate(-194.56, -194.56), scale(56.32)"
           fill="#babaff"
@@ -530,8 +530,8 @@ export const ShieldIcon = () => {
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -555,11 +555,11 @@ export const RightIconTest = () => {
       xmlns="http://www.w3.org/2000/svg"
       stroke="#ffffff"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -571,3 +571,44 @@ export const RightIconTest = () => {
     </svg>
   );
 };
+
+export const MagnifierIcon = ({ width, height } : { width: string, height: string}) => {
+  return (
+    <svg
+              fill="#ffffff"
+              width={width}
+              height={height}
+              viewBox="-4.48 -4.48 40.96 40.96"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g
+                id="SVGRepo_bgCarrier"
+                strokeWidth="0"
+                transform="translate(0,0), scale(1)"
+              >
+                <rect
+                  x="-4.48"
+                  y="-4.48"
+                  width="40.96"
+                  height="40.96"
+                  rx="0"
+                  fill="#80d6f7"
+                  strokeWidth="0"
+                ></rect>
+              </g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                stroke="#CCCCCC"
+                strokeWidth="0.064"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path d="M31.707 30.282l-9.717-9.776c1.811-2.169 2.902-4.96 2.902-8.007 0-6.904-5.596-12.5-12.5-12.5s-12.5 5.596-12.5 12.5 5.596 12.5 12.5 12.5c3.136 0 6.002-1.158 8.197-3.067l9.703 9.764c0.39 0.39 1.024 0.39 1.415 0s0.39-1.023 0-1.415zM12.393 23.016c-5.808 0-10.517-4.709-10.517-10.517s4.708-10.517 10.517-10.517c5.808 0 10.516 4.708 10.516 10.517s-4.709 10.517-10.517 10.517z"></path>{" "}
+              </g>
+            </svg>
+  )
+}

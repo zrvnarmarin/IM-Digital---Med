@@ -4,7 +4,7 @@ import Image from "next/image";
 import TestimonialImage from "../../public/HospitalImage.jpg";
 import { TestimonialType } from "../types";
 import { testimonials } from "./../data";
-import { RightIcon, HexagonIcon } from "@/public/Icons";
+import { RightIcon, HexagonIcon, ArrowUp } from "@/public/Icons";
 
 export default function Testimonials({
   showReadMoreButton = true,
@@ -18,25 +18,15 @@ export default function Testimonials({
       </div>
       <div className="flex-row pt-2">
         <div className="flex-row flex gap-2 items-center">
-          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
-            <RightIcon
-              width="36px"
-              height="36px"
-              backgroundFillColor="#02AEEF80"
-              iconFillColor="#ffffff"
-            />
+          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200 -rotate-90">
+            <ArrowUp />
           </button>
           <Testimonial
             key={testimonials[2].id}
             testimonialData={testimonials[2]}
           />
-          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200">
-            <RightIcon
-              width="36px"
-              height="36px"
-              backgroundFillColor="#02AEEF80"
-              iconFillColor="#ffffff"
-            />
+          <button className="hidden md:block border-none p-0 hover:scale-125 duration-200 rotate-90">
+            <ArrowUp />
           </button>
         </div>
         <div className="flex flex-row justify-center pt-6 gap-4">

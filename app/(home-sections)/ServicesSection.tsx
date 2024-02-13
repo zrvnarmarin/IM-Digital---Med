@@ -1,10 +1,9 @@
 import React from "react";
-import Image from "next/image";
 import "../../public/DoctorCard.css";
 import Link from "next/link";
 import { medicalServices } from "@/app/data";
 import { ServiceType } from "@/app/types";
-import { RightIcon, ShieldIcon } from "@/public/Icons";
+import { RightIcon } from "@/public/Icons";
 import SectionWrapper from "../components/wrappers/SectionWrapper";
 import { TestSVG } from "./WhyPeopleChooseUs";
 

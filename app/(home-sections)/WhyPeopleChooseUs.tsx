@@ -59,7 +59,7 @@ export const TestSVG = ({ iconFill, backgroundFill } : { iconFill?: string, back
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <rect
@@ -74,10 +74,10 @@ export const TestSVG = ({ iconFill, backgroundFill } : { iconFill?: string, back
 
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         stroke="#CCCCCC"
-        stroke-width="0.8"
+        strokeWidth="0.8"
       />
 
       <g id="SVGRepo_iconCarrier">
@@ -102,7 +102,7 @@ export const SecondSVGTest = () => {
       xmlns="http://www.w3.org/2000/svg"
       stroke="#ffffff"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0">
         <rect
           x="0"
           y="0"
@@ -116,8 +116,8 @@ export const SecondSVGTest = () => {
 
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
 
       <g id="SVGRepo_iconCarrier">

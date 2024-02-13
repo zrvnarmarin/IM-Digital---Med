@@ -1,11 +1,11 @@
 import React from "react";
 import Testimonials from "../components/Testimonials";
-import SectionWrapper from "../components/wrappers/SectionWrapper";
+import TestimonialsWrapper from "../components/wrappers/TestimonialsWrapper";
 
 export default function TestimonialsSection() {
   return (
-    <SectionWrapper>
+    <TestimonialsWrapper>
       <Testimonials showReadMoreButton={false} />
-    </SectionWrapper>
+    </TestimonialsWrapper>
   );
 }

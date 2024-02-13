@@ -7,7 +7,7 @@ import Link from "next/link";
 import SectionWrapper from "@/app/components/wrappers/SectionWrapper";
 import ServiceCategoryWrapper from "@/app/components/wrappers/ServiceCategoryWrapper";
 import { TestSVG } from "@/app/(home-sections)/WhyPeopleChooseUs";
-import { RightIcon } from "@/public/Icons";
+import { MagnifierIcon, ArrowUp } from "@/public/Icons";
 import { generateUrlFromFullName } from "@/app/utils";
 
 export default function Page({
@@ -63,25 +63,28 @@ export function HeroSection({
           <h1 className="text-start text-4xl font-bold text-slate-600">
             {serviceCategoryName}
           </h1>
-          <h1 className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
+          <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
             {serviceCategoryDescription} hehe Lorem ipsum dolor sit, amet
             consectetur adipisicing elit. Sint maiores in odio vero quaerat
             itaque error, facere ipsam officiis, repellat sunt incidunt vitae
             vel? Ex consequatur nihil rerum qui laboriosam. Tenetur pariatur
             expedita mollitia enim tempore distinctio impedit recusandae
             reprehenderit sapiente voluptates iusto
-          </h1>
+          </p>
 
-          <div className="flex flex-row items-center gap-12 pt-8">
+          <div className="flex flex-row items-center gap-8 lg:gap-16 pt-8">
             <Link
               href="#services"
               className="text-lg xl:text-xl leading-2 font-medium hover:text-slate-500 text-[#80d6f7] duration-100"
             >
               Services
             </Link>
-            <button className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 text-white font-semibold rounded-md px-8 py-3">
+            <Link
+              href="/contact"
+              className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 shadow-lg text-white font-semibold rounded-md px-8 py-3"
+            >
               Narucite se
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -115,12 +118,17 @@ export const Services = ({
     <SectionWrapper>
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
         <h2 className="text-4xl font-bold text-slate-600">Services</h2>
-        <input
-          type="text"
-          id="email"
-          placeholder="Pretražite usluge"
-          className="rounded-md text-md md:text-lg border-2 border-[#80d6f7] w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
-        />
+        <div className="flex flex-row shadow-lg">
+          <div className="bg-[#02aeef]/50 duration-100 text-white font-semibold px-8 py-3 rounded-l-md">
+            <MagnifierIcon width="30px" height="30px" />
+          </div>
+          <input
+            type="text"
+            id="email"
+            placeholder="Pretražite usluge"
+            className="text-md md:text-lg border border-[#80d6f7] rounded-r-md w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
+          />
+        </div>
       </div>
       {servicesNames.map((serviceName) => (
         <ServiceNameCard
@@ -145,7 +153,7 @@ export const ServiceNameCard = ({
   return (
     <Link
       href={`/services/${serviceCategoryHref}/${serviceHref}`}
-      className="card rounded-md bg-[#02aeef]/5 py-3 px-5 duration-300 group flex items-center justify-between gap-4"
+      className="card rounded-md bg-[#02aeef]/5 py-3 px-5 hover:scale-105 duration-300 shadow-sm group flex items-center justify-between gap-4"
     >
       <div className="flex flex-row items-center gap-6">
         <div className="">
@@ -156,14 +164,9 @@ export const ServiceNameCard = ({
         </p>
       </div>
 
-      <div className=" duration-300 items-center gap-2 justify-end">
-        <div>
-          <RightIcon
-            width="40"
-            height="40"
-            backgroundFillColor="#babaff10"
-            iconFillColor="#64748b"
-          />
+      <div className="hidden group-hover:flex duration-300 items-center gap-2 justify-end">
+        <div className="rotate-90">
+          <ArrowUp />
         </div>
       </div>
     </Link>
