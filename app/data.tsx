@@ -296,44 +296,44 @@ export const coreValues = [
 export const aboutUsThirdSectionArray = [
   {
     id: 1,
-    text: 'lorem ipsum dolor igorrrrrrrrrrnmfvbkf vxr'
+    text: "lorem ipsum dolor igorrrrrrrrrrnmfvbkf vxr",
   },
   {
     id: 2,
-    text: 'lorem ipsum dolor igor igor igor gorfjgniudfobf'
+    text: "lorem ipsum dolor igor igor igor gorfjgniudfobf",
   },
   {
     id: 3,
-    text: 'lorem ipsum dolor igorrrrrrrrrrrrrrrr'
+    text: "lorem ipsum dolor igorrrrrrrrrrrrrrrr",
   },
   {
     id: 4,
-    text: 'lorem ipsum dolor igo sojdhvui josdvosdb sdvb r'
-  }
-]
+    text: "lorem ipsum dolor igo sojdhvui josdvosdb sdvb r",
+  },
+];
 
 export const aboutUsFifthSectionArray = [
   {
     id: 1,
-    title: 'Title neki 1',
-    text: 'bok svim,a ja sam neki opis 1'
+    title: "Title neki 1",
+    text: "bok svim,a ja sam neki opis 1",
   },
   {
     id: 2,
-    title: 'Title neki 2',
-    text: 'bok svim,a ja sam neki opis 2'
+    title: "Title neki 2",
+    text: "bok svim,a ja sam neki opis 2",
   },
   {
     id: 3,
-    title: 'Title neki 3',
-    text: 'bok svim,a ja sam neki opis 3'
+    title: "Title neki 3",
+    text: "bok svim,a ja sam neki opis 3",
   },
   {
     id: 4,
-    title: 'Title neki 4',
-    text: 'bok svima, ja sam neki opis 4'
-  }
-]
+    title: "Title neki 4",
+    text: "bok svima, ja sam neki opis 4",
+  },
+];
 
 export const missionItems = [
   {
@@ -401,22 +401,49 @@ export const testimonials = [
   {
     id: 1,
     testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    personFullName: "John Doe",
+    personFullName: "John D.",
     personOccupation: "Software Engineer",
+    date: "September 24, 2023",
   },
   {
     id: 2,
-    testimonial: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    personFullName: "Jane Smith",
+    testimonial:
+      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    personFullName: "Jane S.",
     personOccupation: "Marketing Specialist",
+    date: "September 24, 2023",
   },
   {
     id: 3,
     testimonial:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    personFullName: "Alex Johnson",
+    personFullName: "Alex J.",
     personOccupation: "Graphic Designer",
-    date: "24. prosinac 2023.",
+    date: "September 24, 2023",
+  },
+  {
+    id: 4,
+    testimonial:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex J.",
+    personOccupation: "Graphic Designer",
+    date: "September 24, 2023",
+  },
+  {
+    id: 5,
+    testimonial:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex J.",
+    personOccupation: "Graphic Designer",
+    date: "September 24, 2023",
+  },
+  {
+    id: 6,
+    testimonial:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    personFullName: "Alex J.",
+    personOccupation: "Graphic Designer",
+    date: "September 24, 2023",
   },
 ];
 
@@ -545,11 +572,16 @@ export const services = [
     name: "Stavljanje dentalnih implantata",
     href: "stavljanje-dentalnih-implantata",
     introDescription: "Neki intro description",
-    aboutTheProcedure: "Ovo je neki long description tog servicea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
-    howToPrepare: "Pripremite se za postavljanje dentalnih implantata slijedeći ove korake...",
-    duringTheProcedure: "Tijekom postupka postavljanja dentalnih implantata, zubar će...",
-    recoveryTime: "Vrijeme oporavka od postavljanja dentalnih implantata varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon postupka postavljanja dentalnih implantata važno je poduzeti određene mjere opreza...",
+    aboutTheProcedure:
+      "Ovo je neki long description tog servicea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    howToPrepare:
+      "Pripremite se za postavljanje dentalnih implantata slijedeći ove korake...",
+    duringTheProcedure:
+      "Tijekom postupka postavljanja dentalnih implantata, zubar će...",
+    recoveryTime:
+      "Vrijeme oporavka od postavljanja dentalnih implantata varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon postupka postavljanja dentalnih implantata važno je poduzeti određene mjere opreza...",
   },
   {
     id: 2,
@@ -557,11 +589,14 @@ export const services = [
     href: "izbjeljivanje-zuba",
     name: "Izbeljivanje zuba",
     introDescription: "Neki intro description za izbeljivanje zuba",
-    aboutTheProcedure: "Ovo je neki long description za uslugu izbeljivanja zuba. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu izbeljivanja zuba. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
     howToPrepare: "Pripremite se za izbjeljivanje zuba slijedeći ove korake...",
     duringTheProcedure: "Tijekom postupka izbjeljivanja zuba, zubar će...",
-    recoveryTime: "Vrijeme oporavka od izbjeljivanja zuba varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon postupka izbjeljivanja zuba važno je poduzeti određene mjere opreza...",
+    recoveryTime:
+      "Vrijeme oporavka od izbjeljivanja zuba varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon postupka izbjeljivanja zuba važno je poduzeti određene mjere opreza...",
   },
   {
     id: 3,
@@ -569,11 +604,15 @@ export const services = [
     name: "Popravka zubnih plombi",
     href: "popravak-zubnih-plombi",
     introDescription: "Neki intro description za popravku zubnih plombi",
-    aboutTheProcedure: "Ovo je neki long description za uslugu popravke zubnih plombi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
-    howToPrepare: "Pripremite se za popravak zubnih plombi slijedeći ove korake...",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu popravke zubnih plombi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    howToPrepare:
+      "Pripremite se za popravak zubnih plombi slijedeći ove korake...",
     duringTheProcedure: "Tijekom postupka popravke zubnih plombi, zubar će...",
-    recoveryTime: "Vrijeme oporavka od popravke zubnih plombi varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon postupka popravke zubnih plombi važno je poduzeti određene mjere opreza...",
+    recoveryTime:
+      "Vrijeme oporavka od popravke zubnih plombi varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon postupka popravke zubnih plombi važno je poduzeti određene mjere opreza...",
   },
   {
     id: 4,
@@ -581,59 +620,75 @@ export const services = [
     name: "Ortodoncija",
     href: "ortodoncija",
     introDescription: "Neki intro description za ortodonciju",
-    aboutTheProcedure: "Ovo je neki long description za uslugu ortodoncije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
-    howToPrepare: "Pripremite se za ortodontski postupak slijedeći ove korake...",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu ortodoncije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    howToPrepare:
+      "Pripremite se za ortodontski postupak slijedeći ove korake...",
     duringTheProcedure: "Tijekom ortodontskog postupka, ortodont će...",
-    recoveryTime: "Vrijeme oporavka od ortodontskog postupka varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon ortodontskog postupka važno je poduzeti određene mjere opreza...",
+    recoveryTime:
+      "Vrijeme oporavka od ortodontskog postupka varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon ortodontskog postupka važno je poduzeti određene mjere opreza...",
   },
   {
     id: 5,
     serviceCategory: "Pulmologija",
     name: "Spirometrija",
-    href: 'spirometrija',
+    href: "spirometrija",
     introDescription: "Neki intro description za spirometriju",
-    aboutTheProcedure: "Ovo je neki long description za uslugu spirometrije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu spirometrije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
     howToPrepare: "Pripremite se za spirometriju slijedeći ove korake...",
     duringTheProcedure: "Tijekom spirometrije, medicinski tehničar će...",
-    recoveryTime: "Vrijeme oporavka od spirometrije varira, ali općenito pacijenti mogu očekivati...",
+    recoveryTime:
+      "Vrijeme oporavka od spirometrije varira, ali općenito pacijenti mogu očekivati...",
     precaution: "Nakon spirometrije važno je poduzeti određene mjere opreza...",
   },
   {
     id: 6,
     serviceCategory: "Pulmologija",
-    href: 'bronhoskopija',
+    href: "bronhoskopija",
     name: "Bronhoskopija",
     introDescription: "Neki intro description za bronhoskopiju",
-    aboutTheProcedure: "Ovo je neki long description za uslugu bronhoskopije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu bronhoskopije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
     howToPrepare: "Pripremite se za bronhoskopiju slijedeći ove korake...",
     duringTheProcedure: "Tijekom bronhoskopije, liječnik će...",
-    recoveryTime: "Vrijeme oporavka od bronhoskopije varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon bronhoskopije važno je poduzeti određene mjere opreza...",
+    recoveryTime:
+      "Vrijeme oporavka od bronhoskopije varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon bronhoskopije važno je poduzeti određene mjere opreza...",
   },
   {
     id: 7,
     serviceCategory: "Kardiologija",
-    href: 'ekg',
+    href: "ekg",
     name: "EKG",
     introDescription: "Neki intro description za EKG",
-    aboutTheProcedure: "Ovo je neki long description za uslugu EKG-a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu EKG-a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
     howToPrepare: "Pripremite se za EKG slijedeći ove korake...",
-    duringTheProcedure: "Tijekom EKG-a, medicinska sestra će postaviti elektrode na vaše tijelo...",
-    recoveryTime: "Vrijeme oporavka od EKG-a varira, ali općenito pacijenti mogu očekivati...",
+    duringTheProcedure:
+      "Tijekom EKG-a, medicinska sestra će postaviti elektrode na vaše tijelo...",
+    recoveryTime:
+      "Vrijeme oporavka od EKG-a varira, ali općenito pacijenti mogu očekivati...",
     precaution: "Nakon EKG-a važno je poduzeti određene mjere opreza...",
   },
   {
     id: 8,
     serviceCategory: "Kardiologija",
-    href: 'ehokardiografija',
+    href: "ehokardiografija",
     name: "Ehokardiografija",
     introDescription: "Neki intro description za ehokardiografiju",
-    aboutTheProcedure: "Ovo je neki long description za uslugu ehokardiografije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
+    aboutTheProcedure:
+      "Ovo je neki long description za uslugu ehokardiografije. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ut justo cursus dignissim. Nulla facilisi. Integer convallis, libero ut suscipit dignissim, tortor nunc bibendum turpis, vel fringilla odio justo vel justo.",
     howToPrepare: "Pripremite se za ehokardiografiju slijedeći ove korake...",
-    duringTheProcedure: "Tijekom ehokardiografije, liječnik će koristiti ultrazvučnu sondu...",
-    recoveryTime: "Vrijeme oporavka od ehokardiografije varira, ali općenito pacijenti mogu očekivati...",
-    precaution: "Nakon ehokardiografije važno je poduzeti određene mjere opreza...",
+    duringTheProcedure:
+      "Tijekom ehokardiografije, liječnik će koristiti ultrazvučnu sondu...",
+    recoveryTime:
+      "Vrijeme oporavka od ehokardiografije varira, ali općenito pacijenti mogu očekivati...",
+    precaution:
+      "Nakon ehokardiografije važno je poduzeti određene mjere opreza...",
   },
   // Repeat the same structure for other services...
 ];

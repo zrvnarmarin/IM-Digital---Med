@@ -274,8 +274,8 @@ export const ArrowUp = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="12.000000pt"
-      height="12.000000pt"
+      width="16.000000pt"
+      height="16.000000pt"
       viewBox="0 0 64.000000 64.000000"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -572,43 +572,78 @@ export const RightIconTest = () => {
   );
 };
 
-export const MagnifierIcon = ({ width, height } : { width: string, height: string}) => {
+export const MagnifierIcon = ({
+  width,
+  height,
+}: {
+  width: string;
+  height: string;
+}) => {
   return (
     <svg
-              fill="#ffffff"
-              width={width}
-              height={height}
-              viewBox="-4.48 -4.48 40.96 40.96"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="#ffffff"
-            >
-              <g
-                id="SVGRepo_bgCarrier"
-                strokeWidth="0"
-                transform="translate(0,0), scale(1)"
-              >
-                <rect
-                  x="-4.48"
-                  y="-4.48"
-                  width="40.96"
-                  height="40.96"
-                  rx="0"
-                  fill="#80d6f7"
-                  strokeWidth="0"
-                ></rect>
-              </g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                stroke="#CCCCCC"
-                strokeWidth="0.064"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <path d="M31.707 30.282l-9.717-9.776c1.811-2.169 2.902-4.96 2.902-8.007 0-6.904-5.596-12.5-12.5-12.5s-12.5 5.596-12.5 12.5 5.596 12.5 12.5 12.5c3.136 0 6.002-1.158 8.197-3.067l9.703 9.764c0.39 0.39 1.024 0.39 1.415 0s0.39-1.023 0-1.415zM12.393 23.016c-5.808 0-10.517-4.709-10.517-10.517s4.708-10.517 10.517-10.517c5.808 0 10.516 4.708 10.516 10.517s-4.709 10.517-10.517 10.517z"></path>{" "}
-              </g>
-            </svg>
-  )
-}
+      fill="#ffffff"
+      width={width}
+      height={height}
+      viewBox="-4.48 -4.48 40.96 40.96"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g
+        id="SVGRepo_bgCarrier"
+        strokeWidth="0"
+        transform="translate(0,0), scale(1)"
+      >
+        <rect
+          x="-4.48"
+          y="-4.48"
+          width="40.96"
+          height="40.96"
+          rx="0"
+          fill="#80d6f7"
+          strokeWidth="0"
+        ></rect>
+      </g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        stroke="#CCCCCC"
+        strokeWidth="0.064"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path d="M31.707 30.282l-9.717-9.776c1.811-2.169 2.902-4.96 2.902-8.007 0-6.904-5.596-12.5-12.5-12.5s-12.5 5.596-12.5 12.5 5.596 12.5 12.5 12.5c3.136 0 6.002-1.158 8.197-3.067l9.703 9.764c0.39 0.39 1.024 0.39 1.415 0s0.39-1.023 0-1.415zM12.393 23.016c-5.808 0-10.517-4.709-10.517-10.517s4.708-10.517 10.517-10.517c5.808 0 10.516 4.708 10.516 10.517s-4.709 10.517-10.517 10.517z"></path>{" "}
+      </g>
+    </svg>
+  );
+};
+
+export const QuotationMarksIcon = () => {
+  return (
+    <svg
+      fill="#80d6f7"
+      width="60px"
+      height="60px"
+      viewBox="0 0 8.00 8.00"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#80d6f7"
+      strokeWidth="0.00008"
+      transform="matrix(1, 0, 0, 1, 0, 0)"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z"
+          transform="translate(0 1)"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+};

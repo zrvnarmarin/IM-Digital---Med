@@ -25,9 +25,16 @@ export default function HeroSection({ serviceName }: { serviceName: string }) {
             maiores in odio vero quaerat itaque error Hehe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
             maiores in odio vero quaerat itaque error. Hehe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
             maiores in odio vero quaerat itaque error. Hehe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            maiores in odio vero quaerat itaque error, Hehe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
             maiores in odio vero quaerat itaque error
           </p>
+          <div className="flex flex-row items-center gap-8 lg:gap-16 pt-8">
+            <Link
+              href="/contact"
+              className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 shadow-lg text-white font-semibold rounded-md px-8 py-3"
+            >
+              Narucite se
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col gap-4">
           <Image

@@ -7,7 +7,8 @@ import Image from "next/image";
 import LogoImage from "../../public/logo-removebg-preview.png";
 
 export default function Navigation() {
-  const [isMobileNavigationOpened, setIsMobileNavigationOpened] = useState(false);
+  const [isMobileNavigationOpened, setIsMobileNavigationOpened] =
+    useState(false);
   // console.log(isSidebarOpened);
 
   const closeSidebarClickHandler = () => setIsMobileNavigationOpened(false);
@@ -30,7 +31,10 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
         <div className="text-slate-500 text-center font-medium text-lg xl:text-xl">
           <Link href={"/"} className="flex flex-row items-center gap-4">
             <Image src={LogoImage} alt="logo_image" width={70} height={70} />
-            <p>Sinergy</p>
+            <div>
+              <p className="text-[#00b5e7] uppercase">Sinergy Wave</p>
+              <p className="text-[#077bbd] uppercase">Clinic</p>
+            </div>
           </Link>
         </div>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
@@ -72,14 +76,21 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
   );
 }
 
-export function MobileNavigation({ onCloseSidebar }: { onCloseSidebar: () => void }) {
+export function MobileNavigation({
+  onCloseSidebar,
+}: {
+  onCloseSidebar: () => void;
+}) {
   return (
     <aside className="fixed bottom-0 top-0 left-0 flex flex-col bg-white text-white h-screen w-full z-50 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-3 bg-slate-700-300/95 drop-shadow border-b-[1px] border-slate-200">
       <div className="flex items-center justify-between">
       <div className="text-slate-500 text-center font-medium text-lg xl:text-xl">
           <Link href={"/"} className="flex flex-row items-center gap-4">
             <Image src={LogoImage} alt="logo_image" width={70} height={70} />
-            <p>Sinergy</p>
+            <div>
+              <p className="text-[#00b5e7] uppercase">Sinergy Wave</p>
+              <p className="text-[#077bbd] uppercase">Clinic</p>
+            </div>
           </Link>
         </div>
         <button

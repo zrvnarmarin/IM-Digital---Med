@@ -5,13 +5,14 @@ import HeroImage from "../../public/HospitalImage.jpg";
 import Footer from "../components/Footer";
 import { Testimonial } from "../components/Testimonials";
 import { testimonials } from "../data";
+import { MagnifierIcon } from "@/public/Icons";
 
 export default function AboutUs() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
       <HeroSection />
       <SearchTestimonialsSection />
-      <TestimoniaslCardsSection />
+      <TestimonialCards />
       <Footer />
     </main>
   );
@@ -42,28 +43,40 @@ export const SearchTestimonialsSection = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
-        <h2 className="text-center text-4xl font-bold text-slate-600">
-          Search testimonials
-        </h2>
-        <input
-          type="text"
-          id="email"
-          placeholder="Select Service"
-          className="rounded-md text-md md:text-lg border border-[#babaff] w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
-        />
+        <h1 className="text-center text-4xl font-bold text-slate-600">
+          Testimonials
+        </h1>
+        <div className="flex flex-row">
+          <div className="bg-[#02aeef]/50 shadow-lg duration-100 text-white font-semibold px-8 py-3 rounded-l-md">
+            <MagnifierIcon width="30px" height="30px" />
+          </div>
+          <input
+            type="text"
+            id="email"
+            placeholder="Search testimonials"
+            className="text-md md:text-lg border border-[#80d6f7] rounded-r-md w-full md:w-fit text-base xl:text-lg font-light text-slate-500 px-6 py-3"
+          />
+        </div>
       </div>
     </SectionWrapper>
   );
 };
 
-export const TestimoniaslCardsSection = () => {
-    return (
-        <SectionWrapper>
-            <div className="flex flex-col gap-6">
-                {testimonials.map(testimonial =>
-                   <Testimonial key={testimonial.id} testimonialData={testimonial} />   
-                )}
-            </div>
-        </SectionWrapper>
-    )
+export const TestimonialCards = () => {
+  return (
+    <SectionWrapper>
+      <div className="grid grid-cols-1 2 gap-8">
+        {testimonials.map((testimonial) => (
+          <Testimonial testimonialData={testimonial} key={testimonial.id} />
+        ))}
+      </div>
+      <div className="flex justify-center pt-8 px-6">
+        <button
+          className="bg-[#02aeef]/50 hover:bg-[#02aeef]/70 duration-100 rounded-md shadow-2xl text-white font-medium px-6 py-3"
+        >
+          Load More
+        </button>
+      </div>
+    </SectionWrapper>
+  )
 }
