@@ -9,7 +9,7 @@ export default function HeroSection({ serviceName }: { serviceName: string }) {
         <div className="bg-[#02aeef]/5 py-8 px-6 lg:bottom-4 left-0 right-0 w-full flex flex-col gap-2 text-white text-center">
           <Link
             href={`/services`}
-            className="text-start w-full text-base xl:text-lg font-medium text-slate-500 hover:text-[#80d6f7] duration-100 pt-2 uppercase py-4"
+            className="text-start w-full text-lg xl:text-xl leading-2 font-medium text-slate-500 hover:text-[#80d6f7] duration-100 pt-2 uppercase py-4"
           >
             {`<<`} Services
           </Link>

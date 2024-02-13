@@ -18,7 +18,7 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <h3 className="col-span-1 text-start text-base xl:text-lg font-normal text-slate-500 pt-2 uppercase">
+          <h3 className="col-span-1 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">
             Education:{" "}
           </h3>
           <div className="col-span-3 flex flex-row gap-4 px-4 items-center text-base xl:text-lg font-light text-slate-500">
@@ -30,7 +30,7 @@ export default function DescriptionSection({ doctor }: { doctor: DoctorType }) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <h3 className="col-span-1 text-start text-base xl:text-lg font-normal text-slate-500 uppercase">
+          <h3 className="col-span-1 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">
             Achievements:{" "}
           </h3>
           <ul className="col-span-3 flex flex-col gap-6 border border-slate-200 p-4 rounded-md bg-[#02aeef]/5">

@@ -62,23 +62,7 @@ export const SecondSection = () => {
         About us some heading
       </p>
 
-      <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-        <span className="font-bold text-[#80d6f7]">
-          Pravom ste mjestu: naš specijalist
-        </span>{" "}
-        parodontologije detaljno će pregledati Vaše zubno meso te u skladu s
-        time dati preporuku za odgovarajući tretman. Pravom ste mjestu: naš
-        specijalist parodontologije detaljno će pregledati{" "}
-        <span className="font-bold text-[#80d6f7]">
-          Vaše zubno meso te u skladu
-        </span>{" "}
-        s time dati preporuku za odgovarajući tretman. s time dati preporuku za
-        odgovarajući tretman.s time dati preporuku za odgovarajući tretman.s
-        time dati preporuku za odgovarajući tretman.s time dati preporuku za
-        odgovarajući tretman.
-      </p>
-
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {coreValues.map((coreValue) => (
           <li
             key={coreValue.id}
@@ -98,14 +82,14 @@ export const SecondSection = () => {
       </ul>
 
       <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
-        <span className="text-[#80d6f7]">Paradontoza je podmukla bolest </span>{" "}
+        <span className="text-[#80d6f7] font-bold">Paradontoza je podmukla bolest </span>{" "}
         desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
         vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana preraste
         u Vaš problem br.1 jer dolazi do nezaustavljivog gubitka tkiva koje
         podržava zube. Parodontoza je podmukla bolest desni koju je na početku
         lako ignorirati jer ne uzrokuje bol,{" "}
-        <span className="text-[#80d6f7]">
-          ali zato vrlo brzo zbog izostanka
+        <span className="text-[#80d6f7] font-bold">
+          ali zato vrlo brzo zbog izostanka {" "}
         </span>
         odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
         dolazi do nezaustavljivog gubitka tkiva koje podržava zube. Parodontoza
@@ -113,8 +97,24 @@ export const SecondSection = () => {
         uzrokuje bol, ali zato vrlo brzo zbog izostanka odgovarajućeg
         parodontološkog tretmana preraste u Vaš problem br.1 jer dolazi do
         nezaustavljivog{" "}
-        <span className="text-[#80d6f7]">gubitka tkiva koje podržava zube</span>
+        <span className="text-[#80d6f7] font-bold">gubitka tkiva koje podržava zube</span>
         .
+      </p>
+
+      <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
+        <span className="font-bold text-[#80d6f7]">
+          Pravom ste mjestu: naš specijalist
+        </span>{" "}
+        parodontologije detaljno će pregledati Vaše zubno meso te u skladu s
+        time dati preporuku za odgovarajući tretman. Pravom ste mjestu: naš
+        specijalist parodontologije detaljno će pregledati{" "}
+        <span className="font-bold text-[#80d6f7]">
+          Vaše zubno meso te u skladu
+        </span>{" "}
+        s time dati preporuku za odgovarajući tretman. s time dati preporuku za
+        odgovarajući tretman.s time dati preporuku za odgovarajući tretman.s
+        time dati preporuku za odgovarajući tretman.s time dati preporuku za
+        odgovarajući tretman.
       </p>
     </SectionWrapper>
   );
@@ -138,11 +138,11 @@ export const ThirdSection = () => {
               className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
             />
           </div>
-          <div className="flex flex-col items-center justify-center gap-6 p-8 bg-[#02aeef]/5 rounded-md">
+          <div className="flex flex-col items-center gap-6 p-8 bg-[#02aeef]/5 rounded-md">
             <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
               Service short description{" "}
             </p>
-            <ul className="w-full flex flex-col gap-4">
+            <ul className="w-full flex flex-col gap-2">
               {aboutUsThirdSectionArray.map((listItem) => (
                 <li
                   key={listItem.id}
@@ -181,7 +181,7 @@ export const ThirdSection = () => {
               className="object-cover w-full h-full md:h-auto opacity-60 bg-black rounded-md"
             />
           </div>
-          <div className="flex flex-col items-center justify-center order-1 gap-8 p-8 bg-[#02aeef]/5 rounded-md">
+          <div className="flex flex-col items-center order-1 gap-8 p-8 bg-[#02aeef]/5 rounded-md">
             <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
               Service short description{" "}
             </p>
@@ -214,7 +214,7 @@ export const FourthSection = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="p-6 bg-[#02aeef]/5 rounded-md order-2">
+        <div className="flex flex-col gap-6 items-center p-8 bg-[#02aeef]/5 rounded-md order-2">
           <p className="w-full text-slate-500 text-start font-normal text-xl xl:text-2xl">
             Neki naslov
           </p>
@@ -259,7 +259,7 @@ export const FifthSection = () => {
       <p className="text-start text-4xl font-bold text-slate-600">
         Fifth section
       </p>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
         {aboutUsFifthSectionArray.map((item) => (
           <div
             key={item.id}
@@ -278,7 +278,7 @@ export const FifthSection = () => {
         ))}
       </ul>
 
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-col lg:flex-row gap-6">
         <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
           <span className="text-[#80d6f7]">
             Paradontoza je podmukla bolest{" "}
@@ -321,7 +321,7 @@ export const SixthSection = () => {
           Meet Our Team
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}

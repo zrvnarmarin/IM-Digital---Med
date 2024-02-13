@@ -18,7 +18,7 @@ export default function MeetOurDoctors() {
           Meet Our Doctor Specialists
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-6 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 pt-6">
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
