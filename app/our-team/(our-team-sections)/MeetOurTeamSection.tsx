@@ -15,9 +15,9 @@ export default function MeetOurDoctors() {
         Meet our doctor specialists
       </h2>
       <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
-        <span className="text-[#80d6f7] font-bold">Clinical Research Training </span> and
+        <span className="text-[#80d6f7] font-semibold">Clinical Research Training </span> and
           Medical Education Critical Care 
-        <span className="text-[#80d6f7] font-bold">
+        <span className="text-[#80d6f7] font-semibold">
            {" "}Medicine Additional NIH Doctors/Researchers 
         </span>
           {" "}nical Research Training and Medical Education · Critical Care Medicine

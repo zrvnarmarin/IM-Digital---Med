@@ -13,7 +13,6 @@ import {
   aboutUsFifthSectionArray,
 } from "../data";
 import { generateUrlFromFullName, getFirstName } from "../utils";
-import DoctorImage from "../../public/DoctorSmiling.jpg";
 import TestimonialsSection from "../(home-sections)/TestimonialsSection";
 import Footer from "../components/Footer";
 import TestImage from "../../public/someDoctorImage.avif";
@@ -82,13 +81,13 @@ export const SecondSection = () => {
       </ul>
 
       <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
-        <span className="text-[#80d6f7] font-bold">Paradontoza je podmukla bolest </span>{" "}
+        <span className="text-[#80d6f7] font-semibold">Paradontoza je podmukla bolest </span>{" "}
         desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
         vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana preraste
         u Vaš problem br.1 jer dolazi do nezaustavljivog gubitka tkiva koje
         podržava zube. Parodontoza je podmukla bolest desni koju je na početku
         lako ignorirati jer ne uzrokuje bol,{" "}
-        <span className="text-[#80d6f7] font-bold">
+        <span className="text-[#80d6f7] font-semibold">
           ali zato vrlo brzo zbog izostanka {" "}
         </span>
         odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1 jer
@@ -97,18 +96,18 @@ export const SecondSection = () => {
         uzrokuje bol, ali zato vrlo brzo zbog izostanka odgovarajućeg
         parodontološkog tretmana preraste u Vaš problem br.1 jer dolazi do
         nezaustavljivog{" "}
-        <span className="text-[#80d6f7] font-bold">gubitka tkiva koje podržava zube</span>
+        <span className="text-[#80d6f7] font-semibold">gubitka tkiva koje podržava zube</span>
         .
       </p>
 
       <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-        <span className="font-bold text-[#80d6f7]">
+        <span className="font-semibold text-[#80d6f7]">
           Pravom ste mjestu: naš specijalist
         </span>{" "}
         parodontologije detaljno će pregledati Vaše zubno meso te u skladu s
         time dati preporuku za odgovarajući tretman. Pravom ste mjestu: naš
         specijalist parodontologije detaljno će pregledati{" "}
-        <span className="font-bold text-[#80d6f7]">
+        <span className="font-semibold text-[#80d6f7]">
           Vaše zubno meso te u skladu
         </span>{" "}
         s time dati preporuku za odgovarajući tretman. s time dati preporuku za
@@ -186,7 +185,7 @@ export const ThirdSection = () => {
               Service short description{" "}
             </p>
             <p className="text-start w-full text-base xl:text-lg font-light text-slate-500">
-              <span className="text-[#80d6f7]">
+              <span className="text-[#80d6f7] font-semibold">
                 Lorem ipsum, dolor sit amet consectetur
               </span>{" "}
               adipisicing elit. Cum itaque repellat veritatis explicabo odio
@@ -195,7 +194,7 @@ export const ThirdSection = () => {
               asperiores? Commodi. Sunt impedit temporibus rem. Suscipit
               temporibus impedit molestias! Laboriosam alias enim vitae,
               excepturi reprehenderit deleniti animi neque{" "}
-              <span className="text-[#80d6f7]">
+              <span className="text-[#80d6f7] font-semibold">
                 labore quod maiores aperiam velit voluptas
               </span>
             </p>
@@ -219,21 +218,21 @@ export const FourthSection = () => {
             Neki naslov
           </p>
           <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 pt-2">
-            <span className="text-[#80d6f7]">
+            <span className="text-[#80d6f7] font-semibold">
               Paradontoza je podmukla bolest{" "}
             </span>{" "}
             desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali
             preraste u Vaš problem br.1 jer dolazi do nezaustavljivog gubitka
             tkiva koje podržava zube. Parodontoza je podmukla bolest desni koju
             je na početku lako ignorirati jer ne uzrokuje bol,{" "}
-            <span className="text-[#80d6f7]">
+            <span className="text-[#80d6f7] font-semibold">
               ali zato vrlo brzo zbog izostanka
             </span>{" "}
             <br /> <br />
             odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1
             odgovarajućeg parodontološkog tretmana preraste u Vaš problem br.1
             jer dolazi do nezaustavljivog{" "}
-            <span className="text-[#80d6f7]">
+            <span className="text-[#80d6f7] font-semibold">
               gubitka tkiva koje podržava zube
             </span>
           </p>
@@ -280,23 +279,23 @@ export const FifthSection = () => {
 
       <div className="flex flex-col lg:flex-row gap-6">
         <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
-          <span className="text-[#80d6f7]">
+          <span className="text-[#80d6f7] font-semibold">
             Paradontoza je podmukla bolest{" "}
           </span>{" "}
           desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
           vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana
-          <span className="text-[#80d6f7]">
+          <span className="text-[#80d6f7] font-semibold">
             ali zato vrlo brzo zbog izostanka
           </span>
         </p>
 
         <p className="text-start w-full text-base xl:text-lg font-light text-slate-500 p-6 bg-[#02aeef]/5 border border-slate-200 rounded-md">
-          <span className="text-[#80d6f7]">
+          <span className="text-[#80d6f7] font-semibold">
             Paradontoza je podmukla bolest{" "}
           </span>{" "}
           desni koju je na početku lako ignorirati jer ne uzrokuje bol, ali zato
           vrlo brzo zbog izostanka odgovarajućeg parodontološkog tretmana
-          <span className="text-[#80d6f7]">
+          <span className="text-[#80d6f7] font-semibold">
             ali zato vrlo brzo zbog izostanka
           </span>
         </p>
