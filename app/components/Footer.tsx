@@ -1,15 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import LogoImage from '../../public/logo-removebg-preview.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#babaff]/90 to-[#babaff]/70 px-8 md:px-14 lg:px-28 xl:px-42 2xl:px-48 pt-8 mt-16 pb-4 flex flex-col w-full h-full relative">
+    <footer className="bg-[#144b5f] px-8 md:px-14 lg:px-28 xl:px-42 2xl:px-48 pt-8 mt-16 pb-4 flex flex-col w-full h-full relative">
       <div className="flex flex-col">
-        <Link href={"/"}>
-          <p className="text-xl sm:text-4xl text leading-10 font-normal tracking-widest italic md:text-3xl text-[#FFFFFF]">
-            Sinergy
-          </p>
-        </Link>
+        <div className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+          <Link href={"/"} className="flex flex-row items-center gap-4">
+            <Image src={LogoImage} alt="logo_image" width={70} height={70} />
+            <div>
+              <p className="text-[#00b5e7] uppercase">Sinergy Wave</p>
+              <p className="text-[#077bbd] uppercase">Clinic</p>
+            </div>
+          </Link>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <ul className="grid grid-cols-1 gap-8 pt-12">
             {footerLinks.map((footerLink) => (
@@ -57,7 +63,9 @@ export default function Footer() {
                 htmlFor="phone-number"
                 className="flex flex-col text-white leading-2 gap-4 text-xs"
               >
-                <span className="pb-2">To make your stay special and even more memorable</span>
+                <span className="pb-2">
+                  To make your stay special and even more memorable
+                </span>
                 <input
                   type="text"
                   placeholder="Enter your email"
@@ -72,7 +80,6 @@ export default function Footer() {
               </div>
             </form>
           </div>
-
         </div>
       </div>
       <h3 className="text-white text-sm md:text-md lg:text-lg pt-16 pb-4">

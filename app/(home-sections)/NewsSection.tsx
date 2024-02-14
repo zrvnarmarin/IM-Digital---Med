@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import TestImage from "../../public/HospitalImage.jpg";
 import "../../public/DoctorCard.css";
 import Link from "next/link";
@@ -12,9 +12,7 @@ export default function NewsSection() {
   return (
     <SectionWrapper>
       <div className="w-fit bg-white flex flex-row items-center justify-start gap-2 pt-2">
-        <h2 className="text-center text-4xl font-bold text-slate-600">
-          News
-        </h2>
+        <h2 className="text-center text-4xl font-bold text-slate-600">News</h2>
       </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-2">
         {news.map((news) => (
@@ -48,8 +46,8 @@ const NewsCard = ({ news }: { news: NewsCardType }) => {
           />
         </div>
         {/* Text Container */}
-        <div 
-        className="absolute h-full top-1/2 left-1/2 transform -translate-x-1/2 
+        <div
+          className="absolute h-full top-1/2 left-1/2 transform -translate-x-1/2 
             -translate-y-1/2 p-4 transition duration-300 ease-in-out w-full bg-[#02aeef]/70
             text-white opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center"
         >
@@ -58,11 +56,7 @@ const NewsCard = ({ news }: { news: NewsCardType }) => {
             <p className="text-md md:text-lg lg:text-xl xl:text-xl font-semibold">
               {news.title}
             </p>
-            <RightIcon
-              width="40"
-              height="40"
-              iconFillColor="#ffffff"
-            />
+            <RightIcon width="40" height="40" iconFillColor="#ffffff" />
           </div>
         </div>
       </li>

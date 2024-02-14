@@ -567,6 +567,40 @@ export const serviceCategories = [
     href: "dermatologija",
     services: ["Dermatoskopija"],
   },
+
+  {
+    id: 5,
+    name: "Fizikalna medicina i rehabilitacija",
+    description: "Ovo je neka deksirpcija za stomatologiju",
+    href: "fizikalna-medicina-i-rehabilitacija",
+    services: [
+      "Stavljanje dentalnih implantata",
+      "Izbjeljivanje zuba",
+      "Popravak zubnih plombi",
+      "Ortodoncija",
+    ],
+  },
+  {
+    id: 2,
+    name: "Urologija",
+    description: "Ovo je neka deksirpcija za pulomologiju",
+    href: "urologija",
+    services: ["Spirometrija", "Bronhoskopija"],
+  },
+  {
+    id: 3,
+    name: "Gastroenterologija",
+    description: "Ovo je neka deksirpcija za kardiologiju",
+    href: "gastroenterologija",
+    services: ["EKG", "Ehokardiografija"],
+  },
+  {
+    id: 4,
+    name: "Ginekologija",
+    description: "Ovo je neka deksirpcija za dermatologiju",
+    href: "ginekologija",
+    services: ["Dermatoskopija"],
+  },
 ];
 
 export const services = [
@@ -694,5 +728,4 @@ export const services = [
     precaution:
       "Nakon ehokardiografije važno je poduzeti određene mjere opreza...",
   },
-  // Repeat the same structure for other services...
 ];
