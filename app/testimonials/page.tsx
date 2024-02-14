@@ -7,7 +7,7 @@ import { Testimonial } from "../components/Testimonials";
 import { testimonials } from "../data";
 import { MagnifierIcon } from "@/public/Icons";
 
-export default function AboutUs() {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-[#FFFFFF]">
       <HeroSection />

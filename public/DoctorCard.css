@@ -1,8 +1,3 @@
-.testimotionals {
-  gap: 8px;
-  padding: 4px;
-}
-
 .card {
   position: relative;
   overflow: hidden;
@@ -31,13 +26,4 @@
 
 .card:hover .layer {
   top: 0;
-}
-
-.image {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #babaff3c;
 }

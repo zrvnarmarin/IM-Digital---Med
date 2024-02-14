@@ -477,6 +477,7 @@ export const news = [
     title: "News Number One",
     imageSrc: TestImage,
     date: "12. prosinca 2023.",
+    shortDescription: "Some short description",
   },
   {
     id: 2,
@@ -484,12 +485,14 @@ export const news = [
     title: "News Number One",
     imageSrc: TestImage,
     date: "12. prosinca 2023.",
+    shortDescription: " Some short description Some short description Some short description Some short description Some short description Some short description",
   },
   {
     id: 3,
     href: "first-news",
     title: "News Number One",
     imageSrc: TestImage,
+    shortDescription: "Some short description",
     date: "12. prosinca 2023.",
   },
   {
@@ -497,6 +500,7 @@ export const news = [
     href: "first-news",
     title: "News Number One",
     imageSrc: TestImage,
+    shortDescription: "Some short description",
     date: "12. prosinca 2023.",
   },
   // {

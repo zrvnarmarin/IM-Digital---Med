@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { FacebookIcon } from "@/public/Icons";
 
 export default function Footer() {
   return (
