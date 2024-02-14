@@ -38,13 +38,13 @@ export function Navbar({ onOpenSidebar }: { onOpenSidebar: () => void }) {
           </Link>
         </div>
         <ul className="hidden lg:flex flex-row items-center justify-between gap-12">
-          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+          <li className="font-medium text-primary no-underline text-slate-500 hover:text-[#00b5e7]">
             <Link href={"/about-us"}>About Us</Link>
           </li>
-          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+          <li className="font-medium text-primary no-underline text-slate-500 hover:text-[#00b5e7]">
             <Link href={"/services"}>Services</Link>
           </li>
-          <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+          <li className="font-medium text-primary no-underline text-slate-500 hover:text-[#00b5e7]">
             <Link href={"/our-team"}>Our Team</Link>
           </li>
           {/* <li className="text-slate-500 text-center font-medium text-lg xl:text-xl">
@@ -84,7 +84,7 @@ export function MobileNavigation({
   return (
     <aside className="fixed bottom-0 top-0 left-0 flex flex-col bg-white text-white h-screen w-full z-50 px-7 md:px-10 lg:px-24 xl:px-28 2xl:px-32 py-3 bg-slate-700-300/95 drop-shadow border-b-[1px] border-slate-200">
       <div className="flex items-center justify-between">
-      <div className="text-slate-500 text-center font-medium text-lg xl:text-xl">
+        <div className="text-slate-500 text-center font-medium text-lg xl:text-xl">
           <Link href={"/"} className="flex flex-row items-center gap-4">
             <Image src={LogoImage} alt="logo_image" width={70} height={70} />
             <div>
@@ -104,19 +104,19 @@ export function MobileNavigation({
       </div>
 
       <ul className="flex flex-col gap-6 py-8">
-        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between hover:text-[#7fd5f6] text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/about-us"}>About Us</Link>
           <div className="rotate-90">
             <ArrowUp />
           </div>
         </li>
-        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between hover:text-[#7fd5f6] text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/services"}>Services</Link>
           <div className="rotate-90">
             <ArrowUp />
           </div>
         </li>
-        <li className="flex flex-row items-center justify-between text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
+        <li className="flex flex-row items-center justify-between hover:text-[#7fd5f6] text-slate-500 text-center font-medium text-lg xl:text-xl hover:bg-[#02aeef]/5 rounded-md p-2 duration-100 cursor-pointer">
           <Link href={"/our-team"}>Our Team</Link>
           <div className="rotate-90">
             <ArrowUp />

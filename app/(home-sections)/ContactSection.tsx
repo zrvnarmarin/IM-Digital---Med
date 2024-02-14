@@ -15,7 +15,7 @@ export default function ContactSection() {
         <div className="flex gap-4 items-center bg-[#02aeef]/5 rounded-r-md">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2 py-4">
-            <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">
+            <p className="font-medium text-primary no-underline text-slate-500">
               Tell us all about your project right here, or send us an email at
               <span className="font-semibold text-[#02aeef]/50">
                 {" "}
@@ -29,7 +29,7 @@ export default function ContactSection() {
         <div className="flex gap-4 items-center bg-[#02aeef]/5 rounded-r-md">
           <div className="h-full flex items-center border-[1px] border-slate-200"></div>
           <div className="flex flex-col gap-2 py-4">
-            <p className="text-slate-500 font-medium text-sm xl:text-md leading-2">
+            <p className="font-medium text-primary no-underline text-slate-500">
               By filling out this form, our call center will contact you within
               24 hours to arrange your appointment.
               <span className="font-semibold text-[#02aeef]/50">
@@ -111,7 +111,7 @@ export default function ContactSection() {
         <div className="flex flex-col items-center bg-[#02aeef]/5 rounded-md">
           <div className="flex flex-col gap-6 p-4 w-full">
             <p className="flex flex-col gap-3 text-slate-500 font-medium text-lg xl:text-xl leading-2 uppercase">Radno vrijeme</p>
-            <div className="w-full flex flex-row gap-2 text-slate-500 font-medium text-sm xl:text-md leading-2">
+            <div className="w-full flex flex-row gap-2 font-medium text-primary no-underline text-slate-500">
               <p>Pon - Pet: </p>
               <p>08:00 - 16:00h</p>
             </div>

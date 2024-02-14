@@ -15,7 +15,7 @@ export default function HeroSection({
       <DoctorPageWrapper>
         <div className="w-full flex flex-col gap-4 text-white text-center">
           <Link
-            href="our-team"
+            href="/our-team"
             className="text-start w-full text-lg xl:text-xl leading-2 font-medium hover:text-slate-600 text-[#80d6f7] duration-100 pt-2 uppercase py-4"
           >
             {`<<`} Our Team
